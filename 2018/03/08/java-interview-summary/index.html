@@ -101,7 +101,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Spring,AOP," />
 
 
 
@@ -112,14 +112,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="分类">
-<meta property="og:url" content="http://yoursite.com/categories/index.html">
+<meta name="description" content="Spring AOP 设计原理">
+<meta name="keywords" content="Spring,AOP">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Spring">
+<meta property="og:url" content="http://yoursite.com/2018/03/07/spring/index.html">
 <meta property="og:site_name" content="YuanYe">
+<meta property="og:description" content="Spring AOP 设计原理">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-31T04:23:05.138Z">
+<meta property="og:updated_time" content="2018-03-07T11:01:54.467Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="分类">
+<meta name="twitter:title" content="Spring">
+<meta name="twitter:description" content="Spring AOP 设计原理">
 
 
 
@@ -151,7 +155,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/03/07/spring/"/>
 
 
 
@@ -361,7 +365,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-03-12T18:59:07+08:00">2018-03-12</time>
+              <time title="更新于" itemprop="dateModified" datetime="2018-03-13T19:04:07+08:00">2018-03-13</time>
             
           </span>
 
@@ -487,6 +491,35 @@
 <li>线程：它是比进程更小的能独立运行的基本单位。线程自己基本上不拥有系统资源,只拥有一点在运行中必不可少的资源(如程序计数器,一组寄存器和栈),但是它可与同属一个进程的其他的线程共享进程所拥有的全部资源.</li>
 </ul>
 </li>
+<li><p>线程的生命周期，状态是如何转移的？</p>
+<ul>
+<li>线程状态<ol>
+<li>新建(NEW)：新创建了一个线程对象。</li>
+<li>可运行(RUNNABLE)：线程对象创建后，其他线程(比如 main 线程）调用了该对象的 start() 方法。该状态的线程位于可运行线程池中，等待被线程调度选中，获取cpu 的使用权。</li>
+<li>运行(RUNNING)：可运行状态(runnable)的线程获得了cpu 时间片（timeslice） ，执行程序代码。</li>
+<li>阻塞(BLOCKED)：阻塞状态是指线程因为某种原因放弃了cpu 使用权，也即让出了cpu timeslice，暂时停止运行。直到线程进入可运行(runnable)状态，才有机会再次获得cpu timeslice 转到运行(running)状态。<ul>
+<li>阻塞的情况分三种：<ol>
+<li>等待阻塞：运行(running)的线程执行 o.wait() 方法，JVM 会把该线程放入等待队列(waitting queue)中。</li>
+<li>同步阻塞：运行(running)的线程在获取对象的同步锁时，若该同步锁被别的线程占用，则 JVM 会把该线程放入锁池(lock pool)中。</li>
+<li>其他阻塞：运行(running)的线程执行 Thread.sleep(long ms) 或 t.join() 方法，或者发出了 I/O 请求时，JVM 会把该线程置为阻塞状态。当 sleep() 状态超时、join() 等待线程终止或者超时、或者I/O处理完毕时，线程重新转入可运行(runnable)状态。</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>死亡(DEAD)：线程run()、main() 方法执行结束，或者因异常退出了run()方法，则该线程结束生命周期。死亡的线程不可再次复生。</li>
+</ol>
+</li>
+<li>状态转换<br><img src="http://dl.iteye.com/upload/picture/pic/116719/7e76cc17-0ad5-3ff3-954e-1f83463519d1.jpg" alt="状态转换图"></li>
+<li>几个方法比较<ol>
+<li>Thread.sleep(long millis)：一定是当前线程调用此方法，当前线程进入阻塞，但不释放对象锁，millis 后线程自动苏醒进入可运行状态。作用：给其它线程执行机会的最佳方式。</li>
+<li>Thread.yield()：一定是当前线程调用此方法，当前线程放弃获取的 cpu 时间片，由运行状态变会可运行状态，让 OS 再次选择线程。作用：让相同优先级的线程轮流执行，但并不保证一定会轮流执行。实际中无法保证 yield() 达到让步目的，因为让步的线程还有可能被线程调度程序再次选中。Thread.yield() 不会导致阻塞。</li>
+<li>t.join()/t.join(long millis)：当前线程里调用其它线程1的 join 方法，当前线程阻塞，但不释放对象锁，直到线程1执行完毕或者 millis 时间到，当前线程进入可运行状态。</li>
+<li>obj.wait()：当前线程调用对象的 wait() 方法，当前线程释放对象锁，进入等待队列。依靠 notify()/notifyAll() 唤醒或者 wait(long timeout) timeout 时间到自动唤醒。</li>
+<li>obj.notify()：唤醒在此对象监视器上等待的单个线程，选择是任意性的。notifyAll() 唤醒在此对象监视器上等待的所有线程。  </li>
+</ol>
+</li>
+</ul>
+</li>
 <li><p>并行和并发的概念</p>
 <ul>
 <li>并行是指两个或者多个事件在同一时刻发生</li>
@@ -494,6 +527,11 @@
 </ul>
 </li>
 <li><p>创建线程的方式及实现</p>
+<ul>
+<li>继承 Thread 类</li>
+<li>实现 Runnable 接口</li>
+<li>使用 Callable 和 Future</li>
+</ul>
 </li>
 <li><p>进程间通信的方式？可參考<a href="http://blog.csdn.net/u011514810/article/details/77131296" target="_blank" rel="noopener">《JAVA线程间通信的几种方式<br>》</a></p>
 <ul>
@@ -527,8 +565,7 @@
 <li>为什么会出现线程不安全？<br>因为存在有限的共享资源（可变的共享变量），以及多线程的并发访问。</li>
 </ul>
 <ul>
-<li><p>如何解决？</p>
-<ul>
+<li>如何解决？<ul>
 <li>尽量避免使用可变的共享变量</li>
 <li>使用不可变的共享变量<br>可以使用final修饰的对象保证线程安全，由于final修饰的引用型变量(除String外)不可变是指引用不可变，但其指向的对象是可变的，所以此类必须安全发布，也即不能对外提供可以修改final对象的接口。</li>
 </ul>
@@ -552,7 +589,7 @@
 </li>
 <li><p>什么是 CAS？<br>比较并交换(compare and swap, CAS)，是原子操作的一种，可用于在多线程编程中实现不被打断的数据交换操作，从而避免多线程同时改写某一数据时由于执行顺序不确定性以及中断的不可预知性产生的数据不一致问题。CAS操作基于CPU提供的原子操作指令实现，各个编译器根据这个特点实现了各自的原子操作函数。<br>简单说：CAS需要检查操作值有没有发生改变，如果没有发生改变则更新。</p>
 <ul>
-<li>优点：</li>
+<li>优点：无锁；非阻塞</li>
 <li>缺点：<ol>
 <li>循环时间太长<br>如果CAS一直不成功呢？这种情况绝对有可能发生，如果自旋CAS长时间地不成功，则会给CPU带来非常大的开销。在JUC中有些地方就限制了CAS自旋的次数，例如BlockingQueue的SynchronousQueue。</li>
 <li>只能保证一个共享变量的原子操作（当然如果你有办法把多个变量整成一个变量，利用CAS也不错。例如读写锁中state的高地位）</li>
@@ -604,7 +641,7 @@
 </li>
 <li><p>说说 Exchanger 原理</p>
 <ul>
-<li>Exchanger（交换者）是一个用于线程间协作的工具类。Exchanger 用于进行线程间的数据交换。它提供一个同步点，在这个同步点两个线程可以交换彼此的数据。这两个线程通过 exchange 方法交换数据， 如果第一个线程先执行 exchange 方法，它会一直等待第二个线程也执行 exchange，当两个线程都到达同步点时，这两个线程就可以交换数据，将本线程生产出来的数据传递给对方。</li>
+<li>Exchanger（交换者）是一个用于线程间协作的工具类。Exchanger 用于进行线程间的数据交换。它提供一个同步点，在这个同步点两个线程可以交换彼此的数据。这两个线程通过 exchange 方法交换数据，如果第一个线程先执行 exchange 方法，它会一直等待第二个线程也执行 exchange，当两个线程都到达同步点时，这两个线程就可以交换数据，将本线程生产出来的数据传递给对方。</li>
 <li>使用场景：Exchanger 也可以用于校对工作</li>
 </ul>
 </li>
@@ -617,10 +654,23 @@
 </li>
 </ul>
 <ul>
-<li>作用：提供线程内的局部变量，这种变量在线程的生命周期内起作用，减少同一个线程内多个函数或者组件之间一些公共变量的传递的复杂度。  </li>
+<li>作用：提供线程内的局部变量，这种变量在线程的生命周期内起作用，减少同一个线程内多个函数或者组件之间一些公共变量的传递的复杂度。<br>ThreadLocal的使用不是为了能让多个线程共同使用某一对象，而是我有一个线程A，其中我需要用到某个对象o，这个对象o在这个线程A之内会被多处调用，而我不希望将这个对象o当作参数在多个方法之间传递，于是，我将这个对象o放到TheadLocal中，这样，在这个线程A之内的任何地方，只要线程A之中的方法不修改这个对象o，我都能取到同样的这个变量o。</li>
 <li>与普通变量的区别：每个使用该变量的线程都会初始化一个完全独立的实例副本。ThreadLocal 变量通常被 private static 修饰。当一个线程结束时，它所使用的所有 ThreadLocal 相对的实例副本都可被回收。</li>
-<li><p>为什么会内存泄漏？<br>ThreadLocalMap 使用 ThreadLocal 的弱引用作为 key，如果一个 ThreadLocal 没有外部强引用来引用它，那么系统 GC 时，这个 ThreadLocal 会被回收，ThreadLocalMap 中就会出现 key 为 null 的 Entry，就没有办法访问这些 key 为 null 的 Entry 的 value，如果当前线程再迟迟不结束的话，这些 key 为 null 的 Entry 的 value 就会一直存在一条强引用链：Thread Ref -&gt; Thread -&gt; ThreaLocalMap -&gt; Entry -&gt; value 永远无法回收，造成内存泄漏。</p>
+</ul>
+<ul>
+<li>为什么会内存泄漏？<ol>
+<li>ThreadLocalMap 使用 ThreadLocal 的弱引用作为 key，如果一个 ThreadLocal 没有外部强引用来引用它，那么系统 GC 时，这个 ThreadLocal 会被回收，ThreadLocalMap 中就会出现 key 为 null 的 Entry，就没有办法访问这些 key 为 null 的 Entry 的 value。如果当前线程再迟迟不结束的话，这些 key 为 null 的 Entry 的 value 就会一直存在一条强引用链：Thread Ref -&gt; Thread -&gt; ThreaLocalMap -&gt; Entry -&gt; value 永远无法回收，造成内存泄漏。</li>
+<li>ThreadLocalMap 的设计已经考虑到上述情况，也加了一些防护措施：在ThreadLocal 的 get()，set()，remove() 时都会清除线程 ThreadLocalMap 里所有 key 为 null 的 value。</li>
+<li>但上述预防措施并不能保证不会内存泄漏：<ul>
+<li>使用 static 的 ThreadLocal，延长了 ThreadLocal 的生命周期，可能导致的内存泄漏。</li>
+<li>分配使用了 ThreadLocal 又不再调用 get()，set()，remove() 方法，那么就会导致内存泄漏。</li>
+</ul>
 </li>
+</ol>
+</li>
+<li>如何避免内存泄漏？<br>每次使用完 ThreadLocal，都调用它的 remove() 方法，清除数据。</li>
+</ul>
+<ul>
 <li><p>适用场景：</p>
 <ol>
 <li>ThreadLocal 适用于变量在线程间隔离且在方法间共享的场景</li>
@@ -637,8 +687,8 @@
 <li><p>讲讲线程池的实现原理</p>
 </li>
 <li>线程池的几种实现方式</li>
-<li><p>线程的生命周期，状态是如何转移的</p>
-</li>
+</ul>
+<ul>
 <li><p>如何理解并发的三个特性：原子性、可见性、顺序性？</p>
 <ul>
 <li>原子性：原子性是指不可再分的最小操作指令，即单条机器指令，原子性操作任意时刻只能有一个线程，因此是线程安全的。</li>
@@ -662,8 +712,10 @@
 </li>
 <li><p>按照锁性质分类：</p>
 <ul>
-<li>公平锁/非公平锁</li>
-<li>互斥锁/读写锁</li>
+<li><p>公平锁/非公平锁</p>
+</li>
+<li><p>互斥锁/读写锁</p>
+</li>
 <li>悲观锁/乐观锁</li>
 <li>独享锁/共享锁</li>
 <li>可重入锁  </li>
@@ -703,7 +755,6 @@
 <li>常见的原子操作类</li>
 <li>乐观锁的业务场景及实现方式</li>
 <li>Java 8并法包下常见的并发类</li>
-<li>偏向锁、轻量级锁、重量级锁、自旋锁的概念</li>
 <li>可参考：<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247484881&amp;idx=2&amp;sn=b0ecf85cd7c9e543c84e7a9859c20a26&amp;chksm=e9c5fc60deb27576a6a9c453dabc585f43d9f29fd8a8f37ed0e7cc2f012c86b23fbd21763a39&amp;scene=21#wechat_redirect" target="_blank" rel="noopener">《Java多线程编程核心技术》</a></li>
 </ul>
 <h3 id="1-5、JVM"><a href="#1-5、JVM" class="headerlink" title="1.5、JVM"></a>1.5、JVM</h3><ul>
