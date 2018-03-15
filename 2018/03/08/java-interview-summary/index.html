@@ -101,7 +101,7 @@
 
 
 
-  <meta name="keywords" content="Spring,AOP," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -112,18 +112,14 @@
 
 
 
-<meta name="description" content="Spring AOP 设计原理">
-<meta name="keywords" content="Spring,AOP">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Spring">
-<meta property="og:url" content="http://yoursite.com/2018/03/07/spring/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="分类">
+<meta property="og:url" content="http://yoursite.com/categories/index.html">
 <meta property="og:site_name" content="YuanYe">
-<meta property="og:description" content="Spring AOP 设计原理">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-07T11:01:54.467Z">
+<meta property="og:updated_time" content="2018-01-31T04:23:05.138Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Spring">
-<meta name="twitter:description" content="Spring AOP 设计原理">
+<meta name="twitter:title" content="分类">
 
 
 
@@ -155,7 +151,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/03/07/spring/"/>
+  <link rel="canonical" href="http://yoursite.com/categories/"/>
 
 
 
@@ -365,7 +361,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-03-13T19:04:07+08:00">2018-03-13</time>
+              <time title="更新于" itemprop="dateModified" datetime="2018-03-15T19:03:41+08:00">2018-03-15</time>
             
           </span>
 
@@ -432,26 +428,78 @@
       
         <h2 id="一、基础篇"><a href="#一、基础篇" class="headerlink" title="一、基础篇"></a>一、基础篇</h2><h3 id="1-1-Java基础"><a href="#1-1-Java基础" class="headerlink" title="1.1 Java基础"></a>1.1 Java基础</h3><ul>
 <li>面向对象的特征：继承、封装和多态</li>
-<li>final, finally, finalize 的区别</li>
-<li>Exception、Error、运行时异常与一般异常有何异同</li>
-<li>请写出5种常见到的runtime exception</li>
-<li>int 和 Integer 有什么区别，Integer的值缓存范围</li>
+<li><p>final, finally, finalize 的区别</p>
+</li>
+<li><p>Exception、Error、运行时异常与一般异常有何异同</p>
+<ul>
+<li><strong>Thorwable</strong>：（表示可抛出）是所有异常和错误的超类，两个直接子类为：<ul>
+<li><strong>Error</strong>：它是由JVM 产生和抛出的，程序无法处理的错误。这些异常发生时，Java 虚拟机一般会选择线程终止。比如 OutOfMemoryError、ThreadDeath等。</li>
+</ul>
+<ul>
+<li><strong>Exception</strong>：是程序本身可以处理的异常，这种异常分两大类运行时异常和非运行时异常。程序中应当尽可能去处理这些异常。<ul>
+<li><strong>RuntimeException</strong>（运行时异常，又称不检查异常）都是 RuntimeException 类及其子类异常，这些异常是不检查异常，程序中可以选择捕获处理，也可以不处理。这些异常一般是由程序逻辑错误引起的，程序应该从逻辑角度尽可能避免这类异常的发生。<br>常见运行时异常：<ul>
+<li>NullPointerException</li>
+<li>IndexOutOfBoundsException</li>
+<li>ClassCastException</li>
+<li>NumberFormatException</li>
+<li>ArrayIndexOutOfBoundsException</li>
+</ul>
+</li>
+<li><strong>非运行时异常</strong>（又称检查异常）是 RuntimeException以外的异常，类型上都属于Exception类及其子类。从程序语法角度讲是必须进行处理的异常，如果不处理，程序就不能编译通过。如 IOException、SQLException 等以及用户自定义的 Exception 异常，一般情况下不自定义检查异常。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>java 异常体系结构图解<br><img src="http://img.blog.csdn.net/20160331115514210" alt="异常图解"></li>
+</ul>
+</li>
+<li><p>int 和 Integer 有什么区别，Integer的值缓存范围</p>
+</li>
 <li>包装类，装箱和拆箱</li>
 <li>String、StringBuilder、StringBuffer</li>
 <li>重载和重写的区别</li>
 <li>抽象类和接口有什么区别</li>
-<li>说说反射的用途及实现</li>
-<li>说说自定义注解的场景及实现</li>
-<li>HTTP请求的GET与POST方式的区别</li>
+<li><p>说说反射的用途及实现</p>
+</li>
+<li><p>说说自定义注解的场景及实现</p>
+<ul>
+<li><img src="https://upload-images.jianshu.io/upload_images/3458176-c5642804973c8b6e.jpg?imageMogr2/auto-orient/" alt="Annotation 思维导图"></li>
+</ul>
+<ul>
+<li><p>Annotation 如何被处理？</p>
+<ul>
+<li><p>当Java源代码被编译时，编译器的一个插件 annotation 处理器则会处理这些 annotation。处理器可以产生报告信息，或者创建附加的Java源文件或资源。如果annotation本身被加上了RententionPolicy的运行时类，则Java编译器则会将annotation的元数据存储到class文件中。然后，Java虚拟机或其他的程序可以查找这些元数据并做相应的处理。</p>
+</li>
+<li><p>当然除了annotation处理器可以处理annotation外，我们也可以使用反射自己来处理annotation。Java SE 5有一个名为AnnotatedElement的接口，Java的反射对象类Class,Constructor,Field,Method以及Package都实现了这个接口。这个接口用来表示当前运行在Java虚拟机中的被加上了annotation的程序元素。通过这个接口可以使用反射读取annotation。AnnotatedElement接口可以访问被加上RUNTIME标记的annotation，相应的方法有getAnnotation,getAnnotations,isAnnotationPresent。由于Annotation类型被编译和存储在二进制文件中就像class一样，所以可以像查询普通的Java对象一样查询这些方法返回的Annotation。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>HTTP请求的GET与POST方式的区别</p>
+</li>
 <li>Session与Cookie区别</li>
-<li>列出自己常用的JDK包</li>
-<li>MVC设计思想</li>
-<li>equals与==的区别</li>
-<li>hashCode和equals方法的区别与联系</li>
+<li><p>列出自己常用的JDK包</p>
+<ul>
+<li>java.lang</li>
+<li>java.util</li>
+<li>java.io</li>
+</ul>
+</li>
+<li><p>MVC设计思想</p>
+<ul>
+<li>M 即Model(模型层)，主要负责业务逻辑以及数据库的交互</li>
+<li>V 即View(视图层)，主要用于显示数据和提交数据</li>
+<li>C 即Controller(控制器)，主要是用作捕获请求并控制请求转发</li>
+</ul>
+</li>
+<li><p>equals与==的区别</p>
+</li>
+<li>hashCode 和 equals 方法的区别与联系</li>
 <li>什么是Java序列化和反序列化，如何实现Java序列化？或者请解释Serializable 接口的作用</li>
 <li>Object类中常见的方法，为什么wait  notify会放在Object里边？</li>
-<li>Java的平台无关性如何体现出来的</li>
-<li>JDK和JRE的区别</li>
 <li>Java 8有哪些新特性</li>
 </ul>
 <h3 id="1-2-Java常见集合"><a href="#1-2-Java常见集合" class="headerlink" title="1.2 Java常见集合"></a>1.2 Java常见集合</h3><ul>
@@ -703,50 +751,121 @@
 <h3 id="1-4-锁机制"><a href="#1-4-锁机制" class="headerlink" title="1.4 锁机制"></a>1.4 锁机制</h3><ul>
 <li><p>什么是锁？<br>锁是保证并发共享数据一致性的工具</p>
 </li>
+<li><p>什么是死锁？<br>如果一个进程集合里面的每个进程都在等待这个集合中的其他一个进程（包括自身）才能继续往下执行，若无外力他们将无法推进，这种情况就是死锁，处于死锁状态的进程称为死锁进程。</p>
+</li>
+<li><p>产生死锁的四个条件</p>
+<ol>
+<li>互斥：进程对所分配到的资源不允许其他进程进行访问，若其他进程访问该资源，只能等待，直至占有该资源的进程使用完成后释放该资源</li>
+<li>请求与保持：进程获得一定的资源之后，又对其他资源发出请求，但是该资源可能被其他进程占有，此事请求阻塞，但又对自己获得的资源保持不放</li>
+<li>不剥夺：指进程已获得的资源，在未完成使用之前，不可被剥夺，只能在使用完后自己释放</li>
+<li>循环等待：指进程发生死锁后，必然存在一个进程和资源之间的环形链</li>
+</ol>
+</li>
+<li><p>处理死锁的基本方法</p>
+<ol>
+<li>预防死锁：通过设置一些限制条件，去破坏产生死锁的必要条件</li>
+<li>避免死锁：在资源分配过程中，使用某种方法避免系统进入不安全的状态，从而避免发生死锁</li>
+<li>检测死锁：允许死锁的发生，但是通过系统的检测之后，采取一些措施，将死锁清除掉</li>
+<li>解除死锁：该方法与检测死锁配合使用</li>
+</ol>
+</li>
 <li><p>Java 中常见的锁有哪些？</p>
 <ul>
-<li><p>阻塞锁</p>
-<ul>
+<li>阻塞锁<ul>
 <li>概念：可以说是让线程进入阻塞状态进行等待，当获得相应的信号（唤醒，时间）时，才可以进入线程的准备就绪状态，准备就绪状态的所有线程，通过竞争，进入运行状态。</li>
 </ul>
 </li>
-<li><p>按照锁性质分类：</p>
-<ul>
-<li><p>公平锁/非公平锁</p>
-</li>
-<li><p>互斥锁/读写锁</p>
-</li>
-<li>悲观锁/乐观锁</li>
-<li>独享锁/共享锁</li>
-<li>可重入锁  </li>
+<li>按照锁性质分类：<ul>
+<li>公平锁 / 非公平锁<ul>
+<li>公平锁：指多个线程按照申请锁的顺序来获取锁。<ul>
+<li>ReentrantLock 可通过构造函数指定为公平锁</li>
 </ul>
 </li>
-<li><p>按照设计方案分类：</p>
-<ul>
+<li>非公平锁：指多个线程获取锁的顺序并不是按照申请锁的顺序，有可能后申请的线程比先申请的线程优先获取锁。有可能，会造成优先级反转或者饥饿现象。<ul>
+<li>实现：ReentrantLock（默认为非公平锁）；Synchronized</li>
+<li>优点：吞吐量比公平锁大</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>独享锁 / 共享锁<ul>
+<li>独享锁：指该锁一次只能被一个线程持有。如：ReentrantLock；ReentrantReadWriteLock.WriteLock；Synchronized</li>
+<li>共享锁：指该锁可被多个线程持有。如：ReentrantReadWriteLock.ReadLock</li>
+</ul>
+</li>
+<li>互斥锁 / 读写锁<br>上面讲的独享锁/共享锁就是一种广义的说法，互斥锁/读写锁就是具体的实现。<br>互斥锁在Java中的具体实现就是ReentrantLock<br>读写锁在Java中的具体实现就是ReadWriteLock</li>
+<li>悲观锁 / 乐观锁<ul>
+<li>乐观锁与悲观锁不是指具体的什么类型的锁，而是指看待并发同步的角度。<ul>
+<li>悲观锁认为对于同一个数据的并发操作，一定是会发生修改的，哪怕没有修改，也会认为修改。因此对于同一个数据的并发操作，悲观锁采取加锁的形式。悲观的认为，不加锁的并发操作一定会出问题。</li>
+<li>乐观锁则认为对于同一个数据的并发操作，是不会发生修改的。在更新数据的时候，会采用尝试更新，不断重新的方式更新数据。乐观的认为，不加锁的并发操作是没有事情的。</li>
+</ul>
+</li>
+<li>适用场景：<ul>
+<li>悲观锁适合写操作非常多的场景</li>
+<li>乐观锁适合读操作非常多的场景，不加锁会带来大量的性能提升</li>
+</ul>
+</li>
+<li>实现：<ul>
+<li>悲观锁在Java中的使用，就是利用各种锁。</li>
+<li>乐观锁在Java中的使用，是无锁编程，常常采用的是CAS算法，典型的例子就是原子类，通过CAS自旋实现原子操作的更新。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>可重入锁  <ul>
+<li>可重入锁又名递归锁，是指在同一个线程在外层方法获取锁的时候，在进入内层方法会自动获取锁。</li>
+<li>实现：ReentrantLock；Synchronized</li>
+<li>优点：可一定程度避免死锁</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>按照设计方案分类：<ul>
 <li><a href="http://ifeve.com/java_lock_see1/" target="_blank" rel="noopener">自旋锁</a><ul>
 <li>概念：自旋锁是采用让当前线程不停地的在循环体内执行实现的，当循环的条件被其他线程改变时 才能进入临界区。</li>
 <li>适用场景：适合于线程竞争不激烈，且锁保持时间短。<br>因为自旋锁只是将当前线程不停地执行循环体，不进行线程状态的改变，所以响应速度更快。但当线程数不停增加时，性能下降明显，因为每个线程都需要执行，占用CPU时间。</li>
 </ul>
 </li>
+<li>锁粗化 / 锁消除<ul>
+<li><strong>锁粗化</strong>：如果虚拟机探测到有这样一串零碎的操作都对同一个对象加锁，将会把加锁同步的范围扩展到整个操作序列的外部，这样就只需要加锁一次就够了。</li>
+<li><strong>锁消除</strong>：指虚拟机即时编译器在运行时，对一些代码上要求同步，但是被检测到不可能存在共享数据竞争的锁进行消除。锁消除主要判定依据来源于逃逸分析的数据支持。锁消除是在编译器级别的事情。</li>
 </ul>
-<ul>
-<li>锁膨胀/锁消除</li>
-<li>偏向锁/轻量级锁/重量级锁</li>
-<li>分段锁</li>
+</li>
+<li>偏向锁 / 轻量级锁 / 重量级锁<br>这三种锁是指锁的状态，并且是针对 Synchronized。在Java 5通过引入锁升级的机制来实现高效Synchronized。这三种锁的状态是通过对象监视器在对象头中的字段来表明的。<ul>
+<li><strong>偏向锁</strong>：指一段同步代码一直被一个线程所访问，那么该线程会自动获取锁。降低获取锁的代价。</li>
+<li><strong>轻量级锁</strong>：指当锁是偏向锁的时候，被另一个线程所访问，偏向锁就会升级为轻量级锁，其他线程会通过自旋的形式尝试获取锁，不会阻塞，提高性能。</li>
+<li><strong>重量级锁</strong>：指当锁为轻量级锁的时候，另一个线程虽然是自旋，但自旋不会一直持续下去，当自旋一定次数的时候，还没有获取到锁，就会进入阻塞，该锁膨胀为重量级锁。重量级锁会让其他申请的线程进入阻塞，性能降低。</li>
+<li>锁升级是单向的: 无锁 -&gt; 偏向锁 -&gt; 轻量级锁 -&gt; 重量级锁</li>
+</ul>
+</li>
+<li>分段锁<ul>
+<li>分段锁其实是一种锁的设计，并不是具体的一种锁。</li>
+<li>分段锁的设计目的是细化锁的粒度，当操作不需要更新整个数组的时候，就仅仅针对数组中的一项进行加锁操作。</li>
+<li>示例：<br>  以 ConcurrentHashMap 来说一下分段锁的含义以及设计思想，ConcurrentHashMap 中的分段锁称为 Segment，它即类似于 HashMap（JDK7与JDK8中HashMap的实现）的结构，即内部拥有一个 Entry 数组，数组中的每个元素又是一个链表；同时又是一个 ReentrantLock（Segment继承了ReentrantLock)。<br>  当需要put元素的时候，并不是对整个hashmap进行加锁，而是先通过hashcode来知道他要放在那一个分段中，然后对这个分段进行加锁，所以当多线程put的时候，只要不是放在一个分段中，就实现了真正的并行的插入。<br>  但是，在统计size的时候，可就是获取hashmap全局信息的时候，就需要获取所有的分段锁才能统计。</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 <ul>
-<li>对象锁</li>
+<li>方法锁 / 对象锁 / 类锁</li>
 <li>线程锁</li>
-<li>信号量<br>可参考：<a href="http://blog.csdn.net/nalanmingdian/article/details/77800355" target="_blank" rel="noopener">JAVA锁有哪些种类</a></li>
+<li>信号量</li>
+</ul>
+<ul>
+<li>可参考：<ol>
+<li><a href="http://blog.csdn.net/nalanmingdian/article/details/77800355" target="_blank" rel="noopener">JAVA锁有哪些种类</a></li>
+<li><a href="https://www.cnblogs.com/lxmyhappy/p/7380073.html" target="_blank" rel="noopener">JAVA锁有哪些种类，以及区别</a></li>
+</ol>
+</li>
 </ul>
 </li>
 <li><p>Condition</p>
 </li>
-<li>重入锁的概念，重入锁为什么可以防止死锁</li>
-<li>产生死锁的四个条件（互斥、请求与保持、不剥夺、循环等待）</li>
-<li>如何检查死锁（通过jConsole检查死锁）</li>
+<li><p>重入锁的概念，重入锁为什么可以防止死锁</p>
+</li>
+<li><p>如何检查死锁（通过jConsole检查死锁）</p>
+</li>
 <li>volatile 实现原理（禁止指令重排、刷新内存）</li>
 <li>synchronized 实现原理（对象监视器）</li>
 <li>synchronized 与 lock 的区别</li>
@@ -755,23 +874,134 @@
 <li>常见的原子操作类</li>
 <li>乐观锁的业务场景及实现方式</li>
 <li>Java 8并法包下常见的并发类</li>
-<li>可参考：<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247484881&amp;idx=2&amp;sn=b0ecf85cd7c9e543c84e7a9859c20a26&amp;chksm=e9c5fc60deb27576a6a9c453dabc585f43d9f29fd8a8f37ed0e7cc2f012c86b23fbd21763a39&amp;scene=21#wechat_redirect" target="_blank" rel="noopener">《Java多线程编程核心技术》</a></li>
-</ul>
+<li><p>可参考：<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247484881&amp;idx=2&amp;sn=b0ecf85cd7c9e543c84e7a9859c20a26&amp;chksm=e9c5fc60deb27576a6a9c453dabc585f43d9f29fd8a8f37ed0e7cc2f012c86b23fbd21763a39&amp;scene=21#wechat_redirect" target="_blank" rel="noopener">《Java多线程编程核心技术》</a></p>
 <h3 id="1-5、JVM"><a href="#1-5、JVM" class="headerlink" title="1.5、JVM"></a>1.5、JVM</h3><ul>
-<li>JVM 运行时内存区域划分</li>
-<li>JVM 如何加载字节码文件</li>
-<li>什么情况会出现Full GC，什么情况会出现yong GC。</li>
-<li>内存溢出 OOM 和堆栈溢出SOE的示例及原因、如何排查与解决</li>
+<li>JVM 思维导图<br><img src="http://fakerblog-wordpress.stor.sinaapp.com/uploads/2014/07/1232.jpg" alt="JVM 思维导图"></li>
+</ul>
+<ul>
+<li>JVM 运行时内存区域划分<ol>
+<li><strong>程序计数器</strong>(Program Counter Register)<br>用来指示 执行哪条指令的</li>
+<li><strong>Java 栈</strong>(VM Stack)或称 Java 虚拟机栈<ul>
+<li>Java栈是Java方法执行的内存模型</li>
+</ul>
+<ul>
+<li>Java栈中存放的是一个个的栈帧，每个栈帧对应一个被调用的方法。<br>在栈帧中包括：<ul>
+<li>局部变量表(Local Variables)</li>
+<li>操作数栈(Operand Stack)</li>
+<li>指向当前方法所属的类的运行时常量池（运行时常量池的概念在方法区部分会谈到）的引用(Reference to runtime constant pool)</li>
+<li>方法返回地址(Return Address)</li>
+<li>一些额外的附加信息</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>本地方法栈</strong>(Native Method Stack)</li>
+<li><strong>方法区</strong>(Method Area)<br>存储了每个类的信息（包括类的名称、方法信息、字段信息）、静态变量、常量以及编译器编译后的代码等。</li>
+<li><strong>堆</strong>(Heap)<br>堆是用来存储对象本身以及数组（当然，数组引用是存放在Java栈中的）的。</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>什么是类的加载</p>
+<ul>
+<li>类的加载是指将类的.class文件中的二进制数据读入到内存中，将其放在运行时数据区的方法区内，然后在堆区创建一个java.lang.Class对象，用来封装类在方法区内的数据结构。</li>
+<li>类加载的最终产品是位于堆区中的 Class 对象，Class 对象封装了类在方法区内的数据结构，并且向 Java 程序员提供了访问方法区内的数据结构的接口。</li>
+</ul>
+</li>
+<li>class 文件加载方式<ul>
+<li>从本地系统中直接加载</li>
+<li>通过网络下载.class文件</li>
+<li>从zip，jar等归档文件中加载.class文件</li>
+<li>从专有数据库中提取.class文件</li>
+<li>将Java源文件动态编译为.class文件</li>
+</ul>
+</li>
+<li>类加载器<ul>
+<li>从 JVM 角度只有两种类加载器：<ul>
+<li>启动类加载器：是虚拟机自身的一部分，使用 C++ 实现。</li>
+<li>所有其他的类加载器：全继承自 java.lang.ClassLoader，这些类加载器需要由启动类加载器加载到内存中之后才能去加载其他的类。由 Java 实现。</li>
+</ul>
+</li>
+<li>从 Java 开发人员的角度，类加载器分三类：<ol>
+<li><strong>启动类加载器</strong>：Bootstrap ClassLoader，负责加载存放在JDK\jre\lib(JDK代表JDK的安装目录，下同)下，或被 -Xbootclasspath 参数指定的路径中的，并且能被虚拟机识别的类库（如rt.jar，所有的java.*开头的类均被Bootstrap ClassLoader加载）。启动类加载器是无法被Java程序直接引用的。</li>
+<li><strong>扩展类加载器</strong>：Extension ClassLoader，该加载器由 sun.misc.Launcher$ExtClassLoader 实现，它负责加载 JDK\jre\lib\ext 目录中，或者由 java.ext.dirs 系统变量指定的路径中的所有类库（如javax.*开头的类），开发者可以直接使用扩展类加载器。</li>
+<li><strong>应用程序类加载器</strong>：Application ClassLoader，该类加载器由 sun.misc.Launcher$AppClassLoader 来实现，它负责加载用户类路径（ClassPath）所指定的类，开发者可以直接使用该类加载器，如果应用程序中没有自定义过自己的类加载器，一般情况下这个就是程序中默认的类加载器。</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>类的生命周期<ul>
+<li>加载：查找并加载类的二进制数据，在 Java 堆中也创建一个 java.lang.Class 类的对象<ul>
+<li>类加载的时机：类加载器并不需要等到某个类被“首次主动使用”时再加载它，JVM规范允许类加载器在预料某个类将要被使用时就预先加载它，如果在预先加载的过程中遇到了.class 文件缺失或存在错误，类加载器必须在程序首次主动使用该类时才报告错误（LinkageError错误）如果这个类一直没有被程序主动使用，那么类加载器就不会报告错误</li>
+</ul>
+</li>
+<li>连接<br>又包含三块内容：<ul>
+<li>验证：文件格式、元数据、字节码、符号引用验证。确保被加载的类的正确性。</li>
+<li>准备：为类的静态变量分配内存，并将其初始化为默认值</li>
+<li>解析：把类中的符号引用转换为直接引用</li>
+</ul>
+</li>
+<li>初始化：为类的静态变量赋予正确的初始值<ul>
+<li>类初始化时机：只有当对类的主动使用的时候才会导致类的初始化，类的主动使用包括以下六种：<ul>
+<li>创建类的实例，也就是 new 的方式</li>
+<li>访问某个类或接口的静态变量，或者对该静态变量赋值</li>
+<li>调用类的静态方法</li>
+<li>反射（如Class.forName(“com.mysql.jdbc.Driver”)）</li>
+<li>初始化某个类的子类，则其父类也会被初始化</li>
+<li>Java虚拟机启动时被标明为启动类的类（Java Test），直接使用java.exe命令来运行某个主类</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>使用：new 出对象，程序中使用</li>
+<li>卸载：执行垃圾回收</li>
+</ul>
+</li>
+<li><p>JVM 类加载机制</p>
+<ul>
+<li><strong>父类委托</strong>：先让父类加载器试图加载该类，只有在父类加载器无法加载该类时才尝试从自己的类路径中加载该类<ul>
+<li>双亲委派模型工作流程：<br>如果一个类加载器收到了类加载的请求，它首先不会自己去尝试加载这个类，而是把请求委托给父加载器去完成，依次向上，因此，所有的类加载请求最终都应该被传递到顶层的启动类加载器中，只有当父加载器在它的搜索范围中没有找到所需的类时，即无法完成该加载，子加载器才会尝试自己去加载该类。</li>
+<li>双亲委派模型意义：<ul>
+<li>系统类防止内存中出现多份同样的字节码</li>
+<li>保证Java程序安全稳定运行</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>全盘负责</strong>：当一个类加载器负责加载某个 Class 时，该 Class 所依赖的和引用的其他Class也将由该类加载器负责载入，除非显示使用另外一个类加载器来载入</li>
+<li><strong>缓存机制</strong>：缓存机制将会保证所有加载过的 Class 都会被缓存，当程序中需要使用某个 Class 时，类加载器先从缓存区寻找该 Class，只有缓存区不存在，系统才会读取该类对应的二进制数据，并将其转换成 Class 对象，存入缓存区。这就是为什么修改了 Class 后，必须重启 JVM，程序的修改才会生效。</li>
+</ul>
+</li>
+<li><p>什么时候发生 GC。</p>
+<ul>
+<li>Minor GC(Young GC)<ul>
+<li>从年轻代空间（包括 Eden 和 Survivor 区域）回收内存被称为 Minor GC</li>
+<li>当 JVM 无法为一个新的对象分配空间时会触发 Minor GC，比如当 Eden 区满了。所以分配率越高，越频繁执行 Minor GC。</li>
+<li>Minor GC 都会触发“全世界的暂停（stop-the-world）”</li>
+<li>执行 Minor GC 操作时，不会影响到永久代</li>
+</ul>
+</li>
+<li>Major GC：清理老年代</li>
+<li>Full GC：清理整个堆空间—包括年轻代和老年代</li>
+</ul>
+</li>
+<li><p>内存溢出 OOM 和堆栈溢出 SOE 的示例及原因、如何排查与解决</p>
+</li>
 <li>如何判断对象是否可以回收或存活</li>
 <li>常见的GC回收算法及其含义</li>
 <li>常见的JVM性能监控和故障处理工具类：jps、jstat、jmap、jinfo、jconsole等</li>
 <li>JVM如何设置参数</li>
 <li>JVM性能调优</li>
-<li>类加载器、双亲委派模型、一个类的生命周期、类是如何加载到JVM中的</li>
-<li>类加载的过程：加载、验证、准备、解析、初始化</li>
-<li>强引用、软引用、弱引用、虚引用</li>
-<li>Java内存模型JMM</li>
-<li>可参考<a href="http://www.54tianzhisheng.cn/2018/02/28/Java-Memory-Model/" target="_blank" rel="noopener">《《深入理解 Java 内存模型》读书笔记》</a></li>
+<li>可参考：<ol>
+<li><a href="http://www.54tianzhisheng.cn/2018/02/28/Java-Memory-Model/" target="_blank" rel="noopener">《深入理解 Java 内存模型》读书笔记</a></li>
+<li><a href="http://www.ityouknow.com/java/2017/03/01/jvm-overview.html" target="_blank" rel="noopener">jvm知识点总览</a></li>
+<li><a href="http://www.cnblogs.com/ityouknow/p/5603287.html" target="_blank" rel="noopener">java类的加载机制</a></li>
+</ol>
+</li>
 </ul>
 <h3 id="1-6、设计模式"><a href="#1-6、设计模式" class="headerlink" title="1.6、设计模式"></a>1.6、设计模式</h3><ul>
 <li>常见的设计模式</li>
