@@ -364,7 +364,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-03-15T19:03:41+08:00">2018-03-15</time>
+              <time title="更新于" itemprop="dateModified" datetime="2018-03-16T17:42:47+08:00">2018-03-16</time>
             
           </span>
 
@@ -504,8 +504,8 @@
 </li>
 <li>hashCode 和 equals 方法的区别与联系</li>
 <li>什么是Java序列化和反序列化，如何实现Java序列化？或者请解释Serializable 接口的作用</li>
-<li>Object类中常见的方法，为什么wait  notify会放在Object里边？</li>
-<li>Java 8有哪些新特性</li>
+<li>Object类中常见的方法，为什么 wait  notify 会放在 Object 里边？</li>
+<li>Java 8 有哪些新特性</li>
 </ul>
 <h3 id="1-2-Java常见集合"><a href="#1-2-Java常见集合" class="headerlink" title="1.2 Java常见集合"></a>1.2 Java常见集合</h3><ul>
 <li><p>List 和 Set 区别</p>
@@ -526,15 +526,15 @@
 </li>
 <li><p>HashMap 的工作原理及代码实现，什么时候用到红黑树</p>
 </li>
-<li><p>多线程情况下HashMap死循环的问题</p>
+<li><p>多线程情况下 HashMap 死循环的问题</p>
 </li>
-<li><p>HashMap出现Hash DOS攻击的问题</p>
+<li><p>HashMap 出现 Hash DOS 攻击的问题</p>
 </li>
 <li><p>ConcurrentHashMap 的工作原理及代码实现，如何统计所有的元素个数</p>
 </li>
-<li><p>手写简单的HashMap</p>
+<li><p>手写简单的 HashMap</p>
 </li>
-<li><p>看过那些Java集合类的源码</p>
+<li><p>看过那些 Java 集合类的源码</p>
 </li>
 </ul>
 <h3 id="1-3、进程和线程"><a href="#1-3、进程和线程" class="headerlink" title="1.3、进程和线程"></a>1.3、进程和线程</h3><ul>
@@ -633,9 +633,11 @@
 <li>CAS 算法</li>
 </ul>
 </li>
+<li>volatile<ul>
+<li>volatile：写内存语义是直接刷新到主内存中，读的内存语义是直接从主内存中读取。</li>
+<li>volatile 内存语义实现原理<br>  对于一般的变量则会被重排序，而对于volatile则不能，这样会影响其内存语义，所以为了实现volatile的内存语义JMM会限制重排序。</li>
 </ul>
-<ul>
-<li>volatile</li>
+</li>
 </ul>
 </li>
 </ul>
@@ -819,6 +821,7 @@
 </li>
 <li>可重入锁  <ul>
 <li>可重入锁又名递归锁，是指在同一个线程在外层方法获取锁的时候，在进入内层方法会自动获取锁。</li>
+<li>jdk里面没有默认的不可重入锁实现类.</li>
 <li>实现：ReentrantLock；Synchronized</li>
 <li>优点：可一定程度避免死锁</li>
 </ul>
@@ -871,16 +874,59 @@
 </li>
 <li><p>如何检查死锁（通过jConsole检查死锁）</p>
 </li>
-<li>volatile 实现原理（禁止指令重排、刷新内存）</li>
-<li>synchronized 实现原理（对象监视器）</li>
-<li>synchronized 与 lock 的区别</li>
-<li>AQS同步队列</li>
-<li>CAS无锁的概念、乐观锁和悲观锁</li>
-<li>常见的原子操作类</li>
-<li>乐观锁的业务场景及实现方式</li>
-<li>Java 8并法包下常见的并发类</li>
+<li><p>volatile 实现原理（禁止指令重排、刷新内存）</p>
+</li>
+<li><p>synchronized 实现原理（对象监视器）<br>  每个对象有一个监视器锁（monitor），当 monitor 被占用时就会处于锁定状态。线程释放锁时其必须是对应的 monitor 的所有者。</p>
+<ul>
+<li>线程尝试获取 monitor 所有权的过程如下：<ol>
+<li>如果 monitor 的进入数为 0，则该线程进入 monitor，然后将进入数设置为 1，该线程即为 monitor 的所有者。</li>
+<li>如果线程已经占有该 monitor，只是重新进入，则进入 monitor 的进入数加 1。</li>
+<li>如果其他线程已经占用了 monitor，则该线程进入阻塞状态，直到 monitor 的进入数为 0，再重新尝试获取 monitor 的所有权。</li>
+</ol>
+</li>
+<li>线程释放锁的过程如下：<br>线程释放锁时 monitor 的进入数减 1，如果减 1 后进入数为 0，那线程退出 monitor，不再是这个 monitor 的所有者。其他被这个 monitor 阻塞的线程可以尝试去获取这个 monitor 的所有权。</li>
+</ul>
+</li>
+<li><p>synchronized 与 lock 的区别<br>Java 提供了两种锁机制：synchronized 和 lock。</p>
+<ul>
+<li>用法区别<ul>
+<li>synchronized：可以加在方法，特定代码块中</li>
+<li>lock：需要显示指定起始位置和终止位置；且在加锁和解锁处需要通过lock()和unlock()显示指出。</li>
+</ul>
+</li>
+<li>性能区别<ul>
+<li>synchronized 是托管给 JVM 执行的，而 lock 是 java 写的控制锁的代码。</li>
+<li>synchronize 在 Java1.5及之前的版本中性能是低效的，比 Lock 锁效率要低，因为这是一个重量级操作。</li>
+<li>synchronize 在 Java1.6进行了很多优化，引入了自旋锁，锁消除，锁粗化，轻量级锁，偏向锁等等，性能得到改善并不比 Lock 差。</li>
+</ul>
+<ul>
+<li>实现机制不同：<ul>
+<li>synchronized 原始采用的是CPU悲观锁机制，即线程获得的是独占锁。独占锁意味着其他线程只能依靠阻塞来等待线程释放锁。而在CPU转换线程阻塞时会引起线程上下文切换，当有很多线程竞争锁的时候，会引起CPU频繁的上下文切换导致效率很低。</li>
+<li>Lock 用的是乐观锁方式。所谓乐观锁就是，每次不加锁而是假设没有冲突而去完成某项操作，如果因为冲突失败就重试，直到成功为止。乐观锁实现的机制就是CAS操作。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>用途区别<br>synchronized 原语和 ReentrantLock 在一般情况下没有什么区别，但是在非常复杂的同步应用中，请考虑使用ReentrantLock，特别是遇到如下情况时：<ol>
+<li>某个线程在等待一个锁的控制权的这段时间需要中断。</li>
+<li>需要分开处理一些 wait-notify，ReentrantLock 里面的 Condition 应用，能够控制 notify 哪个线程。</li>
+<li>具有公平锁功能，每个到来的线程都将排队等候。</li>
+</ol>
+</li>
+</ul>
+</li>
 <li><p>可参考：<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247484881&amp;idx=2&amp;sn=b0ecf85cd7c9e543c84e7a9859c20a26&amp;chksm=e9c5fc60deb27576a6a9c453dabc585f43d9f29fd8a8f37ed0e7cc2f012c86b23fbd21763a39&amp;scene=21#wechat_redirect" target="_blank" rel="noopener">《Java多线程编程核心技术》</a></p>
-<h3 id="1-5、JVM"><a href="#1-5、JVM" class="headerlink" title="1.5、JVM"></a>1.5、JVM</h3><ul>
+</li>
+</ul>
+<h3 id="1-5-JUC"><a href="#1-5-JUC" class="headerlink" title="1.5 JUC"></a>1.5 JUC</h3><ul>
+<li><p>Java 并发体系思维导图<br><img src="http://cmsblogs.com/wp-content/images/share/chenssy_juc_201712.png" alt="Java 并发体系思维导图"></p>
+</li>
+<li><p>AQS 同步队列</p>
+</li>
+<li><p>常见的原子操作类</p>
+</li>
+<li><p>Java 8并法包下常见的并发类</p>
+<h3 id="1-6-JVM"><a href="#1-6-JVM" class="headerlink" title="1.6 JVM"></a>1.6 JVM</h3><ul>
 <li>JVM 思维导图<br><img src="http://fakerblog-wordpress.stor.sinaapp.com/uploads/2014/07/1232.jpg" alt="JVM 思维导图"></li>
 </ul>
 <ul>
@@ -1008,7 +1054,7 @@
 </ol>
 </li>
 </ul>
-<h3 id="1-6、设计模式"><a href="#1-6、设计模式" class="headerlink" title="1.6、设计模式"></a>1.6、设计模式</h3><ul>
+<h3 id="1-7-设计模式"><a href="#1-7-设计模式" class="headerlink" title="1.7 设计模式"></a>1.7 设计模式</h3><ul>
 <li>常见的设计模式</li>
 <li>设计模式的的六大原则及其含义</li>
 <li>常见的单例模式以及各种实现方式的优缺点，哪一种最好，手写常见的单利模式</li>
@@ -1019,28 +1065,36 @@
 <li>说说常用开源框架中设计模式使用分析</li>
 <li>动态代理很重要！！！</li>
 </ul>
-<h3 id="1-7、数据结构"><a href="#1-7、数据结构" class="headerlink" title="1.7、数据结构"></a>1.7、数据结构</h3><ul>
+<h3 id="1-8-数据结构"><a href="#1-8-数据结构" class="headerlink" title="1.8 数据结构"></a>1.8 数据结构</h3><ul>
 <li>树（二叉查找树、平衡二叉树、红黑树、B树、B+树）</li>
 <li>深度有限算法、广度优先算法</li>
 <li>克鲁斯卡尔算法、普林母算法、迪克拉斯算法</li>
 <li>什么是一致性Hash及其原理、Hash环问题</li>
 <li>常见的排序算法和查找算法：快排、折半查找、堆排序等</li>
 </ul>
-<h3 id="1-8、网络-IO基础"><a href="#1-8、网络-IO基础" class="headerlink" title="1.8、网络/IO基础"></a>1.8、网络/IO基础</h3><ul>
+<h3 id="1-9-网络-IO-基础"><a href="#1-9-网络-IO-基础" class="headerlink" title="1.9 网络 / IO 基础"></a>1.9 网络 / IO 基础</h3><ul>
 <li>BIO、NIO、AIO的概念</li>
 <li>什么是长连接和短连接</li>
-<li>Http1.0和2.0相比有什么区别，可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247484611&amp;idx=1&amp;sn=66c875392eedff8150633ddcd5d83e7a&amp;chksm=e9c5fd72deb274648a607b9bc39bac34adadd768577b77354f6dc85422691605e210b69eeb7b&amp;scene=21#wechat_redirect" target="_blank" rel="noopener">《Http 2.0》</a></li>
+<li>Http1.0 和 2.0 相比有什么区别，可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247484611&amp;idx=1&amp;sn=66c875392eedff8150633ddcd5d83e7a&amp;chksm=e9c5fd72deb274648a607b9bc39bac34adadd768577b77354f6dc85422691605e210b69eeb7b&amp;scene=21#wechat_redirect" target="_blank" rel="noopener">《Http 2.0》</a></li>
 <li>Https的基本概念</li>
 <li>三次握手和四次挥手、为什么挥手需要四次</li>
 <li>从游览器中输入URL到页面加载的发生了什么？可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247483724&amp;idx=1&amp;sn=e58dd30d124971c795584e8673d6cc71&amp;chksm=e9c5f8fddeb271ebebbb6c350ed1abc252f1f26b4f35c4ce36e10bde9659a37520feabed2290&amp;scene=21#wechat_redirect" target="_blank" rel="noopener">《从输入URL到页面加载发生了什么》</a></li>
 </ul>
-<h2 id="二、数据存储和消息队列"><a href="#二、数据存储和消息队列" class="headerlink" title="二、数据存储和消息队列"></a>二、数据存储和消息队列</h2><h3 id="2-1、数据库"><a href="#2-1、数据库" class="headerlink" title="2.1、数据库"></a>2.1、数据库</h3><ul>
-<li>MySQL 索引使用的注意事项</li>
-<li>DDL、DML、DCL分别指什么</li>
-<li>explain命令</li>
+<h2 id="二、数据存储和消息队列"><a href="#二、数据存储和消息队列" class="headerlink" title="二、数据存储和消息队列"></a>二、数据存储和消息队列</h2><h3 id="2-1-数据库"><a href="#2-1-数据库" class="headerlink" title="2.1 数据库"></a>2.1 数据库</h3><ul>
+<li><p>MySQL 索引使用的注意事项</p>
+</li>
+<li><p>DDL、DML、DCL分别指什么</p>
+<ul>
+<li>DDL：data manipulation language 数据操纵语言<br>主要用来对数据库的数据进行一些操作，如： SELECT、UPDATE、INSERT、DELETE。</li>
+<li>DML：data definition language 数据库定义语言<br>如：CREATE、ALTER、DROP等</li>
+<li>DCL：Data Control Language 数据库控制语言<br>用来设置或更改数据库用户或角色权限的语句，如 grant,deny,revoke等语句</li>
+</ul>
+</li>
+<li><p>explain 命令</p>
+</li>
 <li>left join，right join，inner join</li>
-<li>数据库事物ACID（原子性、一致性、隔离性、持久性）</li>
-<li>事物的隔离级别（读未提交、读以提交、可重复读、可序列化读）</li>
+<li>数据库事物 ACID<br>（原子性、一致性、隔离性、持久性）</li>
+<li>事务的隔离级别<br>（读未提交、读以提交、可重复读、可序列化读）</li>
 <li>脏读、幻读、不可重复读</li>
 <li>数据库的几大范式</li>
 <li>数据库常见的命令</li>
@@ -1080,7 +1134,14 @@
 <li>如何保证消息的有序性</li>
 </ul>
 <h2 id="三、开源框架和容器"><a href="#三、开源框架和容器" class="headerlink" title="三、开源框架和容器"></a>三、开源框架和容器</h2><h3 id="3-1-Servlet"><a href="#3-1-Servlet" class="headerlink" title="3.1 Servlet"></a>3.1 Servlet</h3><ul>
-<li><p>Servlet的生命周期</p>
+<li><p>什么是 Servlet？<br>Servlet 是一些遵从 Java Servlet API 的 Java 类（实现 Servlet 接口的类），这些Java类可以响应请求。</p>
+</li>
+<li><p>Servlet 的生命周期</p>
+<ul>
+<li>初始化- init()</li>
+<li>请求处理 - service()</li>
+<li>卸载 Servlet - destroy()</li>
+</ul>
 </li>
 <li><p>转发与重定向的区别</p>
 </li>
@@ -1135,8 +1196,31 @@
 <li><p>动态代理（CGLib 与 JDK）、优缺点、性能对比、如何选择？</p>
 </li>
 <li><p>Spring 事务实现方式、事务的传播机制、默认的事务类别</p>
+<ul>
+<li>事务的隔离级别：<ul>
+<li>Read Uncommited （读未提交）</li>
+<li>Read Commited   （读提交）</li>
+<li>Read Repeatable （读重复）</li>
+<li>Serializable    （序列化）</li>
+</ul>
 </li>
-<li>Spring 事务底层原理</li>
+<li>Spring 支持 7 种事务传播行为：<ul>
+<li>propagation_requierd：     如果当前没有事务，就新建一个事务，如果已存在一个事务中，加入到这个事务中，这是最常见的选择。</li>
+<li>propagation_supports：     支持当前事务，如果没有当前事务，就以非事务方法执行。</li>
+<li>propagation_mandatory：    使用当前事务，如果没有当前事务，就抛出异常。</li>
+<li>propagation_required_new： 新建事务，如果当前存在事务，把当前事务挂起。</li>
+<li>propagation_not_supported：以非事务方式执行操作，如果当前存在事务，就把当前事务挂起。</li>
+<li>propagation_never：        以非事务方式执行操作，如果当前事务存在则抛出异常。</li>
+<li>propagation_nested：       如果当前存在事务，则在嵌套事务内执行。如果当前没有事务，则执行与propagation_required类似的操作</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Spring 默认的事务传播行为是 PROPAGATION_REQUIRED，它适合于绝大多数的情况。</li>
+</ul>
+</li>
+<li><p>Spring 事务底层原理</p>
+</li>
 <li>Spring事务失效（事务嵌套），JDK动态代理给Spring事务埋下的坑，可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247484940&amp;idx=1&amp;sn=0a0a7198e96f57d610d3421b19573002&amp;chksm=e9c5ffbddeb276ab64ff3b3efde003193902c69acda797fdc04124f6c2a786255d58817b5a5c&amp;scene=21#wechat_redirect" target="_blank" rel="noopener">《JDK动态代理给Spring事务埋下的坑！》</a></li>
 <li><p>如何自定义注解实现功能</p>
 </li>
@@ -1166,7 +1250,7 @@
 <li>Spring 的单例实现原理</li>
 <li>Spring 框架中用到了哪些设计模式</li>
 <li>Spring 其他产品（Srping Boot、Spring Cloud、Spring Secuirity、Spring Data、Spring AMQP 等）</li>
-<li>有没有用到 Spring Boot，Spring Boot的认识、原理</li>
+<li>有没有用到 Spring Boot，Spring Boot 的认识、原理</li>
 <li>MyBatis的原理</li>
 <li>可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247484822&amp;idx=1&amp;sn=6fbee2a12b31b6102a18d3725671d41b&amp;chksm=e9c5fc27deb275319641c3f30d168b85c7c196fd276d47efa35046b5dc54f5b77174c5bf8808&amp;scene=21#wechat_redirect" target="_blank" rel="noopener">《为什么会有Spring》</a></li>
 <li>可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247484827&amp;idx=1&amp;sn=b9d82f3fced6a875f8dfc22e5849b28e&amp;chksm=e9c5fc2adeb2753c516ef8fc959c0c9dd84ccacaa40473b64bc58b5137c30562a0b45803ba8e&amp;scene=21#wechat_redirect" target="_blank" rel="noopener">《为什么会有Spring AOP》</a></li>
@@ -1182,9 +1266,9 @@
 <li>Netty 重连实现</li>
 </ul>
 <h3 id="3-3、Tomcat"><a href="#3-3、Tomcat" class="headerlink" title="3.3、Tomcat"></a>3.3、Tomcat</h3><ul>
-<li>Tomcat的基础架构（Server、Service、Connector、Container）</li>
-<li>Tomcat如何加载Servlet的</li>
-<li>Pipeline-Valve机制</li>
+<li>Tomcat 的基础架构（Server、Service、Connector、Container）</li>
+<li>Tomcat 如何加载 Servlet 的</li>
+<li>Pipeline-Valve 机制</li>
 <li>可参考：<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247484905&amp;idx=1&amp;sn=6c8acd89476fadbc4cb9ccfda9c9c2e4&amp;chksm=e9c5fc58deb2754e7519511bb0ed8dcbfa3fe29179663b53f3626643f8b9c82068d9b0464ee6&amp;scene=21#wechat_redirect" target="_blank" rel="noopener">《四张图带你了解Tomcat系统架构！》</a></li>
 </ul>
 <h2 id="四、分布式"><a href="#四、分布式" class="headerlink" title="四、分布式"></a>四、分布式</h2><h3 id="4-1、Nginx"><a href="#4-1、Nginx" class="headerlink" title="4.1、Nginx"></a>4.1、Nginx</h3><ul>
@@ -1210,10 +1294,10 @@
 <li>分库与分表带来的分布式困境与应对之策</li>
 </ul>
 <h3 id="4-3、Dubbo"><a href="#4-3、Dubbo" class="headerlink" title="4.3、Dubbo"></a>4.3、Dubbo</h3><ul>
-<li>什么是Dubbo，可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247483931&amp;idx=1&amp;sn=6eda41aa81c1243422a603205d2fad22&amp;chksm=e9c5fbaadeb272bc92537803c14a6f55e1170b1a3b8f60160f66417800c0ace960dfe192717a&amp;scene=21#wechat_redirect" target="_blank" rel="noopener">《Dubbo入门》</a></li>
+<li>什么是 Dubbo，可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247483931&amp;idx=1&amp;sn=6eda41aa81c1243422a603205d2fad22&amp;chksm=e9c5fbaadeb272bc92537803c14a6f55e1170b1a3b8f60160f66417800c0ace960dfe192717a&amp;scene=21#wechat_redirect" target="_blank" rel="noopener">《Dubbo入门》</a></li>
 <li>什么是RPC、如何实现RPC、RPC 的实现原理，可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247483900&amp;idx=1&amp;sn=c5ca198a66a701f81c2ab118fe7a734a&amp;chksm=e9c5f84ddeb2715bc574e467cd6537ef81f223453e0989ffd136976b48dcc2d961a75be596de&amp;scene=21#wechat_redirect" target="_blank" rel="noopener">《基于HTTP的RPC实现》</a></li>
-<li>Dubbo中的SPI是什么概念</li>
-<li>Dubbo的基本原理、执行流程</li>
+<li>Dubbo 中的SPI是什么概念</li>
+<li>Dubbo 的基本原理、执行流程</li>
 </ul>
 <h2 id="五、微服务"><a href="#五、微服务" class="headerlink" title="五、微服务"></a>五、微服务</h2><h3 id="5-1、微服务"><a href="#5-1、微服务" class="headerlink" title="5.1、微服务"></a>5.1、微服务</h3><ul>
 <li>前后端分离是如何做的？</li>
