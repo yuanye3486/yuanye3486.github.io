@@ -101,7 +101,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="java," />
 
 
 
@@ -112,14 +112,24 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="分类">
-<meta property="og:url" content="http://yoursite.com/categories/index.html">
+<meta name="description" content="一、基础篇1.1 Java基础 面向对象的特征：继承、封装和多态 final, finally, finalize 的区别  Exception、Error、运行时异常与一般异常有何异同  Thorwable：（表示可抛出）是所有异常和错误的超类，两个直接子类为： Error：它是由JVM 产生和抛出的，程序无法处理的错误。这些异常发生时，Java 虚拟机一般会选择线程终止。比如 OutOfMem">
+<meta name="keywords" content="java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java interview Summary">
+<meta property="og:url" content="http://yoursite.com/2018/03/08/java-interview-summary/index.html">
 <meta property="og:site_name" content="YuanYe">
+<meta property="og:description" content="一、基础篇1.1 Java基础 面向对象的特征：继承、封装和多态 final, finally, finalize 的区别  Exception、Error、运行时异常与一般异常有何异同  Thorwable：（表示可抛出）是所有异常和错误的超类，两个直接子类为： Error：它是由JVM 产生和抛出的，程序无法处理的错误。这些异常发生时，Java 虚拟机一般会选择线程终止。比如 OutOfMem">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-31T04:23:05.138Z">
+<meta property="og:image" content="http://img.blog.csdn.net/20160331115514210">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3458176-c5642804973c8b6e.jpg?imageMogr2/auto-orient/">
+<meta property="og:image" content="http://dl.iteye.com/upload/picture/pic/116719/7e76cc17-0ad5-3ff3-954e-1f83463519d1.jpg">
+<meta property="og:image" content="http://cmsblogs.com/wp-content/images/share/chenssy_juc_201712.png">
+<meta property="og:image" content="http://fakerblog-wordpress.stor.sinaapp.com/uploads/2014/07/1232.jpg">
+<meta property="og:updated_time" content="2018-03-20T04:06:32.748Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="分类">
+<meta name="twitter:title" content="Java interview Summary">
+<meta name="twitter:description" content="一、基础篇1.1 Java基础 面向对象的特征：继承、封装和多态 final, finally, finalize 的区别  Exception、Error、运行时异常与一般异常有何异同  Thorwable：（表示可抛出）是所有异常和错误的超类，两个直接子类为： Error：它是由JVM 产生和抛出的，程序无法处理的错误。这些异常发生时，Java 虚拟机一般会选择线程终止。比如 OutOfMem">
+<meta name="twitter:image" content="http://img.blog.csdn.net/20160331115514210">
 
 
 
@@ -151,7 +161,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/03/08/java-interview-summary/"/>
 
 
 
@@ -361,7 +371,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-03-16T17:42:47+08:00">2018-03-16</time>
+              <time title="更新于" itemprop="dateModified" datetime="2018-03-20T12:06:32+08:00">2018-03-20</time>
             
           </span>
 
@@ -1022,18 +1032,42 @@
 <li><strong>缓存机制</strong>：缓存机制将会保证所有加载过的 Class 都会被缓存，当程序中需要使用某个 Class 时，类加载器先从缓存区寻找该 Class，只有缓存区不存在，系统才会读取该类对应的二进制数据，并将其转换成 Class 对象，存入缓存区。这就是为什么修改了 Class 后，必须重启 JVM，程序的修改才会生效。</li>
 </ul>
 </li>
-<li><p>什么时候发生 GC。</p>
+<li><p>什么时候发生 GC。<br>Java 中的堆是 GC 的主要区域。GC 分为两种：Minor GC、FullGC (或称为 Major GC)。<br>Minor GC 是发生在新生代中的垃圾收集动作，所采用的是复制算法。<br>Full GC 是发生在老年代的垃圾收集动作，所采用的是标记-清除算法。</p>
 <ul>
-<li>Minor GC(Young GC)<ul>
+<li><p>Minor GC(Young GC)</p>
+<ul>
 <li>从年轻代空间（包括 Eden 和 Survivor 区域）回收内存被称为 Minor GC</li>
 <li>当 JVM 无法为一个新的对象分配空间时会触发 Minor GC，比如当 Eden 区满了。所以分配率越高，越频繁执行 Minor GC。</li>
 <li>Minor GC 都会触发“全世界的暂停（stop-the-world）”</li>
 <li>执行 Minor GC 操作时，不会影响到永久代</li>
 </ul>
-</li>
-<li>Major GC：清理老年代</li>
-<li>Full GC：清理整个堆空间—包括年轻代和老年代</li>
+<ul>
+<li>触发条件：当Eden区满时，触发 Minor GC。</li>
 </ul>
+</li>
+<li><p>Full GC：清理整个堆空间—包括年轻代和老年代</p>
+<ul>
+<li>触发条件：<ol>
+<li>调用System.gc时，系统建议执行Full GC，但是不必然执行</li>
+<li>老年代空间不足</li>
+<li>方法去空间不足</li>
+<li>通过Minor GC后进入老年代的平均大小大于老年代的可用内存</li>
+<li>由Eden区、From Space区向To Space区复制时，对象大小大于To Space可用内存，则把该对象转存到老年代，且老年代的可用内存小于该对象大小</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>堆大小 = 新生代 + 老年代<br>JDK1.6 默认：新生代(Young)与老年代(Old)的比例为 1:2 (该值可以通过参数 –XX:NewRatio 来指定)<br>JDK1.6 默认：Edem : from : to(from) = 8 : 1 : 1 (可以通过参数 –XX:SurvivorRatio 来设定)<br>JVM 每次只会使用 Eden 和其中的一块 Survivor 区域来为对象服务，所以无论什么时候，总是有一块 Survivor 区域是空闲着的。</p>
+</li>
+</ul>
+</li>
+<li><p>Minor GC 过程</p>
+<ol>
+<li>对象出生在 Eden (或一个 Survivor 区域，这里假设是 from 区域)</li>
+<li>经一次 Minor GC 后，若对象还活着，且能够被另外一块 Survivor 区域所容纳(这里为 to 区域，即 to 区域有足够的内存空间来存储 Eden 和 from 区域中存活的对象)，则使用复制算法将这些仍然还存活的对象复制到另外一块 Survivor 区域 (即 to 区域) 中</li>
+<li>然后清理所使用过的 Eden 以及 Survivor 区域 ( 即from 区域 )，并且将这些对象的年龄设置为 1，以后对象在 Survivor 区每熬过一次 Minor GC，就将对象的年龄 + 1。</li>
+<li>当对象的年龄达到某个值时 ( 默认是 15 岁，可以通过参数 -XX:MaxTenuringThreshold 来设定)，这些对象就会成为老年代。但这也不是一定的，对于一些较大的对象 ( 即需要分配一块较大的连续内存空间 ) 则是直接进入到老年代。</li>
+</ol>
 </li>
 <li><p>内存溢出 OOM 和堆栈溢出 SOE 的示例及原因、如何排查与解决</p>
 </li>
@@ -1173,10 +1207,14 @@
 </li>
 <li><p>说说 Spring AOP<br>面向切面编程（AOP）完善spring的依赖注入（DI），面向切面编程在spring中主要表现为两个方面<br>1.面向切面编程提供声明式事务管理<br>2.spring支持用户自定义的切面</p>
 </li>
-<li><p>Spring AOP 实现原理<br>实现 AOP 的技术，主要分为两大类：<br>一是采用动态代理技术，利用截取消息的方式，对该消息进行装饰，以取代原有对象行为的执行；  </p>
+<li><p>Spring AOP 实现原理<br>实现 AOP 的技术，主要分为两大类：  </p>
 <ul>
+<li>动态代理：利用截取消息的方式，对该消息进行装饰，以取代原有对象行为的执行；  <ul>
 <li>jdk 动态代理</li>
-<li>Cglib<br>二是采用静态织入的方式。 针对每个具体类分别编写代理类；针对一个接口编写一个代理类；</li>
+<li>CGLIB<br>CGLIB 是一个代码生成的类库，可以在运行时动态的生成某个类的子类，注意，CGLIB是通过继承的方式做的动态代理，因此如果某个类被标记为final，那么它是无法使用CGLIB做动态代理的，诸如private的方法也是不可以作为切面的。</li>
+</ul>
+</li>
+<li>静态织入：针对每个具体类分别编写代理类；针对一个接口编写一个代理类；</li>
 </ul>
 </li>
 <li><p>Spring 切面可以应用的通知类型有哪些？</p>
@@ -1289,10 +1327,35 @@
 <li>分库与分表带来的分布式困境与应对之策</li>
 </ul>
 <h3 id="4-3、Dubbo"><a href="#4-3、Dubbo" class="headerlink" title="4.3、Dubbo"></a>4.3、Dubbo</h3><ul>
-<li>什么是 Dubbo，可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247483931&amp;idx=1&amp;sn=6eda41aa81c1243422a603205d2fad22&amp;chksm=e9c5fbaadeb272bc92537803c14a6f55e1170b1a3b8f60160f66417800c0ace960dfe192717a&amp;scene=21#wechat_redirect" target="_blank" rel="noopener">《Dubbo入门》</a></li>
-<li>什么是RPC、如何实现RPC、RPC 的实现原理，可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247483900&amp;idx=1&amp;sn=c5ca198a66a701f81c2ab118fe7a734a&amp;chksm=e9c5f84ddeb2715bc574e467cd6537ef81f223453e0989ffd136976b48dcc2d961a75be596de&amp;scene=21#wechat_redirect" target="_blank" rel="noopener">《基于HTTP的RPC实现》</a></li>
-<li>Dubbo 中的SPI是什么概念</li>
-<li>Dubbo 的基本原理、执行流程</li>
+<li><p>什么是 Dubbo ？<br>Dubbo 是一个分布式服务框架，致力于提供高性能和透明化的RPC远程服务调用方案，以及SOA服务治理方案。</p>
+</li>
+<li><p>什么是 RPC、如何实现 RPC、RPC 的实现原理，</p>
+</li>
+<li><p>Dubbo 中的 SPI 是什么概念<br>SPI即Service Provider Interface，服务提供接口.</p>
+</li>
+<li><p>Dubbo 的基本原理、执行流程</p>
+<ul>
+<li>基本原理：<ol>
+<li>client 一个线程调用远程接口，生成一个唯一的ID（比如一段随机字符串，UUID等），Dubbo 是使用 AtomicLong 从 0 开始累计数字的。</li>
+<li>将打包的方法调用信息（如调用的接口名称，方法名称，参数值列表等），和处理结果的回调对象 callback，全部封装在一起，组成一个对象object。</li>
+<li>向专门存放调用信息的全局 ConcurrentHashMap 里面 put(ID, object)。</li>
+<li>将 ID 和打包的方法调用信息封装成一对象 connRequest，使用 IoSession.write(connRequest) 异步发送出去。</li>
+<li>当前线程再使用 callback 的 get() 方法试图获取远程返回的结果，在 get() 内部，则使用 synchronized 获取回调对象 callback 的锁，再先检测是否已经获取到结果，如果没有，然后调用 callback 的 wait() 方法，释放 callback 上的锁，让当前线程处于等待状态。</li>
+<li>服务端接收到请求并处理后，将结果（此结果中包含了前面的 ID，即回传）发送给客户端，客户端 socket 连接上专门监听消息的线程收到消息，分析结果，取到 ID，再从前面的 ConcurrentHashMap 里面 get(ID)，从而找到 callback，将方法调用结果设置到 callback 对象里。</li>
+<li>监听线程接着使用 synchronized 获取回调对象 callback 的锁（因为前面调用过wait()，那个线程已释放 callback 的锁了），再 notifyAll()，唤醒前面处于等待状态的线程继续执行（callback的get()方法继续执行就能拿到调用结果了），至此，整个过程结束。</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>Dubbo 适用场景：适合于小数据量大并发的服务调用，以及服务消费者机器数远大于服务提供者机器数的情况</p>
+</li>
+<li><p>可参考：</p>
+<ol>
+<li><a href="https://my.oschina.net/u/1378920/blog/693374" target="_blank" rel="noopener">分布式框架dubbo原理解析</a></li>
+<li><a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247483931&amp;idx=1&amp;sn=6eda41aa81c1243422a603205d2fad22&amp;chksm=e9c5fbaadeb272bc92537803c14a6f55e1170b1a3b8f60160f66417800c0ace960dfe192717a&amp;scene=21#wechat_redirect" target="_blank" rel="noopener">《Dubbo入门》</a></li>
+<li><a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247483900&amp;idx=1&amp;sn=c5ca198a66a701f81c2ab118fe7a734a&amp;chksm=e9c5f84ddeb2715bc574e467cd6537ef81f223453e0989ffd136976b48dcc2d961a75be596de&amp;scene=21#wechat_redirect" target="_blank" rel="noopener">《基于HTTP的RPC实现》</a></li>
+</ol>
+</li>
 </ul>
 <h2 id="五、微服务"><a href="#五、微服务" class="headerlink" title="五、微服务"></a>五、微服务</h2><h3 id="5-1、微服务"><a href="#5-1、微服务" class="headerlink" title="5.1、微服务"></a>5.1、微服务</h3><ul>
 <li>前后端分离是如何做的？</li>
@@ -1359,7 +1422,13 @@
 <li>说说你认为的架构师是什么样的，架构师主要做什么</li>
 <li>如何看待加班的问题</li>
 </ul>
-
+<h3 id="6-4-面试技巧"><a href="#6-4-面试技巧" class="headerlink" title="6.4 面试技巧"></a>6.4 面试技巧</h3><pre><code>1. [程序员跳槽时，如何高效地准备面试？](http://gitbook.cn/books/5a6985f12a144149588739a5/index.html)
+2. [才震宏：解析程序员跳槽时如何高效地准备面试](http://gitbook.cn/books/5a73206362710202070b47ac/index.html)
+3. [程序员跳槽时，如何正确做好职业规划？](http://gitbook.cn/books/5a9f529e123f227c0649d946/index.html)
+4. [王鹏：解析程序员跳槽时如何正确做好职业规划](http://gitbook.cn/books/5aa9fa860bb9e857450e70ad/index.html)
+5. [程序员跳槽时，如何优雅地谈薪水？](http://gitbook.cn/books/5a951e93ba2cd224ba9480a7/index.html)
+6. [于丽洋：解析程序员跳槽时如何优雅地谈薪水](http://gitbook.cn/books/5aa0bdf7f622f7137a21bf9e/index.html)
+</code></pre>
       
     </div>
     
@@ -1529,7 +1598,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、基础篇"><span class="nav-number">1.</span> <span class="nav-text">一、基础篇</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-Java基础"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 Java基础</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-Java常见集合"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 Java常见集合</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3、进程和线程"><span class="nav-number">1.3.</span> <span class="nav-text">1.3、进程和线程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4-锁机制"><span class="nav-number">1.4.</span> <span class="nav-text">1.4 锁机制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-5-JUC"><span class="nav-number">1.5.</span> <span class="nav-text">1.5 JUC</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-6-JVM"><span class="nav-number">1.6.</span> <span class="nav-text">1.6 JVM</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-7-设计模式"><span class="nav-number">1.7.</span> <span class="nav-text">1.7 设计模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-8-数据结构"><span class="nav-number">1.8.</span> <span class="nav-text">1.8 数据结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-9-网络-IO-基础"><span class="nav-number">1.9.</span> <span class="nav-text">1.9 网络 / IO 基础</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、数据存储和消息队列"><span class="nav-number">2.</span> <span class="nav-text">二、数据存储和消息队列</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-数据库"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 数据库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2、Redis"><span class="nav-number">2.2.</span> <span class="nav-text">2.2、Redis</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3、消息队列"><span class="nav-number">2.3.</span> <span class="nav-text">2.3、消息队列</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、开源框架和容器"><span class="nav-number">3.</span> <span class="nav-text">三、开源框架和容器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-Servlet"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 Servlet</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-Spring"><span class="nav-number">3.2.</span> <span class="nav-text">3.2 Spring</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2、Netty"><span class="nav-number">3.3.</span> <span class="nav-text">3.2、Netty</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3、Tomcat"><span class="nav-number">3.4.</span> <span class="nav-text">3.3、Tomcat</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、分布式"><span class="nav-number">4.</span> <span class="nav-text">四、分布式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1、Nginx"><span class="nav-number">4.1.</span> <span class="nav-text">4.1、Nginx</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2、分布式其他"><span class="nav-number">4.2.</span> <span class="nav-text">4.2、分布式其他</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3、Dubbo"><span class="nav-number">4.3.</span> <span class="nav-text">4.3、Dubbo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#五、微服务"><span class="nav-number">5.</span> <span class="nav-text">五、微服务</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1、微服务"><span class="nav-number">5.1.</span> <span class="nav-text">5.1、微服务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-2、安全问题"><span class="nav-number">5.2.</span> <span class="nav-text">5.2、安全问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-3、性能优化"><span class="nav-number">5.3.</span> <span class="nav-text">5.3、性能优化</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#六、其他"><span class="nav-number">6.</span> <span class="nav-text">六、其他</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#6-1、设计能力"><span class="nav-number">6.1.</span> <span class="nav-text">6.1、设计能力</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-2、业务工程"><span class="nav-number">6.2.</span> <span class="nav-text">6.2、业务工程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-3、软实力"><span class="nav-number">6.3.</span> <span class="nav-text">6.3、软实力</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、基础篇"><span class="nav-number">1.</span> <span class="nav-text">一、基础篇</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-Java基础"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 Java基础</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-Java常见集合"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 Java常见集合</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3、进程和线程"><span class="nav-number">1.3.</span> <span class="nav-text">1.3、进程和线程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4-锁机制"><span class="nav-number">1.4.</span> <span class="nav-text">1.4 锁机制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-5-JUC"><span class="nav-number">1.5.</span> <span class="nav-text">1.5 JUC</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-6-JVM"><span class="nav-number">1.6.</span> <span class="nav-text">1.6 JVM</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-7-设计模式"><span class="nav-number">1.7.</span> <span class="nav-text">1.7 设计模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-8-数据结构"><span class="nav-number">1.8.</span> <span class="nav-text">1.8 数据结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-9-网络-IO-基础"><span class="nav-number">1.9.</span> <span class="nav-text">1.9 网络 / IO 基础</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、数据存储和消息队列"><span class="nav-number">2.</span> <span class="nav-text">二、数据存储和消息队列</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-数据库"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 数据库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2、Redis"><span class="nav-number">2.2.</span> <span class="nav-text">2.2、Redis</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3、消息队列"><span class="nav-number">2.3.</span> <span class="nav-text">2.3、消息队列</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、开源框架和容器"><span class="nav-number">3.</span> <span class="nav-text">三、开源框架和容器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-Servlet"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 Servlet</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-Spring"><span class="nav-number">3.2.</span> <span class="nav-text">3.2 Spring</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2、Netty"><span class="nav-number">3.3.</span> <span class="nav-text">3.2、Netty</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3、Tomcat"><span class="nav-number">3.4.</span> <span class="nav-text">3.3、Tomcat</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、分布式"><span class="nav-number">4.</span> <span class="nav-text">四、分布式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1、Nginx"><span class="nav-number">4.1.</span> <span class="nav-text">4.1、Nginx</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2、分布式其他"><span class="nav-number">4.2.</span> <span class="nav-text">4.2、分布式其他</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3、Dubbo"><span class="nav-number">4.3.</span> <span class="nav-text">4.3、Dubbo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#五、微服务"><span class="nav-number">5.</span> <span class="nav-text">五、微服务</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1、微服务"><span class="nav-number">5.1.</span> <span class="nav-text">5.1、微服务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-2、安全问题"><span class="nav-number">5.2.</span> <span class="nav-text">5.2、安全问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-3、性能优化"><span class="nav-number">5.3.</span> <span class="nav-text">5.3、性能优化</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#六、其他"><span class="nav-number">6.</span> <span class="nav-text">六、其他</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#6-1、设计能力"><span class="nav-number">6.1.</span> <span class="nav-text">6.1、设计能力</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-2、业务工程"><span class="nav-number">6.2.</span> <span class="nav-text">6.2、业务工程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-3、软实力"><span class="nav-number">6.3.</span> <span class="nav-text">6.3、软实力</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-4-面试技巧"><span class="nav-number">6.4.</span> <span class="nav-text">6.4 面试技巧</span></a></li></ol></li></ol></div>
             
 
           </div>
