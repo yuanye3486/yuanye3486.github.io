@@ -364,7 +364,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-03-22T16:41:04+08:00">2018-03-22</time>
+              <time title="更新于" itemprop="dateModified" datetime="2018-03-26T18:56:56+08:00">2018-03-26</time>
             
           </span>
 
@@ -432,8 +432,15 @@
         
           
             <h2 id="一、基础篇"><a href="#一、基础篇" class="headerlink" title="一、基础篇"></a>一、基础篇</h2><h3 id="1-1-Java基础"><a href="#1-1-Java基础" class="headerlink" title="1.1 Java基础"></a>1.1 Java基础</h3><ul>
-<li>面向对象的特征：继承、封装和多态</li>
-<li><p>final, finally, finalize 的区别</p>
+<li><p>面向对象的特征：抽象、继承、封装和多态</p>
+<ol>
+<li><strong>抽象</strong>：就是忽略一个主题中与当前目标无关的那些方面，以便更充分地注意与当前目标有关的方面。抽象并不打算了解全部问题，而只是选择其中的一部分，暂时不用部分细节。<br>抽象包括两个方面，一是过程抽象，二是数据抽象。</li>
+<li><strong>继承</strong>：是一种联结类的层次模型，并且允许和鼓励类的重用，它提供了一种明确表述共性的方法。对象的一个新类可以从现有的类中派生，这个过程称为类继承。新类继承了原始类的特性，新类称为原始类的派生类（子类），而原始类称为新类的基类（父类）。派生<br>类可以从它的基类那里继承方法和实例变量，并且类可以修改或增加新的方法使之更适合特殊的需要。</li>
+<li><strong>封装</strong>：是把过程和数据包围起来，对数据的访问只能通过已定义的界面。面向对象计算始于这个基本概念，即现实世界可以被描绘成一系列完全自治、封装的对象，这些对象通过一个受保护的接口访问其他对象。</li>
+<li><strong>多态性</strong>：是指允许不同类的对象对同一消息作出响应。多态性包括参数化多态性和包含多态性。多态性语言具有灵活、抽象、行为共享、代码共享的优势，很好的解决了应用程序函数同名问题。</li>
+</ol>
+</li>
+<li><p>final, finally, finalize 的区别<br>final 用于声明属性，方法和类，分别表示属性不可变，方法不可覆盖，类不可继承。<br>finally 是异常处理语句结构的一部分，表示总是执行。<br>finalize 是 Object 类的一个方法，在垃圾收集器执行的时候会调用被回收对象的此方法，可以覆盖此方法提供垃圾收集时的其他资源回收，例如关闭文件等。</p>
 </li>
 <li><p>Exception、Error、运行时异常与一般异常有何异同</p>
 <ul>
@@ -460,12 +467,22 @@
 <li>java 异常体系结构图解<br><img src="http://img.blog.csdn.net/20160331115514210" alt="异常图解"></li>
 </ul>
 </li>
-<li><p>int 和 Integer 有什么区别，Integer的值缓存范围</p>
+<li><p>int 和 Integer 有什么区别，Integer的值缓存范围<br>Java 提供两种不同的类型：引用类型和原始类型（或内置类型）。Int 是 java 的原始数据类型，Integer 是 java 为 int 提供的封装类。<br>Java 为每个原始类型提供了封装类，原始类型封装类具体如下：<br>  boolean Boolean<br>  char    Character<br>  byte    Byte<br>  short   Short<br>  int     Integer<br>  long    Long<br>  float   Float<br>  double  Double<br>引用类型和原始类型的行为完全不同，并且它们具有不同的语义。<br>引用类型和原始类型具有不同的特征和用法，它们包括：大小和速度问题，这种类型以哪种类型的数据结构存储，当引用类型和原始类型用作某个类的实例数据时所指定的缺省值。<br>对象引用实例变量的缺省值为 null，而原始类型实例变量的缺省值与它们的类型有关。</p>
 </li>
-<li>包装类，装箱和拆箱</li>
+<li><p>包装类，装箱和拆箱</p>
+</li>
 <li>String、StringBuilder、StringBuffer</li>
-<li>重载和重写的区别</li>
-<li>抽象类和接口有什么区别</li>
+<li><p>重载和重写的区别</p>
+</li>
+<li><p>抽象类和接口有什么区别</p>
+<ul>
+<li>声明方法的存在而不去实现它的类被叫做抽象类（abstract class），它用于要创建一个体现某些基本行为的类，并为该类声明方法，但不能在该类中实现该类的情况。不能创建 abstract 类的实例。然而可以创建一个变量，其类型是一个抽象类，并让它指向具体子类的一个实例。不能有抽象构造函数或抽象静态方法。</li>
+<li>Abstract 类的子类为它们父类中的所有抽象方法提供实现，否则它们也是抽象类为。取而代之，在子类中实现该方法。知道其行为的其它类可以在类中实现这些方法。</li>
+<li>接口（interface）是抽象类的变体。在接口中，所有方法都是抽象的。多继承性可通过实现这样的接口而获得。接口中的所有方法都是抽象的，没有一个有程序体。接口只可以定义static final成员变量。接口的实现与子类相似，除了该实现类不能从接口定义中继承行为。当类实现特殊接口时，它定义（即将程序体给予）所有这种接口的方法。然后，它可以在实现了该接口的类的任何对象上调用接口的方法。由于有抽象类，它允许使用接口名作为引用变量的类型。通常的动态联编将生效。引用可以转换到接口类型或从接口类型转换，instanceof 运算符可以用来决定某对象的类是否实现了接口。</li>
+</ul>
+</li>
+</ul>
+<ul>
 <li><p>说说反射的用途及实现</p>
 </li>
 <li><p>说说自定义注解的场景及实现</p>
@@ -485,7 +502,14 @@
 </li>
 <li><p>HTTP请求的GET与POST方式的区别</p>
 </li>
-<li>Session与Cookie区别</li>
+<li><p>Session 与 Cookie 区别</p>
+<ol>
+<li>Cookie 数据存放在客户的浏览器上，而 Session 数据放在服务器上；</li>
+<li>Cookie 分发是通过扩展 HTTP 协议来实现的，服务器通过在 HTTP 的响应头中加上一行特殊的指示以提示浏览器按照指示生成相应的 Cookie</li>
+<li>Cookie 不是很安全，可以分析存放在本地的 Cookie 并进行 Cookie 欺骗，出于安全考虑应当使用 Session；</li>
+<li>Session 会在一定时间内保存在服务器上，当访问增多时会比较影响服务器的性能，出于考虑减轻服务器性能方面，应当使用 Cookie；单个 Cookie 保存的数据不能超过 4K，大多说浏览器都限制了一个站点最多保存 20 个 Cookie。<br>个人观点认为将一些登录信息（重要信息）存放在 Session 中，而其他信息如果需要保留，可以放在 Cookie 中</li>
+</ol>
+</li>
 <li><p>列出自己常用的JDK包</p>
 <ul>
 <li>java.lang</li>
@@ -500,28 +524,80 @@
 <li>C 即Controller(控制器)，主要是用作捕获请求并控制请求转发</li>
 </ul>
 </li>
-<li><p>equals与==的区别</p>
+<li><p>equals 与 == 的区别<br>== 比较两个对象的引用值是否指相同。<br>equals()：根据 equals() 实现的逻辑比较两个对象是否相同（默认实现是通过 == 比较）。</p>
 </li>
-<li>hashCode 和 equals 方法的区别与联系</li>
+<li><p>String 类为什么是 final 的？<br>主要考虑到“安全”和“效率”的缘故，若String允许被继承，那么它的高度使用率可能会降低程序的性能，因此String被定义成了final。</p>
+</li>
+<li><p>String、StringBuffer与StringBuilder的区别？<br>java 提供了两个类：String和StringBuffer，java1.5 新增 java.lang.StringBuilder 一个可变的字符序列。<br>简单地说，就是一个变量和常量的关系。StringBuffer 对象的内容可以修改；而 String 对象一旦产生后就不可以被修改，重新赋值其实是两个对象。</p>
+<p>StringBuffer<br>StringBuffer的内部实现方式和String不同，StringBuffer在进行字符串处理时，不生成新的对象，在内存使用上要优于String类。所以在实际使用时，如果经常需要对一个字符串进行修改，例如插入、删除等操作，使用StringBuffer要更加适合一些。</p>
+<p>String<br>在String类中没有用来改变已有字符串中的某个字符的方法，由于不能改变一个java字符串中的某个单独字符，所以在JDK文档中称String类的对象是不可改变的。然而，不可改变的字符串具有一个很大的优点:编译器可以把字符串设为共享的。</p>
+<p>StringBuilder<br>StringBuilder 一个可变的字符序列是5.0新增的。此类提供一个与 StringBuffer 兼容的 API，但不保证同步。该类被设计用作 StringBuffer 的一个简易替换，用在字符串缓冲区被单个线程使用的时候（这种情况很普遍）。如果可能，建议优先采用该类，因为在大多数实现中，它比 StringBuffer 要快。两者的方法基本相同。</p>
+</li>
+</ul>
+<ul>
+<li><p>什么是序列化以及用途，什么时候使用序列化？<br>序列化是指把对象转换为字节序列的过程称为对象的序列化；而反序列化是指把字节序列恢复为对象的过程称为对象的反序列化。</p>
+<ul>
+<li>对象的序列化主要有两种用途：<ul>
+<li>把对象的字节序列永久地保存到硬盘上，通常存放在一个文件中。</li>
+<li>在网络上传送对象的字节序列。</li>
+</ul>
+</li>
+<li>什么时候使用序列化：<ul>
+<li>1）对象序列化可以实现分布式对象。主要应用例如：RMI要利用对象序列化运行远程主机上的服务，就像在本地机上运行对象时一样。</li>
+<li>2）java对象序列化不仅保留一个对象的数据，而且递归保存对象引用的每个对象的数据。可以将整个对象层次写入字节流中，可以保存在文件中或在网络连接上传递。利用对象序列化可以进行对象的”深复制”，即复制对象本身及引用的对象本身。序列化一个对象可能得到整个对象序列。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>hashCode 和 equals 方法的区别与联系</p>
+</li>
 <li>什么是Java序列化和反序列化，如何实现Java序列化？或者请解释Serializable 接口的作用</li>
-<li>Object类中常见的方法，为什么 wait  notify 会放在 Object 里边？</li>
-<li>Java 8 有哪些新特性</li>
+<li><p>Object类中常见的方法，为什么 wait  notify 会放在 Object 里边？</p>
+</li>
+<li><p>单例模式</p>
+</li>
+<li><p>Java 8 有哪些新特性</p>
+</li>
 </ul>
 <h3 id="1-2-Java常见集合"><a href="#1-2-Java常见集合" class="headerlink" title="1.2 Java常见集合"></a>1.2 Java常见集合</h3><ul>
-<li><p>List 和 Set 区别</p>
+<li><p><a href="https://blog.csdn.net/qq_22118507/article/details/51576319" target="_blank" rel="noopener">List、Set、Map 的区别</a></p>
+<ol>
+<li>List,Set都是继承自Collection接口，Map则不是</li>
+<li>List特点：元素有放入顺序可重复。<br>Set特点：元素无放入顺序不可重复，重复元素会覆盖掉，（注意：元素虽然无放入顺序，但是元素在set中的位置是有该元素的HashCode决定的，其位置其实是固定的，加入Set 的Object必须定义 equals()方法 ，另外list支持for循环，也就是通过下标来遍历，也可以用迭代器，但是set只能用迭代，因为他无序，无法用下标来取得想要的值。）</li>
+<li>List：和数组类似，List可以动态增长，查找元素效率高，插入删除元素效率低，因为会引起其他元素位置改变。<br>Set：检索元素效率低下，删除和插入效率高，插入和删除不会引起元素位置改变。</li>
+<li>Map适合储存键值对的数据</li>
+<li>LinkedList、ArrayList、HashSet 是非线程安全的，Vector是线程安全的;<br>HashMap 是非线程安全的，HashTable 是线程安全的;<br>StringBuilder是非线程安全的，StringBuffer是线程安全的。</li>
+</ol>
 </li>
-<li><p>Set和hashCode以及equals方法的联系</p>
+<li><p>HashSet 如何保证不重复<br>HashSet中的元素存储在 HashMap中，当向HashSet add()元素的时，会判断元素是否存在的依据，不仅仅是hash码值就能够确定的，同时还要结合equles方法。</p>
 </li>
-<li><p>List 和 Map 区别</p>
+<li><p><a href="https://www.jianshu.com/p/e2f75c8cce01" target="_blank" rel="noopener">HashMap 是线程安全的吗，为什么不是线程安全的（最好画图说明多线程环境下不安全）?</a></p>
+<ol>
+<li>put 的时候导致的多线程数据不一致。</li>
+<li>HashMap 的get操作可能因为resize而引起死循环（cpu 100%）<br>参考：</li>
+</ol>
+<ul>
+<li><a href="https://coolshell.cn/articles/9606.html" target="_blank" rel="noopener">JAVA HashMap 的死循环</a></li>
+</ul>
+</li>
+<li><p>HashMap 的扩容过程</p>
+<ol>
+<li><a href="http://www.importnew.com/23907.html" target="_blank" rel="noopener">深入分析ConcurrentHashMap1.8的扩容实现</a></li>
+</ol>
+</li>
+<li><p>HashMap 1.7 与 1.8 的 区别，1.8 做了哪些优化，如何优化的？</p>
+</li>
+<li>LinkedHashMap 的应用</li>
+<li><p>Set 和 hashCode 以及 equals 方法的联系</p>
 </li>
 <li><p>Arraylist 与 LinkedList 区别</p>
 </li>
 <li><p>ArrayList 与 Vector 区别</p>
 </li>
-<li><p>HashMap 和 Hashtable 的区别</p>
+<li><p><a href="http://www.cnblogs.com/lzrabbit/p/3721067.html#h1" target="_blank" rel="noopener">HashMap、Hashtable 和 HashSet 的区别</a></p>
 </li>
-<li><p>HashSet 和 HashMap 区别</p>
-</li>
+</ul>
+<ul>
 <li><p>HashMap 和 ConcurrentHashMap 的区别<br>可参考：<a href="http://www.importnew.com/28263.html" target="_blank" rel="noopener">Java7/8 中的 HashMap 和 ConcurrentHashMap 全解析</a></p>
 </li>
 <li><p>HashMap 的工作原理及代码实现，什么时候用到红黑树</p>
@@ -533,6 +609,8 @@
 <li><p>ConcurrentHashMap 的工作原理及代码实现，如何统计所有的元素个数</p>
 </li>
 <li><p>手写简单的 HashMap</p>
+</li>
+<li><p>数组在内存中如何分配</p>
 </li>
 <li><p>看过那些 Java 集合类的源码</p>
 </li>
@@ -586,7 +664,9 @@
 <li>使用 Callable 和 Future</li>
 </ul>
 </li>
-<li><p>进程间通信的方式？可參考<a href="http://blog.csdn.net/u011514810/article/details/77131296" target="_blank" rel="noopener">《JAVA线程间通信的几种方式<br>》</a></p>
+<li><p>同步和异步有何异同，在什么情况下分别使用他们？举例说明。<br>如果数据将在线程间共享。例如正在写的数据以后可能被另一个线程读到，或者正在读的数据可能已经被另一个线程写过了，那么这些数据就是共享数据，必须进行同步存取。<br>当应用程序在对象上调用了一个需要花费很长时间来执行的方法，并且不希望让程序等待方法的返回时，就应该使用异步编程，在很多情况下采用异步途径往往更有效率。</p>
+</li>
+<li><p>进程间通信的方式？可參考<a href="http://blog.csdn.net/u011514810/article/details/77131296" target="_blank" rel="noopener">JAVA线程间通信的几种方式</a></p>
 <ul>
 <li>通过在线程之间共享对象就可以了，然后通过wait/notify/notifyAll、await/signal/signalAll进行唤起和等待，比方说阻塞队列BlockingQueue就是为线程之间共享数据而设计的</li>
 </ul>
@@ -642,7 +722,7 @@
 </li>
 </ul>
 </li>
-<li><p>什么是 CAS？<br>比较并交换(compare and swap, CAS)，是原子操作的一种，可用于在多线程编程中实现不被打断的数据交换操作，从而避免多线程同时改写某一数据时由于执行顺序不确定性以及中断的不可预知性产生的数据不一致问题。CAS操作基于CPU提供的原子操作指令实现，各个编译器根据这个特点实现了各自的原子操作函数。<br>简单说：CAS需要检查操作值有没有发生改变，如果没有发生改变则更新。</p>
+<li><p>什么是 CAS，CAS 有什么缺陷，如何解决？<br>比较并交换(compare and swap, CAS)，是原子操作的一种，可用于在多线程编程中实现不被打断的数据交换操作，从而避免多线程同时改写某一数据时由于执行顺序不确定性以及中断的不可预知性产生的数据不一致问题。CAS操作基于CPU提供的原子操作指令实现，各个编译器根据这个特点实现了各自的原子操作函数。<br>简单说：CAS需要检查操作值有没有发生改变，如果没有发生改变则更新。</p>
 <ul>
 <li>优点：无锁；非阻塞</li>
 <li>缺点：<ol>
@@ -779,8 +859,17 @@
 </li>
 </ul>
 </li>
-<li><p>可参考：</p>
-<ol>
+<li><p>线程池的种类，区别和使用场景？</p>
+</li>
+<li><p>分析线程池的实现原理和线程的调度过程？</p>
+</li>
+<li><p>线程池如何调优，最大数目如何确认？</p>
+</li>
+<li><p>数据连接池的工作机制是什么？<br>J2EE 服务器启动时会建立一定数量的池连接，并一直维持不少于此数目的池连接。客户端程序需要连接时，池驱动程序会返回一个未使用的池连接并将其表记为忙。如果当前没有空闲连接，池驱动程序就新建一定数量的连接，新建连接的数量由配置参数决定。当使用的池连接调用完成后，池驱动程序将此连接表记为空闲，其他调用就可以使用这个连接。</p>
+</li>
+</ul>
+<ul>
+<li>可参考：<ol>
 <li><a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247484881&amp;idx=2&amp;sn=b0ecf85cd7c9e543c84e7a9859c20a26" target="_blank" rel="noopener">《Java多线程编程核心技术》</a></li>
 <li><a href="http://www.importnew.com/18459.html" target="_blank" rel="noopener">《40个Java多线程问题总结》</a></li>
 <li><a href="https://javadoop.com/post/java-memory-model" target="_blank" rel="noopener">Java 并发基础之内存模型</a></li>
@@ -965,8 +1054,18 @@
 </li>
 <li><p>AQS 同步队列</p>
 </li>
-<li><p>常见的原子操作类</p>
+<li><p>LockSupport工具</p>
 </li>
+<li><p>Condition接口及其实现原理</p>
+</li>
+<li><p>Fork/Join框架的理解</p>
+</li>
+<li><p>分段锁的原理,锁力度减小的思考</p>
+</li>
+<li><p>八种阻塞队列以及各个阻塞队列的特性</p>
+</li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzAwMTE3MDY4MQ==&amp;mid=2652433302&amp;idx=1&amp;sn=2c51d1990fbdd2c917bc3cdc00508a72" target="_blank" rel="noopener">Java中的队列都有哪些，有什么区别？</a></li>
+<li>常见的原子操作类</li>
 <li><p>Java 8并法包下常见的并发类</p>
 <h3 id="1-6-JVM"><a href="#1-6-JVM" class="headerlink" title="1.6 JVM"></a>1.6 JVM</h3><ul>
 <li>JVM 思维导图<br><img src="http://fakerblog-wordpress.stor.sinaapp.com/uploads/2014/07/1232.jpg" alt="JVM 思维导图"></li>
@@ -1106,8 +1205,21 @@
 <li>当对象的年龄达到某个值时 ( 默认是 15 岁，可以通过参数 -XX:MaxTenuringThreshold 来设定)，这些对象就会成为老年代。但这也不是一定的，对于一些较大的对象 ( 即需要分配一块较大的连续内存空间 ) 则是直接进入到老年代。</li>
 </ol>
 </li>
-<li><p>内存溢出 OOM 和堆栈溢出 SOE 的示例及原因、如何排查与解决</p>
+<li><p>Java 中会存在内存泄漏吗？<br>会。<br>有两类主要的Java内存泄漏：</p>
+<ul>
+<li><strong>非必要的对象引用</strong><br>Java代码常常保留对于不再需要的对象引用，这阻止了垃圾收集器对这部分对象的回收工作。Java对象通常被其他对象包含引用，为此一个单一对象可以保持整个对象树在内存中，于是导致了如下问题:<ol>
+<li>在向数组添加对象以后遗漏了对于他们的处理</li>
+<li>直到你再次使用对象的时候都不释放引用。比如一个菜单指令可以插件一个对象实例引用并且不释放便于以后再次调用的时候使用，但是也许永远不会发生。</li>
+<li>在其他引用依然需要旧有状态的时候贸然修改对象状态。比如当你为了在一个文本文件里面保存一些属性而使用一个数组，诸如”字符个数”等字段在不再需要的时候依然保留在内存当中.</li>
+<li>允许一个长久执行的线程所引用的对象。设置引用为 NULL 也无济于事，在线程退出和空闲之前，对象不会被收集释放</li>
+</ol>
 </li>
+<li><strong>未释放的系统资源</strong><br>Java方法可以定位 Java 实例以外的堆内存，诸如针对视窗和位图的内存资源。Java常常通过JNI(Java Native Interface)调用C/C++子程序定位这些资源。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>内存溢出 OOM 和堆栈溢出 SOE 的示例及原因、如何排查与解决</li>
 <li>如何判断对象是否可以回收或存活</li>
 <li>常见的GC回收算法及其含义</li>
 <li>常见的JVM性能监控和故障处理工具类：jps、jstat、jmap、jinfo、jconsole等</li>
@@ -1136,7 +1248,7 @@
 <li>深度有限算法、广度优先算法</li>
 <li>克鲁斯卡尔算法、普林母算法、迪克拉斯算法</li>
 <li>什么是一致性Hash及其原理、Hash环问题</li>
-<li>常见的排序算法和查找算法：快排、折半查找、堆排序等</li>
+<li>常见的排序算法和查找算法：快排、折半查找、堆排序等<br>快排算法：<br>  //使用快速排序方法对a[0:n-1]排序<br>  从a[0:n-1]中选择一个元素作为middle，该元素为支点<br>  把余下的元素分割为两段left和right，使得left中的元素都小于等于支点，而right中的元素都大于等于支点<br>  递归地使用快速排序方法对left进行排序<br>  递归地使用快速排序方法对right进行排序<br>  所得结果为left+middle+right</li>
 </ul>
 <h3 id="1-9-网络-IO-基础"><a href="#1-9-网络-IO-基础" class="headerlink" title="1.9 网络 / IO 基础"></a>1.9 网络 / IO 基础</h3><ul>
 <li>BIO、NIO、AIO的概念<br>可参考：<a href="https://tech.meituan.com/nio.html" target="_blank" rel="noopener">Java NIO浅析</a></li>
@@ -1242,9 +1354,11 @@
 <li>Web MVC 和 Spring Web 提供了 Java Web 应用的框架或与其他流行的 Web 框架进行集成。</li>
 </ul>
 </li>
+<li><p>BeanFactory 和 FactoryBean？</p>
+</li>
 <li><p>BeanFactory 和 ApplicationContext 有什么区别</p>
 </li>
-<li><p>Spring Bean 的生命周期</p>
+<li><p>Spring Bean 的生命周期，如何被管理的？</p>
 <ol>
 <li>Spring 容器 从XML 文件中读取 Bean 的定义，并实例化bean。</li>
 <li>Spring 根据 Bean 的定义填充所有的属性。</li>
@@ -1260,9 +1374,13 @@
 </li>
 <li><p>Spring中Bean的作用域，默认的是哪一个？ Singleton</p>
 </li>
-<li><p>Spring IoC 是什么？<br>IOC:控制反转也叫依赖注入，IOC利用java反射机制，AOP利用代理模式。所谓控制反转是指，本来被调用者的实例是有调用者来创建的，这样的缺点是耦合性太强，IOC则是统一交给spring来管理创建，将对象交给容器管理，你只需要在spring配置文件总配置相应的bean，以及设置相关的属性，让spring容器来生成类的实例对象以及管理对象。在spring容器启动的时候，spring会把你在配置文件中配置的bean都初始化好，然后在你需要调用的时候，就把它已经初始化好的那些bean分配给你需要调用这些bean的类。</p>
+<li><p>Spring IOC 的理解，其初始化过程？<br>IOC:控制反转也叫依赖注入，IOC利用java反射机制，AOP利用代理模式。所谓控制反转是指，本来被调用者的实例是有调用者来创建的，这样的缺点是耦合性太强，IOC则是统一交给spring来管理创建，将对象交给容器管理，你只需要在spring配置文件总配置相应的bean，以及设置相关的属性，让spring容器来生成类的实例对象以及管理对象。在spring容器启动的时候，spring会把你在配置文件中配置的bean都初始化好，然后在你需要调用的时候，就把它已经初始化好的那些bean分配给你需要调用这些bean的类。</p>
 </li>
-<li><p>说说 Spring AOP<br>面向切面编程（AOP）完善spring的依赖注入（DI），面向切面编程在spring中主要表现为两个方面<br>1.面向切面编程提供声明式事务管理<br>2.spring支持用户自定义的切面</p>
+<li><p>说说 Spring AOP<br>面向切面编程（AOP）完善spring的依赖注入（DI），面向切面编程在spring中主要表现为两个方面</p>
+<ol>
+<li>面向切面编程提供声明式事务管理</li>
+<li>spring支持用户自定义的切面<br>AOP：面向切面，是一种编程思想，OOP的延续。将系统中非核心的业务提取出来，进行单独处理。比如事务、日志和安全等。</li>
+</ol>
 </li>
 <li><p>Spring AOP 实现原理<br>实现 AOP 的技术，主要分为两大类：  </p>
 <ul>
