@@ -113,13 +113,13 @@
 
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="标签">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+<meta property="og:title" content="分类">
+<meta property="og:url" content="http://yoursite.com/categories/index.html">
 <meta property="og:site_name" content="YuanYe">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-31T03:44:48.832Z">
+<meta property="og:updated_time" content="2018-01-31T04:23:05.138Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="标签">
+<meta name="twitter:title" content="分类">
 
 
 
@@ -151,7 +151,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/"/>
+  <link rel="canonical" href="http://yoursite.com/categories/"/>
 
 
 
@@ -361,7 +361,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-03-26T18:56:56+08:00">2018-03-26</time>
+              <time title="更新于" itemprop="dateModified" datetime="2018-03-27T10:51:15+08:00">2018-03-27</time>
             
           </span>
 
@@ -426,19 +426,14 @@
       
 
       
-        <h2 id="一、基础篇"><a href="#一、基础篇" class="headerlink" title="一、基础篇"></a>一、基础篇</h2><h3 id="1-1-Java基础"><a href="#1-1-Java基础" class="headerlink" title="1.1 Java基础"></a>1.1 Java基础</h3><ul>
-<li><p>面向对象的特征：抽象、继承、封装和多态</p>
-<ol>
+        <h1 id="基础篇"><a href="#基础篇" class="headerlink" title="基础篇"></a>基础篇</h1><h2 id="Java基础"><a href="#Java基础" class="headerlink" title="Java基础"></a>Java基础</h2><h3 id="面向对象的特征：抽象、继承、封装和多态"><a href="#面向对象的特征：抽象、继承、封装和多态" class="headerlink" title="面向对象的特征：抽象、继承、封装和多态"></a>面向对象的特征：抽象、继承、封装和多态</h3><ol>
 <li><strong>抽象</strong>：就是忽略一个主题中与当前目标无关的那些方面，以便更充分地注意与当前目标有关的方面。抽象并不打算了解全部问题，而只是选择其中的一部分，暂时不用部分细节。<br>抽象包括两个方面，一是过程抽象，二是数据抽象。</li>
 <li><strong>继承</strong>：是一种联结类的层次模型，并且允许和鼓励类的重用，它提供了一种明确表述共性的方法。对象的一个新类可以从现有的类中派生，这个过程称为类继承。新类继承了原始类的特性，新类称为原始类的派生类（子类），而原始类称为新类的基类（父类）。派生<br>类可以从它的基类那里继承方法和实例变量，并且类可以修改或增加新的方法使之更适合特殊的需要。</li>
 <li><strong>封装</strong>：是把过程和数据包围起来，对数据的访问只能通过已定义的界面。面向对象计算始于这个基本概念，即现实世界可以被描绘成一系列完全自治、封装的对象，这些对象通过一个受保护的接口访问其他对象。</li>
 <li><strong>多态性</strong>：是指允许不同类的对象对同一消息作出响应。多态性包括参数化多态性和包含多态性。多态性语言具有灵活、抽象、行为共享、代码共享的优势，很好的解决了应用程序函数同名问题。</li>
 </ol>
-</li>
-<li><p>final, finally, finalize 的区别<br>final 用于声明属性，方法和类，分别表示属性不可变，方法不可覆盖，类不可继承。<br>finally 是异常处理语句结构的一部分，表示总是执行。<br>finalize 是 Object 类的一个方法，在垃圾收集器执行的时候会调用被回收对象的此方法，可以覆盖此方法提供垃圾收集时的其他资源回收，例如关闭文件等。</p>
-</li>
-<li><p>Exception、Error、运行时异常与一般异常有何异同</p>
-<ul>
+<h3 id="final-finally-finalize-的区别"><a href="#final-finally-finalize-的区别" class="headerlink" title="final, finally, finalize 的区别"></a>final, finally, finalize 的区别</h3><p>  final 用于声明属性，方法和类，分别表示属性不可变，方法不可覆盖，类不可继承。<br>  finally 是异常处理语句结构的一部分，表示总是执行。<br>  finalize 是 Object 类的一个方法，在垃圾收集器执行的时候会调用被回收对象的此方法，可以覆盖此方法提供垃圾收集时的其他资源回收，例如关闭文件等。</p>
+<h3 id="Exception、Error、运行时异常与一般异常有何异同"><a href="#Exception、Error、运行时异常与一般异常有何异同" class="headerlink" title="Exception、Error、运行时异常与一般异常有何异同"></a>Exception、Error、运行时异常与一般异常有何异同</h3><ul>
 <li><strong>Thorwable</strong>：（表示可抛出）是所有异常和错误的超类，两个直接子类为：<ul>
 <li><strong>Error</strong>：它是由JVM 产生和抛出的，程序无法处理的错误。这些异常发生时，Java 虚拟机一般会选择线程终止。比如 OutOfMemoryError、ThreadDeath等。</li>
 </ul>
@@ -461,27 +456,13 @@
 <ul>
 <li>java 异常体系结构图解<br><img src="http://img.blog.csdn.net/20160331115514210" alt="异常图解"></li>
 </ul>
-</li>
-<li><p>int 和 Integer 有什么区别，Integer的值缓存范围<br>Java 提供两种不同的类型：引用类型和原始类型（或内置类型）。Int 是 java 的原始数据类型，Integer 是 java 为 int 提供的封装类。<br>Java 为每个原始类型提供了封装类，原始类型封装类具体如下：<br>  boolean Boolean<br>  char    Character<br>  byte    Byte<br>  short   Short<br>  int     Integer<br>  long    Long<br>  float   Float<br>  double  Double<br>引用类型和原始类型的行为完全不同，并且它们具有不同的语义。<br>引用类型和原始类型具有不同的特征和用法，它们包括：大小和速度问题，这种类型以哪种类型的数据结构存储，当引用类型和原始类型用作某个类的实例数据时所指定的缺省值。<br>对象引用实例变量的缺省值为 null，而原始类型实例变量的缺省值与它们的类型有关。</p>
-</li>
-<li><p>包装类，装箱和拆箱</p>
-</li>
-<li>String、StringBuilder、StringBuffer</li>
-<li><p>重载和重写的区别</p>
-</li>
-<li><p>抽象类和接口有什么区别</p>
-<ul>
+<h3 id="int-和-Integer-有什么区别，Integer的值缓存范围"><a href="#int-和-Integer-有什么区别，Integer的值缓存范围" class="headerlink" title="int 和 Integer 有什么区别，Integer的值缓存范围"></a>int 和 Integer 有什么区别，Integer的值缓存范围</h3><p>  Java 提供两种不同的类型：引用类型和原始类型（或内置类型）。Int 是 java 的原始数据类型，Integer 是 java 为 int 提供的封装类。<br>  Java 为每个原始类型提供了封装类，原始类型封装类具体如下：<br>    boolean Boolean<br>    char    Character<br>    byte    Byte<br>    short   Short<br>    int     Integer<br>    long    Long<br>    float   Float<br>    double  Double<br>  引用类型和原始类型的行为完全不同，并且它们具有不同的语义。<br>  引用类型和原始类型具有不同的特征和用法，它们包括：大小和速度问题，这种类型以哪种类型的数据结构存储，当引用类型和原始类型用作某个类的实例数据时所指定的缺省值。<br>  对象引用实例变量的缺省值为 null，而原始类型实例变量的缺省值与它们的类型有关。</p>
+<h3 id="包装类，装箱和拆箱"><a href="#包装类，装箱和拆箱" class="headerlink" title="包装类，装箱和拆箱"></a>包装类，装箱和拆箱</h3><h3 id="String、StringBuilder、StringBuffer"><a href="#String、StringBuilder、StringBuffer" class="headerlink" title="String、StringBuilder、StringBuffer"></a>String、StringBuilder、StringBuffer</h3><h3 id="重载和重写的区别"><a href="#重载和重写的区别" class="headerlink" title="重载和重写的区别"></a>重载和重写的区别</h3><h3 id="抽象类和接口有什么区别"><a href="#抽象类和接口有什么区别" class="headerlink" title="抽象类和接口有什么区别"></a>抽象类和接口有什么区别</h3><ul>
 <li>声明方法的存在而不去实现它的类被叫做抽象类（abstract class），它用于要创建一个体现某些基本行为的类，并为该类声明方法，但不能在该类中实现该类的情况。不能创建 abstract 类的实例。然而可以创建一个变量，其类型是一个抽象类，并让它指向具体子类的一个实例。不能有抽象构造函数或抽象静态方法。</li>
 <li>Abstract 类的子类为它们父类中的所有抽象方法提供实现，否则它们也是抽象类为。取而代之，在子类中实现该方法。知道其行为的其它类可以在类中实现这些方法。</li>
 <li>接口（interface）是抽象类的变体。在接口中，所有方法都是抽象的。多继承性可通过实现这样的接口而获得。接口中的所有方法都是抽象的，没有一个有程序体。接口只可以定义static final成员变量。接口的实现与子类相似，除了该实现类不能从接口定义中继承行为。当类实现特殊接口时，它定义（即将程序体给予）所有这种接口的方法。然后，它可以在实现了该接口的类的任何对象上调用接口的方法。由于有抽象类，它允许使用接口名作为引用变量的类型。通常的动态联编将生效。引用可以转换到接口类型或从接口类型转换，instanceof 运算符可以用来决定某对象的类是否实现了接口。</li>
 </ul>
-</li>
-</ul>
-<ul>
-<li><p>说说反射的用途及实现</p>
-</li>
-<li><p>说说自定义注解的场景及实现</p>
-<ul>
+<h3 id="说说反射的用途及实现"><a href="#说说反射的用途及实现" class="headerlink" title="说说反射的用途及实现"></a>说说反射的用途及实现</h3><h3 id="说说自定义注解的场景及实现"><a href="#说说自定义注解的场景及实现" class="headerlink" title="说说自定义注解的场景及实现"></a>说说自定义注解的场景及实现</h3><ul>
 <li><img src="https://upload-images.jianshu.io/upload_images/3458176-c5642804973c8b6e.jpg?imageMogr2/auto-orient/" alt="Annotation 思维导图"></li>
 </ul>
 <ul>
@@ -494,43 +475,29 @@
 </ul>
 </li>
 </ul>
-</li>
-<li><p>HTTP请求的GET与POST方式的区别</p>
-</li>
-<li><p>Session 与 Cookie 区别</p>
-<ol>
+<h3 id="HTTP请求的GET与POST方式的区别"><a href="#HTTP请求的GET与POST方式的区别" class="headerlink" title="HTTP请求的GET与POST方式的区别"></a>HTTP请求的GET与POST方式的区别</h3><h3 id="Session-与-Cookie-区别"><a href="#Session-与-Cookie-区别" class="headerlink" title="Session 与 Cookie 区别"></a>Session 与 Cookie 区别</h3><ol>
 <li>Cookie 数据存放在客户的浏览器上，而 Session 数据放在服务器上；</li>
 <li>Cookie 分发是通过扩展 HTTP 协议来实现的，服务器通过在 HTTP 的响应头中加上一行特殊的指示以提示浏览器按照指示生成相应的 Cookie</li>
 <li>Cookie 不是很安全，可以分析存放在本地的 Cookie 并进行 Cookie 欺骗，出于安全考虑应当使用 Session；</li>
 <li>Session 会在一定时间内保存在服务器上，当访问增多时会比较影响服务器的性能，出于考虑减轻服务器性能方面，应当使用 Cookie；单个 Cookie 保存的数据不能超过 4K，大多说浏览器都限制了一个站点最多保存 20 个 Cookie。<br>个人观点认为将一些登录信息（重要信息）存放在 Session 中，而其他信息如果需要保留，可以放在 Cookie 中</li>
 </ol>
-</li>
-<li><p>列出自己常用的JDK包</p>
-<ul>
+<h3 id="列出自己常用的JDK包"><a href="#列出自己常用的JDK包" class="headerlink" title="列出自己常用的JDK包"></a>列出自己常用的JDK包</h3><ul>
 <li>java.lang</li>
 <li>java.util</li>
 <li>java.io</li>
 </ul>
-</li>
-<li><p>MVC设计思想</p>
-<ul>
+<h3 id="MVC设计思想"><a href="#MVC设计思想" class="headerlink" title="MVC设计思想"></a>MVC设计思想</h3><ul>
 <li>M 即Model(模型层)，主要负责业务逻辑以及数据库的交互</li>
 <li>V 即View(视图层)，主要用于显示数据和提交数据</li>
 <li>C 即Controller(控制器)，主要是用作捕获请求并控制请求转发</li>
 </ul>
-</li>
-<li><p>equals 与 == 的区别<br>== 比较两个对象的引用值是否指相同。<br>equals()：根据 equals() 实现的逻辑比较两个对象是否相同（默认实现是通过 == 比较）。</p>
-</li>
-<li><p>String 类为什么是 final 的？<br>主要考虑到“安全”和“效率”的缘故，若String允许被继承，那么它的高度使用率可能会降低程序的性能，因此String被定义成了final。</p>
-</li>
-<li><p>String、StringBuffer与StringBuilder的区别？<br>java 提供了两个类：String和StringBuffer，java1.5 新增 java.lang.StringBuilder 一个可变的字符序列。<br>简单地说，就是一个变量和常量的关系。StringBuffer 对象的内容可以修改；而 String 对象一旦产生后就不可以被修改，重新赋值其实是两个对象。</p>
-<p>StringBuffer<br>StringBuffer的内部实现方式和String不同，StringBuffer在进行字符串处理时，不生成新的对象，在内存使用上要优于String类。所以在实际使用时，如果经常需要对一个字符串进行修改，例如插入、删除等操作，使用StringBuffer要更加适合一些。</p>
-<p>String<br>在String类中没有用来改变已有字符串中的某个字符的方法，由于不能改变一个java字符串中的某个单独字符，所以在JDK文档中称String类的对象是不可改变的。然而，不可改变的字符串具有一个很大的优点:编译器可以把字符串设为共享的。</p>
-<p>StringBuilder<br>StringBuilder 一个可变的字符序列是5.0新增的。此类提供一个与 StringBuffer 兼容的 API，但不保证同步。该类被设计用作 StringBuffer 的一个简易替换，用在字符串缓冲区被单个线程使用的时候（这种情况很普遍）。如果可能，建议优先采用该类，因为在大多数实现中，它比 StringBuffer 要快。两者的方法基本相同。</p>
-</li>
-</ul>
-<ul>
-<li><p>什么是序列化以及用途，什么时候使用序列化？<br>序列化是指把对象转换为字节序列的过程称为对象的序列化；而反序列化是指把字节序列恢复为对象的过程称为对象的反序列化。</p>
+<h3 id="equals-与-的区别"><a href="#equals-与-的区别" class="headerlink" title="equals 与 == 的区别"></a>equals 与 == 的区别</h3><p>  == 比较两个对象的引用值是否指相同。<br>  equals()：根据 equals() 实现的逻辑比较两个对象是否相同（默认实现是通过 == 比较）。</p>
+<h3 id="String-类为什么是-final-的？"><a href="#String-类为什么是-final-的？" class="headerlink" title="String 类为什么是 final 的？"></a>String 类为什么是 final 的？</h3><p>  主要考虑到“安全”和“效率”的缘故，若String允许被继承，那么它的高度使用率可能会降低程序的性能，因此String被定义成了final。</p>
+<h3 id="String、StringBuffer与StringBuilder的区别？"><a href="#String、StringBuffer与StringBuilder的区别？" class="headerlink" title="String、StringBuffer与StringBuilder的区别？"></a>String、StringBuffer与StringBuilder的区别？</h3><p>  java 提供了两个类：String和StringBuffer，java1.5 新增 java.lang.StringBuilder 一个可变的字符序列。<br>  简单地说，就是一个变量和常量的关系。StringBuffer 对象的内容可以修改；而 String 对象一旦产生后就不可以被修改，重新赋值其实是两个对象。</p>
+<p>  StringBuffer<br>  StringBuffer的内部实现方式和String不同，StringBuffer在进行字符串处理时，不生成新的对象，在内存使用上要优于String类。所以在实际使用时，如果经常需要对一个字符串进行修改，例如插入、删除等操作，使用StringBuffer要更加适合一些。</p>
+<p>  String<br>  在String类中没有用来改变已有字符串中的某个字符的方法，由于不能改变一个java字符串中的某个单独字符，所以在JDK文档中称String类的对象是不可改变的。然而，不可改变的字符串具有一个很大的优点:编译器可以把字符串设为共享的。</p>
+<p>  StringBuilder<br>  StringBuilder 一个可变的字符序列是5.0新增的。此类提供一个与 StringBuffer 兼容的 API，但不保证同步。该类被设计用作 StringBuffer 的一个简易替换，用在字符串缓冲区被单个线程使用的时候（这种情况很普遍）。如果可能，建议优先采用该类，因为在大多数实现中，它比 StringBuffer 要快。两者的方法基本相同。</p>
+<h3 id="什么是序列化以及用途，什么时候使用序列化？"><a href="#什么是序列化以及用途，什么时候使用序列化？" class="headerlink" title="什么是序列化以及用途，什么时候使用序列化？"></a>什么是序列化以及用途，什么时候使用序列化？</h3><p>  序列化是指把对象转换为字节序列的过程称为对象的序列化；而反序列化是指把字节序列恢复为对象的过程称为对象的反序列化。</p>
 <ul>
 <li>对象的序列化主要有两种用途：<ul>
 <li>把对象的字节序列永久地保存到硬盘上，通常存放在一个文件中。</li>
@@ -543,82 +510,30 @@
 </ul>
 </li>
 </ul>
-</li>
-<li><p>hashCode 和 equals 方法的区别与联系</p>
-</li>
-<li>什么是Java序列化和反序列化，如何实现Java序列化？或者请解释Serializable 接口的作用</li>
-<li><p>Object类中常见的方法，为什么 wait  notify 会放在 Object 里边？</p>
-</li>
-<li><p>单例模式</p>
-</li>
-<li><p>Java 8 有哪些新特性</p>
-</li>
-</ul>
-<h3 id="1-2-Java常见集合"><a href="#1-2-Java常见集合" class="headerlink" title="1.2 Java常见集合"></a>1.2 Java常见集合</h3><ul>
-<li><p><a href="https://blog.csdn.net/qq_22118507/article/details/51576319" target="_blank" rel="noopener">List、Set、Map 的区别</a></p>
-<ol>
+<h3 id="hashCode-和-equals-方法的区别与联系"><a href="#hashCode-和-equals-方法的区别与联系" class="headerlink" title="hashCode 和 equals 方法的区别与联系"></a>hashCode 和 equals 方法的区别与联系</h3><h3 id="什么是Java序列化和反序列化，如何实现Java序列化？或者请解释Serializable-接口的作用"><a href="#什么是Java序列化和反序列化，如何实现Java序列化？或者请解释Serializable-接口的作用" class="headerlink" title="什么是Java序列化和反序列化，如何实现Java序列化？或者请解释Serializable 接口的作用"></a>什么是Java序列化和反序列化，如何实现Java序列化？或者请解释Serializable 接口的作用</h3><h3 id="Object类中常见的方法，为什么-wait-notify-会放在-Object-里边？"><a href="#Object类中常见的方法，为什么-wait-notify-会放在-Object-里边？" class="headerlink" title="Object类中常见的方法，为什么 wait  notify 会放在 Object 里边？"></a>Object类中常见的方法，为什么 wait  notify 会放在 Object 里边？</h3><h3 id="单例模式"><a href="#单例模式" class="headerlink" title="单例模式"></a>单例模式</h3><h3 id="Java-8-有哪些新特性"><a href="#Java-8-有哪些新特性" class="headerlink" title="Java 8 有哪些新特性"></a>Java 8 有哪些新特性</h3><h2 id="Java常见集合"><a href="#Java常见集合" class="headerlink" title="Java常见集合"></a>Java常见集合</h2><h3 id="List、Set、Map-的区别"><a href="#List、Set、Map-的区别" class="headerlink" title="List、Set、Map 的区别"></a><a href="https://blog.csdn.net/qq_22118507/article/details/51576319" target="_blank" rel="noopener">List、Set、Map 的区别</a></h3><ol>
 <li>List,Set都是继承自Collection接口，Map则不是</li>
 <li>List特点：元素有放入顺序可重复。<br>Set特点：元素无放入顺序不可重复，重复元素会覆盖掉，（注意：元素虽然无放入顺序，但是元素在set中的位置是有该元素的HashCode决定的，其位置其实是固定的，加入Set 的Object必须定义 equals()方法 ，另外list支持for循环，也就是通过下标来遍历，也可以用迭代器，但是set只能用迭代，因为他无序，无法用下标来取得想要的值。）</li>
 <li>List：和数组类似，List可以动态增长，查找元素效率高，插入删除元素效率低，因为会引起其他元素位置改变。<br>Set：检索元素效率低下，删除和插入效率高，插入和删除不会引起元素位置改变。</li>
 <li>Map适合储存键值对的数据</li>
 <li>LinkedList、ArrayList、HashSet 是非线程安全的，Vector是线程安全的;<br>HashMap 是非线程安全的，HashTable 是线程安全的;<br>StringBuilder是非线程安全的，StringBuffer是线程安全的。</li>
 </ol>
-</li>
-<li><p>HashSet 如何保证不重复<br>HashSet中的元素存储在 HashMap中，当向HashSet add()元素的时，会判断元素是否存在的依据，不仅仅是hash码值就能够确定的，同时还要结合equles方法。</p>
-</li>
-<li><p><a href="https://www.jianshu.com/p/e2f75c8cce01" target="_blank" rel="noopener">HashMap 是线程安全的吗，为什么不是线程安全的（最好画图说明多线程环境下不安全）?</a></p>
-<ol>
+<h3 id="HashSet-如何保证不重复"><a href="#HashSet-如何保证不重复" class="headerlink" title="HashSet 如何保证不重复"></a>HashSet 如何保证不重复</h3><p>  HashSet中的元素存储在 HashMap中，当向HashSet add()元素的时，会判断元素是否存在的依据，不仅仅是hash码值就能够确定的，同时还要结合equles方法。</p>
+<h3 id="HashMap-是线程安全的吗，为什么不是线程安全的（最好画图说明多线程环境下不安全）"><a href="#HashMap-是线程安全的吗，为什么不是线程安全的（最好画图说明多线程环境下不安全）" class="headerlink" title="HashMap 是线程安全的吗，为什么不是线程安全的（最好画图说明多线程环境下不安全）?"></a><a href="https://www.jianshu.com/p/e2f75c8cce01" target="_blank" rel="noopener">HashMap 是线程安全的吗，为什么不是线程安全的（最好画图说明多线程环境下不安全）?</a></h3><ol>
 <li>put 的时候导致的多线程数据不一致。</li>
 <li>HashMap 的get操作可能因为resize而引起死循环（cpu 100%）<br>参考：</li>
 </ol>
 <ul>
 <li><a href="https://coolshell.cn/articles/9606.html" target="_blank" rel="noopener">JAVA HashMap 的死循环</a></li>
 </ul>
-</li>
-<li><p>HashMap 的扩容过程</p>
-<ol>
+<h3 id="HashMap-的扩容过程"><a href="#HashMap-的扩容过程" class="headerlink" title="HashMap 的扩容过程"></a>HashMap 的扩容过程</h3><ol>
 <li><a href="http://www.importnew.com/23907.html" target="_blank" rel="noopener">深入分析ConcurrentHashMap1.8的扩容实现</a></li>
 </ol>
-</li>
-<li><p>HashMap 1.7 与 1.8 的 区别，1.8 做了哪些优化，如何优化的？</p>
-</li>
-<li>LinkedHashMap 的应用</li>
-<li><p>Set 和 hashCode 以及 equals 方法的联系</p>
-</li>
-<li><p>Arraylist 与 LinkedList 区别</p>
-</li>
-<li><p>ArrayList 与 Vector 区别</p>
-</li>
-<li><p><a href="http://www.cnblogs.com/lzrabbit/p/3721067.html#h1" target="_blank" rel="noopener">HashMap、Hashtable 和 HashSet 的区别</a></p>
-</li>
-</ul>
-<ul>
-<li><p>HashMap 和 ConcurrentHashMap 的区别<br>可参考：<a href="http://www.importnew.com/28263.html" target="_blank" rel="noopener">Java7/8 中的 HashMap 和 ConcurrentHashMap 全解析</a></p>
-</li>
-<li><p>HashMap 的工作原理及代码实现，什么时候用到红黑树</p>
-</li>
-<li><p>多线程情况下 HashMap 死循环的问题</p>
-</li>
-<li><p>HashMap 出现 Hash DOS 攻击的问题</p>
-</li>
-<li><p>ConcurrentHashMap 的工作原理及代码实现，如何统计所有的元素个数</p>
-</li>
-<li><p>手写简单的 HashMap</p>
-</li>
-<li><p>数组在内存中如何分配</p>
-</li>
-<li><p>看过那些 Java 集合类的源码</p>
-</li>
-</ul>
-<h3 id="1-3、进程和线程"><a href="#1-3、进程和线程" class="headerlink" title="1.3、进程和线程"></a>1.3、进程和线程</h3><ul>
-<li><p>线程和进程的概念</p>
-<ul>
+<h3 id="HashMap-1-7-与-1-8-的-区别，1-8-做了哪些优化，如何优化的？"><a href="#HashMap-1-7-与-1-8-的-区别，1-8-做了哪些优化，如何优化的？" class="headerlink" title="HashMap 1.7 与 1.8 的 区别，1.8 做了哪些优化，如何优化的？"></a>HashMap 1.7 与 1.8 的 区别，1.8 做了哪些优化，如何优化的？</h3><h3 id="LinkedHashMap-的应用"><a href="#LinkedHashMap-的应用" class="headerlink" title="LinkedHashMap 的应用"></a>LinkedHashMap 的应用</h3><h3 id="Set-和-hashCode-以及-equals-方法的联系"><a href="#Set-和-hashCode-以及-equals-方法的联系" class="headerlink" title="Set 和 hashCode 以及 equals 方法的联系"></a>Set 和 hashCode 以及 equals 方法的联系</h3><h3 id="Arraylist-与-LinkedList-区别"><a href="#Arraylist-与-LinkedList-区别" class="headerlink" title="Arraylist 与 LinkedList 区别"></a>Arraylist 与 LinkedList 区别</h3><h3 id="ArrayList-与-Vector-区别"><a href="#ArrayList-与-Vector-区别" class="headerlink" title="ArrayList 与 Vector 区别"></a>ArrayList 与 Vector 区别</h3><h3 id="HashMap、Hashtable-和-HashSet-的区别"><a href="#HashMap、Hashtable-和-HashSet-的区别" class="headerlink" title="HashMap、Hashtable 和 HashSet 的区别"></a><a href="http://www.cnblogs.com/lzrabbit/p/3721067.html#h1" target="_blank" rel="noopener">HashMap、Hashtable 和 HashSet 的区别</a></h3><h3 id="HashMap-和-ConcurrentHashMap-的区别"><a href="#HashMap-和-ConcurrentHashMap-的区别" class="headerlink" title="HashMap 和 ConcurrentHashMap 的区别"></a>HashMap 和 ConcurrentHashMap 的区别</h3><p>  可参考：<a href="http://www.importnew.com/28263.html" target="_blank" rel="noopener">Java7/8 中的 HashMap 和 ConcurrentHashMap 全解析</a></p>
+<h3 id="HashMap-的工作原理及代码实现，什么时候用到红黑树"><a href="#HashMap-的工作原理及代码实现，什么时候用到红黑树" class="headerlink" title="HashMap 的工作原理及代码实现，什么时候用到红黑树"></a>HashMap 的工作原理及代码实现，什么时候用到红黑树</h3><h3 id="多线程情况下-HashMap-死循环的问题"><a href="#多线程情况下-HashMap-死循环的问题" class="headerlink" title="多线程情况下 HashMap 死循环的问题"></a>多线程情况下 HashMap 死循环的问题</h3><h3 id="HashMap-出现-Hash-DOS-攻击的问题"><a href="#HashMap-出现-Hash-DOS-攻击的问题" class="headerlink" title="HashMap 出现 Hash DOS 攻击的问题"></a>HashMap 出现 Hash DOS 攻击的问题</h3><h3 id="ConcurrentHashMap-的工作原理及代码实现，如何统计所有的元素个数"><a href="#ConcurrentHashMap-的工作原理及代码实现，如何统计所有的元素个数" class="headerlink" title="ConcurrentHashMap 的工作原理及代码实现，如何统计所有的元素个数"></a>ConcurrentHashMap 的工作原理及代码实现，如何统计所有的元素个数</h3><h3 id="手写简单的-HashMap"><a href="#手写简单的-HashMap" class="headerlink" title="手写简单的 HashMap"></a>手写简单的 HashMap</h3><h3 id="数组在内存中如何分配"><a href="#数组在内存中如何分配" class="headerlink" title="数组在内存中如何分配"></a>数组在内存中如何分配</h3><h3 id="看过那些-Java-集合类的源码"><a href="#看过那些-Java-集合类的源码" class="headerlink" title="看过那些 Java 集合类的源码"></a>看过那些 Java 集合类的源码</h3><h2 id="进程和线程"><a href="#进程和线程" class="headerlink" title="进程和线程"></a>进程和线程</h2><h3 id="线程和进程的概念"><a href="#线程和进程的概念" class="headerlink" title="线程和进程的概念"></a>线程和进程的概念</h3><ul>
 <li>进程：具有一定独立功能的程序关于某个数据集合上的一次运行活动,进程是系统进行资源分配和调度的一个独立单位。</li>
 <li>线程：它是比进程更小的能独立运行的基本单位。线程自己基本上不拥有系统资源,只拥有一点在运行中必不可少的资源(如程序计数器,一组寄存器和栈),但是它可与同属一个进程的其他的线程共享进程所拥有的全部资源.</li>
 </ul>
-</li>
-<li><p>线程的生命周期，状态是如何转移的？</p>
-<ul>
+<h3 id="线程的生命周期，状态是如何转移的？"><a href="#线程的生命周期，状态是如何转移的？" class="headerlink" title="线程的生命周期，状态是如何转移的？"></a>线程的生命周期，状态是如何转移的？</h3><ul>
 <li>线程状态<ol>
 <li>新建(NEW)：新创建了一个线程对象。</li>
 <li>可运行(RUNNABLE)：线程对象创建后，其他线程(比如 main 线程）调用了该对象的 start() 方法。该状态的线程位于可运行线程池中，等待被线程调度选中，获取cpu 的使用权。</li>
@@ -645,38 +560,25 @@
 </ol>
 </li>
 </ul>
-</li>
-<li><p>并行和并发的概念</p>
-<ul>
+<h3 id="并行和并发的概念"><a href="#并行和并发的概念" class="headerlink" title="并行和并发的概念"></a>并行和并发的概念</h3><ul>
 <li>并行是指两个或者多个事件在同一时刻发生</li>
 <li>并发是指两个或多个事件在同一时间间隔发生</li>
 </ul>
-</li>
-<li><p>创建线程的方式及实现</p>
-<ul>
+<h3 id="创建线程的方式及实现"><a href="#创建线程的方式及实现" class="headerlink" title="创建线程的方式及实现"></a>创建线程的方式及实现</h3><ul>
 <li>继承 Thread 类</li>
 <li>实现 Runnable 接口</li>
 <li>使用 Callable 和 Future</li>
 </ul>
-</li>
-<li><p>同步和异步有何异同，在什么情况下分别使用他们？举例说明。<br>如果数据将在线程间共享。例如正在写的数据以后可能被另一个线程读到，或者正在读的数据可能已经被另一个线程写过了，那么这些数据就是共享数据，必须进行同步存取。<br>当应用程序在对象上调用了一个需要花费很长时间来执行的方法，并且不希望让程序等待方法的返回时，就应该使用异步编程，在很多情况下采用异步途径往往更有效率。</p>
-</li>
-<li><p>进程间通信的方式？可參考<a href="http://blog.csdn.net/u011514810/article/details/77131296" target="_blank" rel="noopener">JAVA线程间通信的几种方式</a></p>
-<ul>
+<h3 id="同步和异步有何异同，在什么情况下分别使用他们？举例说明。"><a href="#同步和异步有何异同，在什么情况下分别使用他们？举例说明。" class="headerlink" title="同步和异步有何异同，在什么情况下分别使用他们？举例说明。"></a>同步和异步有何异同，在什么情况下分别使用他们？举例说明。</h3><p>  如果数据将在线程间共享。例如正在写的数据以后可能被另一个线程读到，或者正在读的数据可能已经被另一个线程写过了，那么这些数据就是共享数据，必须进行同步存取。<br>  当应用程序在对象上调用了一个需要花费很长时间来执行的方法，并且不希望让程序等待方法的返回时，就应该使用异步编程，在很多情况下采用异步途径往往更有效率。</p>
+<h3 id="进程间通信的方式？可參考JAVA线程间通信的几种方式"><a href="#进程间通信的方式？可參考JAVA线程间通信的几种方式" class="headerlink" title="进程间通信的方式？可參考JAVA线程间通信的几种方式"></a>进程间通信的方式？可參考<a href="http://blog.csdn.net/u011514810/article/details/77131296" target="_blank" rel="noopener">JAVA线程间通信的几种方式</a></h3><ul>
 <li>通过在线程之间共享对象就可以了，然后通过wait/notify/notifyAll、await/signal/signalAll进行唤起和等待，比方说阻塞队列BlockingQueue就是为线程之间共享数据而设计的</li>
 </ul>
-</li>
-<li><p>线程间通信的方式。可参考<a href="http://www.jasongj.com/java/thread_communication/" target="_blank" rel="noopener">《线程间通信剖析》</a></p>
-</li>
-<li><p>为什么需要多线程(多线程的优势)</p>
-<ol>
+<h3 id="线程间通信的方式。可参考《线程间通信剖析》"><a href="#线程间通信的方式。可参考《线程间通信剖析》" class="headerlink" title="线程间通信的方式。可参考《线程间通信剖析》"></a>线程间通信的方式。可参考<a href="http://www.jasongj.com/java/thread_communication/" target="_blank" rel="noopener">《线程间通信剖析》</a></h3><h3 id="为什么需要多线程-多线程的优势"><a href="#为什么需要多线程-多线程的优势" class="headerlink" title="为什么需要多线程(多线程的优势)"></a>为什么需要多线程(多线程的优势)</h3><ol>
 <li>更多的计算核心（充分利用硬件资源）</li>
 <li>更快的响应时间</li>
 <li>更好的编程模型</li>
 </ol>
-</li>
-<li><p>什么是线程安全？</p>
-<ul>
+<h3 id="什么是线程安全？"><a href="#什么是线程安全？" class="headerlink" title="什么是线程安全？"></a>什么是线程安全？</h3><ul>
 <li>如果你的代码在多线程下执行和在单线程下执行永远都能获得一样的结果，那么你的代码就是线程安全的。</li>
 <li>线程安全也是有几个级别的<ol>
 <li>不可变<br>String、Integer、Long 这些，都是final类型的类，任何一个线程都改变不了它们的值，要改变除非新创建一个，因此这些不可变对象不需要任何同步手段就可以直接在多线程环境下使用</li>
@@ -686,9 +588,7 @@
 </ol>
 </li>
 </ul>
-</li>
-<li><p>如何保证线程安全？</p>
-<ul>
+<h3 id="如何保证线程安全？"><a href="#如何保证线程安全？" class="headerlink" title="如何保证线程安全？"></a>如何保证线程安全？</h3><ul>
 <li>什么是线程安全？</li>
 <li>为什么会出现线程不安全？<br>因为存在有限的共享资源（可变的共享变量），以及多线程的并发访问。</li>
 </ul>
@@ -716,8 +616,7 @@
 </ul>
 </li>
 </ul>
-</li>
-<li><p>什么是 CAS，CAS 有什么缺陷，如何解决？<br>比较并交换(compare and swap, CAS)，是原子操作的一种，可用于在多线程编程中实现不被打断的数据交换操作，从而避免多线程同时改写某一数据时由于执行顺序不确定性以及中断的不可预知性产生的数据不一致问题。CAS操作基于CPU提供的原子操作指令实现，各个编译器根据这个特点实现了各自的原子操作函数。<br>简单说：CAS需要检查操作值有没有发生改变，如果没有发生改变则更新。</p>
+<h3 id="什么是-CAS，CAS-有什么缺陷，如何解决？"><a href="#什么是-CAS，CAS-有什么缺陷，如何解决？" class="headerlink" title="什么是 CAS，CAS 有什么缺陷，如何解决？"></a>什么是 CAS，CAS 有什么缺陷，如何解决？</h3><p>  比较并交换(compare and swap, CAS)，是原子操作的一种，可用于在多线程编程中实现不被打断的数据交换操作，从而避免多线程同时改写某一数据时由于执行顺序不确定性以及中断的不可预知性产生的数据不一致问题。CAS操作基于CPU提供的原子操作指令实现，各个编译器根据这个特点实现了各自的原子操作函数。<br>  简单说：CAS需要检查操作值有没有发生改变，如果没有发生改变则更新。</p>
 <ul>
 <li>优点：无锁；非阻塞</li>
 <li>缺点：<ol>
@@ -732,9 +631,7 @@
 </ol>
 </li>
 </ul>
-</li>
-<li><p>说说 CountDownLatch, CyclicBarrier, Semaphore 原理和区别</p>
-<ul>
+<h3 id="说说-CountDownLatch-CyclicBarrier-Semaphore-原理和区别"><a href="#说说-CountDownLatch-CyclicBarrier-Semaphore-原理和区别" class="headerlink" title="说说 CountDownLatch, CyclicBarrier, Semaphore 原理和区别"></a>说说 CountDownLatch, CyclicBarrier, Semaphore 原理和区别</h3><ul>
 <li>概念<ul>
 <li>CountDownLatch：是一个同步工具类，它允许一个或多个线程一直等待，直到其他线程的操作执行完后再执行。</li>
 <li>CyclicBarrier： 它可以实现让一组线程等待至某个状态之后再全部同时执行。</li>
@@ -768,15 +665,11 @@
 </ul>
 </li>
 </ul>
-</li>
-<li><p>说说 Exchanger 原理</p>
-<ul>
+<h3 id="说说-Exchanger-原理"><a href="#说说-Exchanger-原理" class="headerlink" title="说说 Exchanger 原理"></a>说说 Exchanger 原理</h3><ul>
 <li>Exchanger（交换者）是一个用于线程间协作的工具类。Exchanger 用于进行线程间的数据交换。它提供一个同步点，在这个同步点两个线程可以交换彼此的数据。这两个线程通过 exchange 方法交换数据，如果第一个线程先执行 exchange 方法，它会一直等待第二个线程也执行 exchange，当两个线程都到达同步点时，这两个线程就可以交换数据，将本线程生产出来的数据传递给对方。</li>
 <li>使用场景：Exchanger 也可以用于校对工作</li>
 </ul>
-</li>
-<li><p>ThreadLocal 原理分析，ThreadLocal 为什么会出现 OOM，出现的深层次原理？</p>
-<ul>
+<h3 id="ThreadLocal-原理分析，ThreadLocal-为什么会出现-OOM，出现的深层次原理？"><a href="#ThreadLocal-原理分析，ThreadLocal-为什么会出现-OOM，出现的深层次原理？" class="headerlink" title="ThreadLocal 原理分析，ThreadLocal 为什么会出现 OOM，出现的深层次原理？"></a>ThreadLocal 原理分析，ThreadLocal 为什么会出现 OOM，出现的深层次原理？</h3><ul>
 <li>原理：每个Thread 维护一个 ThreadLocalMap 映射表，这个映射表的 key 是 ThreadLocal实例本身，value 是真正需要存储的 Object。<ol>
 <li>ThreadLocal 本身并不存储值，它只是作为一个 key 来让线程从 ThreadLocalMap 获取 value。</li>
 <li>ThreadLocalMap 是使用 ThreadLocal 的弱引用作为 Key 的，弱引用的对象在 GC 时会被回收。</li>
@@ -813,11 +706,7 @@
 </ol>
 </li>
 </ul>
-</li>
-<li><p>讲讲线程池的实现原理</p>
-</li>
-<li><p>线程池的几种实现方式</p>
-<ul>
+<h3 id="讲讲线程池的实现原理"><a href="#讲讲线程池的实现原理" class="headerlink" title="讲讲线程池的实现原理"></a>讲讲线程池的实现原理</h3><h3 id="线程池的几种实现方式"><a href="#线程池的几种实现方式" class="headerlink" title="线程池的几种实现方式"></a>线程池的几种实现方式</h3><ul>
 <li><p>ThreadPoolExecutor 构造函数</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">ThreadPoolExecutor</span><span class="params">(<span class="keyword">int</span> corePoolSize,</span></span></span><br><span class="line"><span class="function"><span class="params">                          <span class="keyword">int</span> maximumPoolSize,</span></span></span><br><span class="line"><span class="function"><span class="params">                          <span class="keyword">long</span> keepAliveTime,</span></span></span><br><span class="line"><span class="function"><span class="params">                          TimeUnit unit,</span></span></span><br><span class="line"><span class="function"><span class="params">                          BlockingQueue&lt;Runnable&gt; workQueue,</span></span></span><br><span class="line"><span class="function"><span class="params">                          ThreadFactory threadFactory,</span></span></span><br><span class="line"><span class="function"><span class="params">                          RejectedExecutionHandler handler)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (corePoolSize &lt; <span class="number">0</span> ||</span><br><span class="line">        maximumPoolSize &lt;= <span class="number">0</span> ||</span><br><span class="line">        maximumPoolSize &lt; corePoolSize ||</span><br><span class="line">        keepAliveTime &lt; <span class="number">0</span>)</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException();</span><br><span class="line">    <span class="comment">// 这几个参数都是必须要有的</span></span><br><span class="line">    <span class="keyword">if</span> (workQueue == <span class="keyword">null</span> || threadFactory == <span class="keyword">null</span> || handler == <span class="keyword">null</span>)</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> NullPointerException();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">this</span>.corePoolSize = corePoolSize;</span><br><span class="line">    <span class="keyword">this</span>.maximumPoolSize = maximumPoolSize;</span><br><span class="line">    <span class="keyword">this</span>.workQueue = workQueue;</span><br><span class="line">    <span class="keyword">this</span>.keepAliveTime = unit.toNanos(keepAliveTime);</span><br><span class="line">    <span class="keyword">this</span>.threadFactory = threadFactory;</span><br><span class="line">    <span class="keyword">this</span>.handler = handler;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <ul>
@@ -837,8 +726,7 @@
 </ol>
 </li>
 </ul>
-</li>
-<li><p>如何理解并发的三个特性（问题）：原子性、内存可见性、重排序？<br>这些也是并发程序为什么难写的原因。</p>
+<h3 id="如何理解并发的三个特性（问题）：原子性、内存可见性、重排序？"><a href="#如何理解并发的三个特性（问题）：原子性、内存可见性、重排序？" class="headerlink" title="如何理解并发的三个特性（问题）：原子性、内存可见性、重排序？"></a>如何理解并发的三个特性（问题）：原子性、内存可见性、重排序？</h3><p>  这些也是并发程序为什么难写的原因。</p>
 <ul>
 <li>原子性：原子性是指不可再分的最小操作指令，即单条机器指令，原子性操作任意时刻只能有一个线程，因此是线程安全的。</li>
 <li>内存可见性：指当多个线程并发访问共享变量时，一个线程对共享变量的修改，其它线程能够立即看到。<ul>
@@ -853,47 +741,27 @@
 </ol>
 </li>
 </ul>
-</li>
-<li><p>线程池的种类，区别和使用场景？</p>
-</li>
-<li><p>分析线程池的实现原理和线程的调度过程？</p>
-</li>
-<li><p>线程池如何调优，最大数目如何确认？</p>
-</li>
-<li><p>数据连接池的工作机制是什么？<br>J2EE 服务器启动时会建立一定数量的池连接，并一直维持不少于此数目的池连接。客户端程序需要连接时，池驱动程序会返回一个未使用的池连接并将其表记为忙。如果当前没有空闲连接，池驱动程序就新建一定数量的连接，新建连接的数量由配置参数决定。当使用的池连接调用完成后，池驱动程序将此连接表记为空闲，其他调用就可以使用这个连接。</p>
-</li>
-</ul>
-<ul>
-<li>可参考：<ol>
+<h3 id="线程池的种类，区别和使用场景？"><a href="#线程池的种类，区别和使用场景？" class="headerlink" title="线程池的种类，区别和使用场景？"></a>线程池的种类，区别和使用场景？</h3><h3 id="分析线程池的实现原理和线程的调度过程？"><a href="#分析线程池的实现原理和线程的调度过程？" class="headerlink" title="分析线程池的实现原理和线程的调度过程？"></a>分析线程池的实现原理和线程的调度过程？</h3><h3 id="线程池如何调优，最大数目如何确认？"><a href="#线程池如何调优，最大数目如何确认？" class="headerlink" title="线程池如何调优，最大数目如何确认？"></a>线程池如何调优，最大数目如何确认？</h3><h3 id="数据连接池的工作机制是什么？"><a href="#数据连接池的工作机制是什么？" class="headerlink" title="数据连接池的工作机制是什么？"></a>数据连接池的工作机制是什么？</h3><p>  J2EE 服务器启动时会建立一定数量的池连接，并一直维持不少于此数目的池连接。客户端程序需要连接时，池驱动程序会返回一个未使用的池连接并将其表记为忙。如果当前没有空闲连接，池驱动程序就新建一定数量的连接，新建连接的数量由配置参数决定。当使用的池连接调用完成后，池驱动程序将此连接表记为空闲，其他调用就可以使用这个连接。</p>
+<h3 id="可参考："><a href="#可参考：" class="headerlink" title="可参考："></a>可参考：</h3><ol>
 <li><a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247484881&amp;idx=2&amp;sn=b0ecf85cd7c9e543c84e7a9859c20a26" target="_blank" rel="noopener">《Java多线程编程核心技术》</a></li>
 <li><a href="http://www.importnew.com/18459.html" target="_blank" rel="noopener">《40个Java多线程问题总结》</a></li>
 <li><a href="https://javadoop.com/post/java-memory-model" target="_blank" rel="noopener">Java 并发基础之内存模型</a></li>
 </ol>
-</li>
-</ul>
-<h3 id="1-4-锁机制"><a href="#1-4-锁机制" class="headerlink" title="1.4 锁机制"></a>1.4 锁机制</h3><ul>
-<li><p>什么是锁？<br>锁是保证并发共享数据一致性的工具</p>
-</li>
-<li><p>什么是死锁？<br>如果一个进程集合里面的每个进程都在等待这个集合中的其他一个进程（包括自身）才能继续往下执行，若无外力他们将无法推进，这种情况就是死锁，处于死锁状态的进程称为死锁进程。</p>
-</li>
-<li><p>产生死锁的四个条件</p>
-<ol>
+<h2 id="锁机制"><a href="#锁机制" class="headerlink" title="锁机制"></a>锁机制</h2><h3 id="什么是锁？"><a href="#什么是锁？" class="headerlink" title="什么是锁？"></a>什么是锁？</h3><p>  锁是保证并发共享数据一致性的工具</p>
+<h3 id="什么是死锁？"><a href="#什么是死锁？" class="headerlink" title="什么是死锁？"></a>什么是死锁？</h3><p>  如果一个进程集合里面的每个进程都在等待这个集合中的其他一个进程（包括自身）才能继续往下执行，若无外力他们将无法推进，这种情况就是死锁，处于死锁状态的进程称为死锁进程。</p>
+<h3 id="产生死锁的四个条件"><a href="#产生死锁的四个条件" class="headerlink" title="产生死锁的四个条件"></a>产生死锁的四个条件</h3><ol>
 <li>互斥：进程对所分配到的资源不允许其他进程进行访问，若其他进程访问该资源，只能等待，直至占有该资源的进程使用完成后释放该资源</li>
 <li>请求与保持：进程获得一定的资源之后，又对其他资源发出请求，但是该资源可能被其他进程占有，此事请求阻塞，但又对自己获得的资源保持不放</li>
 <li>不剥夺：指进程已获得的资源，在未完成使用之前，不可被剥夺，只能在使用完后自己释放</li>
 <li>循环等待：指进程发生死锁后，必然存在一个进程和资源之间的环形链</li>
 </ol>
-</li>
-<li><p>处理死锁的基本方法</p>
-<ol>
+<h3 id="处理死锁的基本方法"><a href="#处理死锁的基本方法" class="headerlink" title="处理死锁的基本方法"></a>处理死锁的基本方法</h3><ol>
 <li>预防死锁：通过设置一些限制条件，去破坏产生死锁的必要条件</li>
 <li>避免死锁：在资源分配过程中，使用某种方法避免系统进入不安全的状态，从而避免发生死锁</li>
 <li>检测死锁：允许死锁的发生，但是通过系统的检测之后，采取一些措施，将死锁清除掉</li>
 <li>解除死锁：该方法与检测死锁配合使用</li>
 </ol>
-</li>
-<li><p>Java 中常见的锁有哪些？</p>
-<ul>
+<h3 id="Java-中常见的锁有哪些？"><a href="#Java-中常见的锁有哪些？" class="headerlink" title="Java 中常见的锁有哪些？"></a>Java 中常见的锁有哪些？</h3><ul>
 <li>阻塞锁<ul>
 <li>概念：可以说是让线程进入阻塞状态进行等待，当获得相应的信号（唤醒，时间）时，才可以进入线程的准备就绪状态，准备就绪状态的所有线程，通过竞争，进入运行状态。</li>
 </ul>
@@ -983,15 +851,7 @@
 </ol>
 </li>
 </ul>
-</li>
-<li><p>Condition</p>
-</li>
-<li><p>重入锁的概念，重入锁为什么可以防止死锁</p>
-</li>
-<li><p>如何检查死锁（通过jConsole检查死锁）</p>
-</li>
-<li><p>volatile 实现原理（禁止指令重排、刷新内存）？</p>
-<ul>
+<h3 id="Condition"><a href="#Condition" class="headerlink" title="Condition"></a>Condition</h3><h3 id="重入锁的概念，重入锁为什么可以防止死锁"><a href="#重入锁的概念，重入锁为什么可以防止死锁" class="headerlink" title="重入锁的概念，重入锁为什么可以防止死锁"></a>重入锁的概念，重入锁为什么可以防止死锁</h3><h3 id="如何检查死锁（通过jConsole检查死锁）"><a href="#如何检查死锁（通过jConsole检查死锁）" class="headerlink" title="如何检查死锁（通过jConsole检查死锁）"></a>如何检查死锁（通过jConsole检查死锁）</h3><h3 id="volatile-实现原理（禁止指令重排、刷新内存）？"><a href="#volatile-实现原理（禁止指令重排、刷新内存）？" class="headerlink" title="volatile 实现原理（禁止指令重排、刷新内存）？"></a>volatile 实现原理（禁止指令重排、刷新内存）？</h3><ul>
 <li>作用：内存可见性和禁止指令重排序。</li>
 <li>volatile 如何解决内存可见性：读一个 volatile 变量之前，需要先使相应的本地缓存失效，这样就必须到主内存读取最新值，写一个 volatile 属性会立即刷入到主内存。</li>
 <li>volatile 适用场景：某个属性被多个线程共享，其中有一个线程修改了此属性，其他线程可以立即得到修改后的值。在并发包的源码中，它使用得非常多。</li>
@@ -1001,8 +861,7 @@
 <li>volatile 提供了 happens-before 保证，对 volatile 变量 v 的写入 happens-before 所有其他线程后续对 v 的读操作。</li>
 <li>volatile 可以使得 long 和 double 的赋值是原子的。</li>
 </ul>
-</li>
-<li><p>synchronized 实现原理（对象监视器）<br>  每个对象有一个监视器锁（monitor），当 monitor 被占用时就会处于锁定状态。线程释放锁时其必须是对应的 monitor 的所有者。</p>
+<h3 id="synchronized-实现原理（对象监视器）"><a href="#synchronized-实现原理（对象监视器）" class="headerlink" title="synchronized 实现原理（对象监视器）"></a>synchronized 实现原理（对象监视器）</h3><p>  每个对象有一个监视器锁（monitor），当 monitor 被占用时就会处于锁定状态。线程释放锁时其必须是对应的 monitor 的所有者。</p>
 <ul>
 <li>线程尝试获取 monitor 所有权的过程如下：<ol>
 <li>如果 monitor 的进入数为 0，则该线程进入 monitor，然后将进入数设置为 1，该线程即为 monitor 的所有者。</li>
@@ -1012,8 +871,7 @@
 </li>
 <li>线程释放锁的过程如下：<br>线程释放锁时 monitor 的进入数减 1，如果减 1 后进入数为 0，那线程退出 monitor，不再是这个 monitor 的所有者。其他被这个 monitor 阻塞的线程可以尝试去获取这个 monitor 的所有权。</li>
 </ul>
-</li>
-<li><p>synchronized 与 lock 的区别<br>Java 提供了两种锁机制：synchronized 和 lock。</p>
+<h3 id="synchronized-与-lock-的区别"><a href="#synchronized-与-lock-的区别" class="headerlink" title="synchronized 与 lock 的区别"></a>synchronized 与 lock 的区别</h3><p>  Java 提供了两种锁机制：synchronized 和 lock。</p>
 <ul>
 <li>用法区别<ul>
 <li>synchronized：可以加在方法，特定代码块中</li>
@@ -1040,29 +898,8 @@
 </ol>
 </li>
 </ul>
-</li>
-<li><p>可参考：<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247484881&amp;idx=2&amp;sn=b0ecf85cd7c9e543c84e7a9859c20a26" target="_blank" rel="noopener">《Java多线程编程核心技术》</a></p>
-</li>
-</ul>
-<h3 id="1-5-JUC"><a href="#1-5-JUC" class="headerlink" title="1.5 JUC"></a>1.5 JUC</h3><ul>
-<li><p>Java 并发体系思维导图<br><img src="http://cmsblogs.com/wp-content/images/share/chenssy_juc_201712.png" alt="Java 并发体系思维导图"></p>
-</li>
-<li><p>AQS 同步队列</p>
-</li>
-<li><p>LockSupport工具</p>
-</li>
-<li><p>Condition接口及其实现原理</p>
-</li>
-<li><p>Fork/Join框架的理解</p>
-</li>
-<li><p>分段锁的原理,锁力度减小的思考</p>
-</li>
-<li><p>八种阻塞队列以及各个阻塞队列的特性</p>
-</li>
-<li><a href="https://mp.weixin.qq.com/s?__biz=MzAwMTE3MDY4MQ==&amp;mid=2652433302&amp;idx=1&amp;sn=2c51d1990fbdd2c917bc3cdc00508a72" target="_blank" rel="noopener">Java中的队列都有哪些，有什么区别？</a></li>
-<li>常见的原子操作类</li>
-<li><p>Java 8并法包下常见的并发类</p>
-<h3 id="1-6-JVM"><a href="#1-6-JVM" class="headerlink" title="1.6 JVM"></a>1.6 JVM</h3><ul>
+<h3 id="可参考：《Java多线程编程核心技术》"><a href="#可参考：《Java多线程编程核心技术》" class="headerlink" title="可参考：《Java多线程编程核心技术》"></a>可参考：<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247484881&amp;idx=2&amp;sn=b0ecf85cd7c9e543c84e7a9859c20a26" target="_blank" rel="noopener">《Java多线程编程核心技术》</a></h3><h2 id="JUC"><a href="#JUC" class="headerlink" title="JUC"></a>JUC</h2><h3 id="Java-并发体系思维导图"><a href="#Java-并发体系思维导图" class="headerlink" title="Java 并发体系思维导图"></a>Java 并发体系思维导图</h3><p>  <img src="http://cmsblogs.com/wp-content/images/share/chenssy_juc_201712.png" alt="Java 并发体系思维导图"></p>
+<h3 id="AQS-同步队列"><a href="#AQS-同步队列" class="headerlink" title="AQS 同步队列"></a>AQS 同步队列</h3><h3 id="LockSupport工具"><a href="#LockSupport工具" class="headerlink" title="LockSupport工具"></a>LockSupport工具</h3><h3 id="Condition接口及其实现原理"><a href="#Condition接口及其实现原理" class="headerlink" title="Condition接口及其实现原理"></a>Condition接口及其实现原理</h3><h3 id="Fork-Join框架的理解"><a href="#Fork-Join框架的理解" class="headerlink" title="Fork/Join框架的理解"></a>Fork/Join框架的理解</h3><h3 id="分段锁的原理-锁力度减小的思考"><a href="#分段锁的原理-锁力度减小的思考" class="headerlink" title="分段锁的原理,锁力度减小的思考"></a>分段锁的原理,锁力度减小的思考</h3><h3 id="八种阻塞队列以及各个阻塞队列的特性"><a href="#八种阻塞队列以及各个阻塞队列的特性" class="headerlink" title="八种阻塞队列以及各个阻塞队列的特性"></a>八种阻塞队列以及各个阻塞队列的特性</h3><h3 id="Java中的队列都有哪些，有什么区别？"><a href="#Java中的队列都有哪些，有什么区别？" class="headerlink" title="Java中的队列都有哪些，有什么区别？"></a><a href="https://mp.weixin.qq.com/s?__biz=MzAwMTE3MDY4MQ==&amp;mid=2652433302&amp;idx=1&amp;sn=2c51d1990fbdd2c917bc3cdc00508a72" target="_blank" rel="noopener">Java中的队列都有哪些，有什么区别？</a></h3><h3 id="常见的原子操作类"><a href="#常见的原子操作类" class="headerlink" title="常见的原子操作类"></a>常见的原子操作类</h3><h3 id="Java-8并法包下常见的并发类"><a href="#Java-8并法包下常见的并发类" class="headerlink" title="Java 8并法包下常见的并发类"></a>Java 8并法包下常见的并发类</h3><h2 id="JVM"><a href="#JVM" class="headerlink" title="JVM"></a>JVM</h2><ul>
 <li>JVM 思维导图<br><img src="http://fakerblog-wordpress.stor.sinaapp.com/uploads/2014/07/1232.jpg" alt="JVM 思维导图"></li>
 </ul>
 <ul>
@@ -1088,22 +925,16 @@
 </ol>
 </li>
 </ul>
-</li>
-<li><p>什么是类的加载</p>
-<ul>
+<h3 id="什么是类的加载"><a href="#什么是类的加载" class="headerlink" title="什么是类的加载"></a>什么是类的加载</h3><ul>
 <li>类的加载是指将类的.class文件中的二进制数据读入到内存中，将其放在运行时数据区的方法区内，然后在堆区创建一个java.lang.Class对象，用来封装类在方法区内的数据结构。</li>
-<li>类加载的最终产品是位于堆区中的 Class 对象，Class 对象封装了类在方法区内的数据结构，并且向 Java 程序员提供了访问方法区内的数据结构的接口。</li>
-</ul>
-</li>
-<li>class 文件加载方式<ul>
+<li>类加载的最终产品是位于堆区中的 Class 对象，Class 对象封装了类在方法区内的数据结构，并且向 Java 程序员提供了访问方法区内的数据结构的接口。<h3 id="class-文件加载方式"><a href="#class-文件加载方式" class="headerlink" title="class 文件加载方式"></a>class 文件加载方式</h3></li>
 <li>从本地系统中直接加载</li>
 <li>通过网络下载.class文件</li>
 <li>从zip，jar等归档文件中加载.class文件</li>
 <li>从专有数据库中提取.class文件</li>
-<li>将Java源文件动态编译为.class文件</li>
+<li>将Java源文件动态编译为.class文件<h3 id="类加载器"><a href="#类加载器" class="headerlink" title="类加载器"></a>类加载器</h3></li>
 </ul>
-</li>
-<li>类加载器<ul>
+<ul>
 <li>从 JVM 角度只有两种类加载器：<ul>
 <li>启动类加载器：是虚拟机自身的一部分，使用 C++ 实现。</li>
 <li>所有其他的类加载器：全继承自 java.lang.ClassLoader，这些类加载器需要由启动类加载器加载到内存中之后才能去加载其他的类。由 Java 实现。</li>
@@ -1112,12 +943,9 @@
 <li>从 Java 开发人员的角度，类加载器分三类：<ol>
 <li><strong>启动类加载器</strong>：Bootstrap ClassLoader，负责加载存放在JDK\jre\lib(JDK代表JDK的安装目录，下同)下，或被 -Xbootclasspath 参数指定的路径中的，并且能被虚拟机识别的类库（如rt.jar，所有的java.*开头的类均被Bootstrap ClassLoader加载）。启动类加载器是无法被Java程序直接引用的。</li>
 <li><strong>扩展类加载器</strong>：Extension ClassLoader，该加载器由 sun.misc.Launcher$ExtClassLoader 实现，它负责加载 JDK\jre\lib\ext 目录中，或者由 java.ext.dirs 系统变量指定的路径中的所有类库（如javax.*开头的类），开发者可以直接使用扩展类加载器。</li>
-<li><strong>应用程序类加载器</strong>：Application ClassLoader，该类加载器由 sun.misc.Launcher$AppClassLoader 来实现，它负责加载用户类路径（ClassPath）所指定的类，开发者可以直接使用该类加载器，如果应用程序中没有自定义过自己的类加载器，一般情况下这个就是程序中默认的类加载器。</li>
+<li><strong>应用程序类加载器</strong>：Application ClassLoader，该类加载器由 sun.misc.Launcher$AppClassLoader 来实现，它负责加载用户类路径（ClassPath）所指定的类，开发者可以直接使用该类加载器，如果应用程序中没有自定义过自己的类加载器，一般情况下这个就是程序中默认的类加载器。<h3 id="类的生命周期"><a href="#类的生命周期" class="headerlink" title="类的生命周期"></a>类的生命周期</h3></li>
 </ol>
 </li>
-</ul>
-</li>
-<li>类的生命周期<ul>
 <li>加载：查找并加载类的二进制数据，在 Java 堆中也创建一个 java.lang.Class 类的对象<ul>
 <li>类加载的时机：类加载器并不需要等到某个类被“首次主动使用”时再加载它，JVM规范允许类加载器在预料某个类将要被使用时就预先加载它，如果在预先加载的过程中遇到了.class 文件缺失或存在错误，类加载器必须在程序首次主动使用该类时才报告错误（LinkageError错误）如果这个类一直没有被程序主动使用，那么类加载器就不会报告错误</li>
 </ul>
@@ -1143,10 +971,8 @@
 </ul>
 <ul>
 <li>使用：new 出对象，程序中使用</li>
-<li>卸载：执行垃圾回收</li>
+<li>卸载：执行垃圾回收<h3 id="JVM-类加载机制"><a href="#JVM-类加载机制" class="headerlink" title="JVM 类加载机制"></a>JVM 类加载机制</h3></li>
 </ul>
-</li>
-<li><p>JVM 类加载机制</p>
 <ul>
 <li><strong>父类委托</strong>：先让父类加载器试图加载该类，只有在父类加载器无法加载该类时才尝试从自己的类路径中加载该类<ul>
 <li>双亲委派模型工作流程：<br>如果一个类加载器收到了类加载的请求，它首先不会自己去尝试加载这个类，而是把请求委托给父加载器去完成，依次向上，因此，所有的类加载请求最终都应该被传递到顶层的启动类加载器中，只有当父加载器在它的搜索范围中没有找到所需的类时，即无法完成该加载，子加载器才会尝试自己去加载该类。</li>
@@ -1162,8 +988,7 @@
 <li><strong>全盘负责</strong>：当一个类加载器负责加载某个 Class 时，该 Class 所依赖的和引用的其他Class也将由该类加载器负责载入，除非显示使用另外一个类加载器来载入</li>
 <li><strong>缓存机制</strong>：缓存机制将会保证所有加载过的 Class 都会被缓存，当程序中需要使用某个 Class 时，类加载器先从缓存区寻找该 Class，只有缓存区不存在，系统才会读取该类对应的二进制数据，并将其转换成 Class 对象，存入缓存区。这就是为什么修改了 Class 后，必须重启 JVM，程序的修改才会生效。</li>
 </ul>
-</li>
-<li><p>什么时候发生 GC。<br>Java 中的堆是 GC 的主要区域。GC 分为两种：Minor GC、FullGC (或称为 Major GC)。<br>Minor GC 是发生在新生代中的垃圾收集动作，所采用的是复制算法。<br>Full GC 是发生在老年代的垃圾收集动作，所采用的是标记-清除算法。</p>
+<h3 id="什么时候发生-GC。"><a href="#什么时候发生-GC。" class="headerlink" title="什么时候发生 GC。"></a>什么时候发生 GC。</h3><p>  Java 中的堆是 GC 的主要区域。GC 分为两种：Minor GC、FullGC (或称为 Major GC)。<br>  Minor GC 是发生在新生代中的垃圾收集动作，所采用的是复制算法。<br>  Full GC 是发生在老年代的垃圾收集动作，所采用的是标记-清除算法。</p>
 <ul>
 <li><p>Minor GC(Young GC)</p>
 <ul>
@@ -1191,16 +1016,13 @@
 <li><p>堆大小 = 新生代 + 老年代<br>JDK1.6 默认：新生代(Young)与老年代(Old)的比例为 1:2 (该值可以通过参数 –XX:NewRatio 来指定)<br>JDK1.6 默认：Edem : from : to(from) = 8 : 1 : 1 (可以通过参数 –XX:SurvivorRatio 来设定)<br>JVM 每次只会使用 Eden 和其中的一块 Survivor 区域来为对象服务，所以无论什么时候，总是有一块 Survivor 区域是空闲着的。</p>
 </li>
 </ul>
-</li>
-<li><p>Minor GC 过程</p>
-<ol>
+<h3 id="Minor-GC-过程"><a href="#Minor-GC-过程" class="headerlink" title="Minor GC 过程"></a>Minor GC 过程</h3><ol>
 <li>对象出生在 Eden (或一个 Survivor 区域，这里假设是 from 区域)</li>
 <li>经一次 Minor GC 后，若对象还活着，且能够被另外一块 Survivor 区域所容纳(这里为 to 区域，即 to 区域有足够的内存空间来存储 Eden 和 from 区域中存活的对象)，则使用复制算法将这些仍然还存活的对象复制到另外一块 Survivor 区域 (即 to 区域) 中</li>
 <li>然后清理所使用过的 Eden 以及 Survivor 区域 ( 即from 区域 )，并且将这些对象的年龄设置为 1，以后对象在 Survivor 区每熬过一次 Minor GC，就将对象的年龄 + 1。</li>
 <li>当对象的年龄达到某个值时 ( 默认是 15 岁，可以通过参数 -XX:MaxTenuringThreshold 来设定)，这些对象就会成为老年代。但这也不是一定的，对于一些较大的对象 ( 即需要分配一块较大的连续内存空间 ) 则是直接进入到老年代。</li>
 </ol>
-</li>
-<li><p>Java 中会存在内存泄漏吗？<br>会。<br>有两类主要的Java内存泄漏：</p>
+<h3 id="Java-中会存在内存泄漏吗？"><a href="#Java-中会存在内存泄漏吗？" class="headerlink" title="Java 中会存在内存泄漏吗？"></a>Java 中会存在内存泄漏吗？</h3><p>  会。<br>  有两类主要的Java内存泄漏：</p>
 <ul>
 <li><strong>非必要的对象引用</strong><br>Java代码常常保留对于不再需要的对象引用，这阻止了垃圾收集器对这部分对象的回收工作。Java对象通常被其他对象包含引用，为此一个单一对象可以保持整个对象树在内存中，于是导致了如下问题:<ol>
 <li>在向数组添加对象以后遗漏了对于他们的处理</li>
@@ -1211,97 +1033,22 @@
 </li>
 <li><strong>未释放的系统资源</strong><br>Java方法可以定位 Java 实例以外的堆内存，诸如针对视窗和位图的内存资源。Java常常通过JNI(Java Native Interface)调用C/C++子程序定位这些资源。</li>
 </ul>
-</li>
-</ul>
-<ul>
-<li>内存溢出 OOM 和堆栈溢出 SOE 的示例及原因、如何排查与解决</li>
-<li>如何判断对象是否可以回收或存活</li>
-<li>常见的GC回收算法及其含义</li>
-<li>常见的JVM性能监控和故障处理工具类：jps、jstat、jmap、jinfo、jconsole等</li>
-<li>JVM如何设置参数</li>
-<li>JVM性能调优</li>
-<li>可参考：<ol>
+<h3 id="内存溢出-OOM-和堆栈溢出-SOE-的示例及原因、如何排查与解决"><a href="#内存溢出-OOM-和堆栈溢出-SOE-的示例及原因、如何排查与解决" class="headerlink" title="内存溢出 OOM 和堆栈溢出 SOE 的示例及原因、如何排查与解决"></a>内存溢出 OOM 和堆栈溢出 SOE 的示例及原因、如何排查与解决</h3><h3 id="如何判断对象是否可以回收或存活"><a href="#如何判断对象是否可以回收或存活" class="headerlink" title="如何判断对象是否可以回收或存活"></a>如何判断对象是否可以回收或存活</h3><h3 id="常见的GC回收算法及其含义"><a href="#常见的GC回收算法及其含义" class="headerlink" title="常见的GC回收算法及其含义"></a>常见的GC回收算法及其含义</h3><h3 id="常见的JVM性能监控和故障处理工具类：jps、jstat、jmap、jinfo、jconsole等"><a href="#常见的JVM性能监控和故障处理工具类：jps、jstat、jmap、jinfo、jconsole等" class="headerlink" title="常见的JVM性能监控和故障处理工具类：jps、jstat、jmap、jinfo、jconsole等"></a>常见的JVM性能监控和故障处理工具类：jps、jstat、jmap、jinfo、jconsole等</h3><h3 id="JVM如何设置参数"><a href="#JVM如何设置参数" class="headerlink" title="JVM如何设置参数"></a>JVM如何设置参数</h3><h3 id="JVM性能调优"><a href="#JVM性能调优" class="headerlink" title="JVM性能调优"></a>JVM性能调优</h3><h3 id="可参考：-1"><a href="#可参考：-1" class="headerlink" title="可参考："></a>可参考：</h3><ol>
 <li><a href="http://www.54tianzhisheng.cn/2018/02/28/Java-Memory-Model/" target="_blank" rel="noopener">《深入理解 Java 内存模型》读书笔记</a></li>
 <li><a href="http://www.ityouknow.com/java/2017/03/01/jvm-overview.html" target="_blank" rel="noopener">jvm知识点总览</a></li>
 <li><a href="http://www.cnblogs.com/ityouknow/p/5603287.html" target="_blank" rel="noopener">java类的加载机制</a></li>
 </ol>
-</li>
-</ul>
-<h3 id="1-7-设计模式"><a href="#1-7-设计模式" class="headerlink" title="1.7 设计模式"></a>1.7 设计模式</h3><ul>
-<li>常见的设计模式</li>
-<li>设计模式的的六大原则及其含义</li>
-<li>常见的单例模式以及各种实现方式的优缺点，哪一种最好，手写常见的单利模式</li>
-<li>设计模式在实际场景中的应用</li>
-<li>Spring中用到了哪些设计模式</li>
-<li>MyBatis中用到了哪些设计模式</li>
-<li>你项目中有使用哪些设计模式</li>
-<li>说说常用开源框架中设计模式使用分析</li>
-<li>动态代理很重要！！！</li>
-</ul>
-<h3 id="1-8-数据结构"><a href="#1-8-数据结构" class="headerlink" title="1.8 数据结构"></a>1.8 数据结构</h3><ul>
-<li>树（二叉查找树、平衡二叉树、红黑树、B树、B+树）</li>
-<li>深度有限算法、广度优先算法</li>
-<li>克鲁斯卡尔算法、普林母算法、迪克拉斯算法</li>
-<li>什么是一致性Hash及其原理、Hash环问题</li>
-<li>常见的排序算法和查找算法：快排、折半查找、堆排序等<br>快排算法：<br>  //使用快速排序方法对a[0:n-1]排序<br>  从a[0:n-1]中选择一个元素作为middle，该元素为支点<br>  把余下的元素分割为两段left和right，使得left中的元素都小于等于支点，而right中的元素都大于等于支点<br>  递归地使用快速排序方法对left进行排序<br>  递归地使用快速排序方法对right进行排序<br>  所得结果为left+middle+right</li>
-</ul>
-<h3 id="1-9-网络-IO-基础"><a href="#1-9-网络-IO-基础" class="headerlink" title="1.9 网络 / IO 基础"></a>1.9 网络 / IO 基础</h3><ul>
-<li>BIO、NIO、AIO的概念<br>可参考：<a href="https://tech.meituan.com/nio.html" target="_blank" rel="noopener">Java NIO浅析</a></li>
-<li>什么是长连接和短连接</li>
-<li>Http1.0 和 2.0 相比有什么区别，可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247484611&amp;idx=1&amp;sn=66c875392eedff8150633ddcd5d83e7a" target="_blank" rel="noopener">《Http 2.0》</a></li>
-<li>Https的基本概念</li>
-<li>三次握手和四次挥手、为什么挥手需要四次</li>
-<li>从游览器中输入URL到页面加载的发生了什么？可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247483724&amp;idx=1&amp;sn=e58dd30d124971c795584e8673d6cc71" target="_blank" rel="noopener">《从输入URL到页面加载发生了什么》</a></li>
-</ul>
-<h2 id="二、数据存储和消息队列"><a href="#二、数据存储和消息队列" class="headerlink" title="二、数据存储和消息队列"></a>二、数据存储和消息队列</h2><h3 id="2-1-数据库"><a href="#2-1-数据库" class="headerlink" title="2.1 数据库"></a>2.1 数据库</h3><ul>
-<li><p>MySQL 索引使用的注意事项</p>
-</li>
-<li><p>DDL、DML、DCL分别指什么</p>
-<ul>
+<h2 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h2><h3 id="常见的设计模式"><a href="#常见的设计模式" class="headerlink" title="常见的设计模式"></a>常见的设计模式</h3><h3 id="设计模式的的六大原则及其含义"><a href="#设计模式的的六大原则及其含义" class="headerlink" title="设计模式的的六大原则及其含义"></a>设计模式的的六大原则及其含义</h3><h3 id="常见的单例模式以及各种实现方式的优缺点，哪一种最好，手写常见的单利模式"><a href="#常见的单例模式以及各种实现方式的优缺点，哪一种最好，手写常见的单利模式" class="headerlink" title="常见的单例模式以及各种实现方式的优缺点，哪一种最好，手写常见的单利模式"></a>常见的单例模式以及各种实现方式的优缺点，哪一种最好，手写常见的单利模式</h3><h3 id="设计模式在实际场景中的应用"><a href="#设计模式在实际场景中的应用" class="headerlink" title="设计模式在实际场景中的应用"></a>设计模式在实际场景中的应用</h3><h3 id="Spring中用到了哪些设计模式"><a href="#Spring中用到了哪些设计模式" class="headerlink" title="Spring中用到了哪些设计模式"></a>Spring中用到了哪些设计模式</h3><h3 id="MyBatis中用到了哪些设计模式"><a href="#MyBatis中用到了哪些设计模式" class="headerlink" title="MyBatis中用到了哪些设计模式"></a>MyBatis中用到了哪些设计模式</h3><h3 id="你项目中有使用哪些设计模式"><a href="#你项目中有使用哪些设计模式" class="headerlink" title="你项目中有使用哪些设计模式"></a>你项目中有使用哪些设计模式</h3><h3 id="说说常用开源框架中设计模式使用分析"><a href="#说说常用开源框架中设计模式使用分析" class="headerlink" title="说说常用开源框架中设计模式使用分析"></a>说说常用开源框架中设计模式使用分析</h3><h3 id="动态代理很重要！！！"><a href="#动态代理很重要！！！" class="headerlink" title="动态代理很重要！！！"></a>动态代理很重要！！！</h3><h2 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h2><h3 id="树（二叉查找树、平衡二叉树、红黑树、B树、B-树）"><a href="#树（二叉查找树、平衡二叉树、红黑树、B树、B-树）" class="headerlink" title="树（二叉查找树、平衡二叉树、红黑树、B树、B+树）"></a>树（二叉查找树、平衡二叉树、红黑树、B树、B+树）</h3><h3 id="深度有限算法、广度优先算法"><a href="#深度有限算法、广度优先算法" class="headerlink" title="深度有限算法、广度优先算法"></a>深度有限算法、广度优先算法</h3><h3 id="克鲁斯卡尔算法、普林母算法、迪克拉斯算法"><a href="#克鲁斯卡尔算法、普林母算法、迪克拉斯算法" class="headerlink" title="克鲁斯卡尔算法、普林母算法、迪克拉斯算法"></a>克鲁斯卡尔算法、普林母算法、迪克拉斯算法</h3><h3 id="什么是一致性Hash及其原理、Hash环问题"><a href="#什么是一致性Hash及其原理、Hash环问题" class="headerlink" title="什么是一致性Hash及其原理、Hash环问题"></a>什么是一致性Hash及其原理、Hash环问题</h3><h3 id="常见的排序算法和查找算法：快排、折半查找、堆排序等"><a href="#常见的排序算法和查找算法：快排、折半查找、堆排序等" class="headerlink" title="常见的排序算法和查找算法：快排、折半查找、堆排序等"></a>常见的排序算法和查找算法：快排、折半查找、堆排序等</h3><p>  快排算法：<br>    //使用快速排序方法对a[0:n-1]排序<br>    从a[0:n-1]中选择一个元素作为middle，该元素为支点<br>    把余下的元素分割为两段left和right，使得left中的元素都小于等于支点，而right中的元素都大于等于支点<br>    递归地使用快速排序方法对left进行排序<br>    递归地使用快速排序方法对right进行排序<br>    所得结果为left+middle+right</p>
+<h2 id="网络-IO-基础"><a href="#网络-IO-基础" class="headerlink" title="网络 / IO 基础"></a>网络 / IO 基础</h2><h3 id="BIO、NIO、AIO的概念"><a href="#BIO、NIO、AIO的概念" class="headerlink" title="BIO、NIO、AIO的概念"></a>BIO、NIO、AIO的概念</h3><p>  可参考：<a href="https://tech.meituan.com/nio.html" target="_blank" rel="noopener">Java NIO浅析</a></p>
+<h3 id="什么是长连接和短连接"><a href="#什么是长连接和短连接" class="headerlink" title="什么是长连接和短连接"></a>什么是长连接和短连接</h3><h3 id="Http1-0-和-2-0-相比有什么区别，可参考《Http-2-0》"><a href="#Http1-0-和-2-0-相比有什么区别，可参考《Http-2-0》" class="headerlink" title="Http1.0 和 2.0 相比有什么区别，可参考《Http 2.0》"></a>Http1.0 和 2.0 相比有什么区别，可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247484611&amp;idx=1&amp;sn=66c875392eedff8150633ddcd5d83e7a" target="_blank" rel="noopener">《Http 2.0》</a></h3><h3 id="Https的基本概念"><a href="#Https的基本概念" class="headerlink" title="Https的基本概念"></a>Https的基本概念</h3><h3 id="三次握手和四次挥手、为什么挥手需要四次"><a href="#三次握手和四次挥手、为什么挥手需要四次" class="headerlink" title="三次握手和四次挥手、为什么挥手需要四次"></a>三次握手和四次挥手、为什么挥手需要四次</h3><h3 id="从游览器中输入URL到页面加载的发生了什么？可参考《从输入URL到页面加载发生了什么》"><a href="#从游览器中输入URL到页面加载的发生了什么？可参考《从输入URL到页面加载发生了什么》" class="headerlink" title="从游览器中输入URL到页面加载的发生了什么？可参考《从输入URL到页面加载发生了什么》"></a>从游览器中输入URL到页面加载的发生了什么？可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247483724&amp;idx=1&amp;sn=e58dd30d124971c795584e8673d6cc71" target="_blank" rel="noopener">《从输入URL到页面加载发生了什么》</a></h3><h2 id="二、数据存储和消息队列"><a href="#二、数据存储和消息队列" class="headerlink" title="二、数据存储和消息队列"></a>二、数据存储和消息队列</h2><h2 id="2-1-数据库"><a href="#2-1-数据库" class="headerlink" title="2.1 数据库"></a>2.1 数据库</h2><h3 id="MySQL-索引使用的注意事项"><a href="#MySQL-索引使用的注意事项" class="headerlink" title="MySQL 索引使用的注意事项"></a>MySQL 索引使用的注意事项</h3><h3 id="DDL、DML、DCL分别指什么"><a href="#DDL、DML、DCL分别指什么" class="headerlink" title="DDL、DML、DCL分别指什么"></a>DDL、DML、DCL分别指什么</h3><ul>
 <li>DDL：data manipulation language 数据操纵语言<br>主要用来对数据库的数据进行一些操作，如： SELECT、UPDATE、INSERT、DELETE。</li>
 <li>DML：data definition language 数据库定义语言<br>如：CREATE、ALTER、DROP等</li>
 <li>DCL：Data Control Language 数据库控制语言<br>用来设置或更改数据库用户或角色权限的语句，如 grant,deny,revoke等语句</li>
 </ul>
-</li>
-<li><p>explain 命令</p>
-</li>
-<li>left join，right join，inner join</li>
-<li>数据库事物 ACID<br>（原子性、一致性、隔离性、持久性）</li>
-<li>事务的隔离级别<br>（读未提交、读以提交、可重复读、可序列化读）</li>
-<li>脏读、幻读、不可重复读</li>
-<li>数据库的几大范式</li>
-<li>数据库常见的命令</li>
-<li>说说分库与分表设计</li>
-<li>分库与分表带来的分布式困境与应对之策（如何解决分布式下的分库分表，全局表？）</li>
-<li>说说 SQL 优化之道。可参考<a href="http://blog.csdn.net/xlgen157387/article/details/50735269" target="_blank" rel="noopener">《19个MySQL性能优化要点解析》</a></li>
-<li>MySQL遇到的死锁问题、如何排查与解决</li>
-<li>存储引擎的 InnoDB与MyISAM区别，优缺点，使用场景</li>
-<li>索引类别（B+树索引、全文索引、哈希索引）、索引的原理</li>
-<li>什么是自适应哈希索引（AHI）</li>
-<li>为什么要用 B+tree 作为MySQL索引的数据结构</li>
-<li>聚集索引与非聚集索引的区别</li>
-<li>遇到过索引失效的情况没，什么时候可能会出现，如何解决</li>
-<li>limit 20000 加载很慢怎么解决</li>
-<li>如何选择合适的分布式主键方案</li>
-<li>选择合适的数据存储方案</li>
-<li>常见的几种分布式ID的设计方案</li>
-<li>常见的数据库优化方案，在你的项目中数据库如何进行优化的</li>
-</ul>
-<h3 id="2-2、Redis"><a href="#2-2、Redis" class="headerlink" title="2.2、Redis"></a>2.2、Redis</h3><ul>
-<li>Redis 有哪些数据类型，可参考<a href="https://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247483987&amp;idx=1&amp;sn=5c5e4cd5bc73a7e6f84e5d6adfab0935" target="_blank" rel="noopener">《Redis常见的5种不同的数据类型详解》</a></li>
-<li>Redis 内部结构</li>
-<li>Redis 使用场景</li>
-<li>Redis 持久化机制，可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247483992&amp;idx=1&amp;sn=8f554bc490c4db1a78a30144f873e911" target="_blank" rel="noopener">《使用快照和AOF将Redis数据持久化到硬盘中》</a></li>
-<li>Redis 集群方案与实现</li>
-<li>Redis 为什么是单线程的？</li>
-<li>缓存雪崩、缓存穿透、缓存预热、缓存更新、缓存降级</li>
-<li>使用缓存的合理性问题</li>
-<li>Redis 常见的回收策略</li>
-</ul>
-<h3 id="2-3、消息队列"><a href="#2-3、消息队列" class="headerlink" title="2.3、消息队列"></a>2.3、消息队列</h3><p>  MQ 是一个互联网架构中常见的解耦利器<br>  <img src="http://neoremind.com/wp-content/uploads/MQ_mind2.png" alt="消息队列思维导图"></p>
-<ul>
-<li><p>消息队列的使用场景</p>
-<ul>
+<h3 id="explain-命令"><a href="#explain-命令" class="headerlink" title="explain 命令"></a>explain 命令</h3><h3 id="left-join，right-join，inner-join"><a href="#left-join，right-join，inner-join" class="headerlink" title="left join，right join，inner join"></a>left join，right join，inner join</h3><h3 id="数据库事物-ACID"><a href="#数据库事物-ACID" class="headerlink" title="数据库事物 ACID"></a>数据库事物 ACID</h3><p>  （原子性、一致性、隔离性、持久性）</p>
+<h3 id="事务的隔离级别"><a href="#事务的隔离级别" class="headerlink" title="事务的隔离级别"></a>事务的隔离级别</h3><p>  （读未提交、读以提交、可重复读、可序列化读）</p>
+<h3 id="脏读、幻读、不可重复读"><a href="#脏读、幻读、不可重复读" class="headerlink" title="脏读、幻读、不可重复读"></a>脏读、幻读、不可重复读</h3><h3 id="数据库的几大范式"><a href="#数据库的几大范式" class="headerlink" title="数据库的几大范式"></a>数据库的几大范式</h3><h3 id="数据库常见的命令"><a href="#数据库常见的命令" class="headerlink" title="数据库常见的命令"></a>数据库常见的命令</h3><h3 id="说说分库与分表设计"><a href="#说说分库与分表设计" class="headerlink" title="说说分库与分表设计"></a>说说分库与分表设计</h3><h3 id="分库与分表带来的分布式困境与应对之策（如何解决分布式下的分库分表，全局表？）"><a href="#分库与分表带来的分布式困境与应对之策（如何解决分布式下的分库分表，全局表？）" class="headerlink" title="分库与分表带来的分布式困境与应对之策（如何解决分布式下的分库分表，全局表？）"></a>分库与分表带来的分布式困境与应对之策（如何解决分布式下的分库分表，全局表？）</h3><h3 id="说说-SQL-优化之道。可参考《19个MySQL性能优化要点解析》"><a href="#说说-SQL-优化之道。可参考《19个MySQL性能优化要点解析》" class="headerlink" title="说说 SQL 优化之道。可参考《19个MySQL性能优化要点解析》"></a>说说 SQL 优化之道。可参考<a href="http://blog.csdn.net/xlgen157387/article/details/50735269" target="_blank" rel="noopener">《19个MySQL性能优化要点解析》</a></h3><h3 id="MySQL遇到的死锁问题、如何排查与解决"><a href="#MySQL遇到的死锁问题、如何排查与解决" class="headerlink" title="MySQL遇到的死锁问题、如何排查与解决"></a>MySQL遇到的死锁问题、如何排查与解决</h3><h3 id="存储引擎的-InnoDB与MyISAM区别，优缺点，使用场景"><a href="#存储引擎的-InnoDB与MyISAM区别，优缺点，使用场景" class="headerlink" title="存储引擎的 InnoDB与MyISAM区别，优缺点，使用场景"></a>存储引擎的 InnoDB与MyISAM区别，优缺点，使用场景</h3><h3 id="索引类别（B-树索引、全文索引、哈希索引）、索引的原理"><a href="#索引类别（B-树索引、全文索引、哈希索引）、索引的原理" class="headerlink" title="索引类别（B+树索引、全文索引、哈希索引）、索引的原理"></a>索引类别（B+树索引、全文索引、哈希索引）、索引的原理</h3><h3 id="什么是自适应哈希索引（AHI）"><a href="#什么是自适应哈希索引（AHI）" class="headerlink" title="什么是自适应哈希索引（AHI）"></a>什么是自适应哈希索引（AHI）</h3><h3 id="为什么要用-B-tree-作为MySQL索引的数据结构"><a href="#为什么要用-B-tree-作为MySQL索引的数据结构" class="headerlink" title="为什么要用 B+tree 作为MySQL索引的数据结构"></a>为什么要用 B+tree 作为MySQL索引的数据结构</h3><h3 id="聚集索引与非聚集索引的区别"><a href="#聚集索引与非聚集索引的区别" class="headerlink" title="聚集索引与非聚集索引的区别"></a>聚集索引与非聚集索引的区别</h3><h3 id="遇到过索引失效的情况没，什么时候可能会出现，如何解决"><a href="#遇到过索引失效的情况没，什么时候可能会出现，如何解决" class="headerlink" title="遇到过索引失效的情况没，什么时候可能会出现，如何解决"></a>遇到过索引失效的情况没，什么时候可能会出现，如何解决</h3><h3 id="limit-20000-加载很慢怎么解决"><a href="#limit-20000-加载很慢怎么解决" class="headerlink" title="limit 20000 加载很慢怎么解决"></a>limit 20000 加载很慢怎么解决</h3><h3 id="如何选择合适的分布式主键方案"><a href="#如何选择合适的分布式主键方案" class="headerlink" title="如何选择合适的分布式主键方案"></a>如何选择合适的分布式主键方案</h3><h3 id="选择合适的数据存储方案"><a href="#选择合适的数据存储方案" class="headerlink" title="选择合适的数据存储方案"></a>选择合适的数据存储方案</h3><h3 id="常见的几种分布式ID的设计方案"><a href="#常见的几种分布式ID的设计方案" class="headerlink" title="常见的几种分布式ID的设计方案"></a>常见的几种分布式ID的设计方案</h3><h3 id="常见的数据库优化方案，在你的项目中数据库如何进行优化的"><a href="#常见的数据库优化方案，在你的项目中数据库如何进行优化的" class="headerlink" title="常见的数据库优化方案，在你的项目中数据库如何进行优化的"></a>常见的数据库优化方案，在你的项目中数据库如何进行优化的</h3><h2 id="Redis"><a href="#Redis" class="headerlink" title="Redis"></a>Redis</h2><h3 id="Redis-有哪些数据类型，可参考《Redis常见的5种不同的数据类型详解》"><a href="#Redis-有哪些数据类型，可参考《Redis常见的5种不同的数据类型详解》" class="headerlink" title="Redis 有哪些数据类型，可参考《Redis常见的5种不同的数据类型详解》"></a>Redis 有哪些数据类型，可参考<a href="https://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247483987&amp;idx=1&amp;sn=5c5e4cd5bc73a7e6f84e5d6adfab0935" target="_blank" rel="noopener">《Redis常见的5种不同的数据类型详解》</a></h3><h3 id="Redis-内部结构"><a href="#Redis-内部结构" class="headerlink" title="Redis 内部结构"></a>Redis 内部结构</h3><h3 id="Redis-使用场景"><a href="#Redis-使用场景" class="headerlink" title="Redis 使用场景"></a>Redis 使用场景</h3><h3 id="Redis-持久化机制，可参考《使用快照和AOF将Redis数据持久化到硬盘中》"><a href="#Redis-持久化机制，可参考《使用快照和AOF将Redis数据持久化到硬盘中》" class="headerlink" title="Redis 持久化机制，可参考《使用快照和AOF将Redis数据持久化到硬盘中》"></a>Redis 持久化机制，可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247483992&amp;idx=1&amp;sn=8f554bc490c4db1a78a30144f873e911" target="_blank" rel="noopener">《使用快照和AOF将Redis数据持久化到硬盘中》</a></h3><h3 id="Redis-集群方案与实现"><a href="#Redis-集群方案与实现" class="headerlink" title="Redis 集群方案与实现"></a>Redis 集群方案与实现</h3><h3 id="Redis-为什么是单线程的？"><a href="#Redis-为什么是单线程的？" class="headerlink" title="Redis 为什么是单线程的？"></a>Redis 为什么是单线程的？</h3><h3 id="缓存雪崩、缓存穿透、缓存预热、缓存更新、缓存降级"><a href="#缓存雪崩、缓存穿透、缓存预热、缓存更新、缓存降级" class="headerlink" title="缓存雪崩、缓存穿透、缓存预热、缓存更新、缓存降级"></a>缓存雪崩、缓存穿透、缓存预热、缓存更新、缓存降级</h3><h3 id="使用缓存的合理性问题"><a href="#使用缓存的合理性问题" class="headerlink" title="使用缓存的合理性问题"></a>使用缓存的合理性问题</h3><h3 id="Redis-常见的回收策略"><a href="#Redis-常见的回收策略" class="headerlink" title="Redis 常见的回收策略"></a>Redis 常见的回收策略</h3><h2 id="消息队列"><a href="#消息队列" class="headerlink" title="消息队列"></a>消息队列</h2><p>  MQ 是一个互联网架构中常见的解耦利器<br>  <img src="http://neoremind.com/wp-content/uploads/MQ_mind2.png" alt="消息队列思维导图"></p>
+<h3 id="消息队列的使用场景"><a href="#消息队列的使用场景" class="headerlink" title="消息队列的使用场景"></a>消息队列的使用场景</h3><ul>
 <li>什么时候使用 MQ？<ul>
 <li>数据驱动的任务依赖</li>
 <li>上游不关心多下游执行结果<br>上游需要关注执行结果时要用“调用”，上游不关注执行结果时，就可以使用MQ了。</li>
@@ -1313,48 +1060,24 @@
 </ul>
 </li>
 </ul>
-</li>
-<li><p>消息的重发补偿解决思路</p>
-</li>
-<li>消息的幂等性解决思路</li>
-<li>消息的堆积解决思路</li>
-<li>自己如何实现消息队列</li>
-<li>如何保证消息的有序性</li>
-<li>可参考：<ul>
+<h3 id="消息的重发补偿解决思路"><a href="#消息的重发补偿解决思路" class="headerlink" title="消息的重发补偿解决思路"></a>消息的重发补偿解决思路</h3><h3 id="消息的幂等性解决思路"><a href="#消息的幂等性解决思路" class="headerlink" title="消息的幂等性解决思路"></a>消息的幂等性解决思路</h3><h3 id="消息的堆积解决思路"><a href="#消息的堆积解决思路" class="headerlink" title="消息的堆积解决思路"></a>消息的堆积解决思路</h3><h3 id="自己如何实现消息队列"><a href="#自己如何实现消息队列" class="headerlink" title="自己如何实现消息队列"></a>自己如何实现消息队列</h3><h3 id="如何保证消息的有序性"><a href="#如何保证消息的有序性" class="headerlink" title="如何保证消息的有序性"></a>如何保证消息的有序性</h3><h3 id="可参考：-2"><a href="#可参考：-2" class="headerlink" title="可参考："></a>可参考：</h3><ul>
 <li><a href="https://mp.weixin.qq.com/s?__biz=MjM5ODYxMDA5OQ==&amp;mid=2651960012&amp;idx=1&amp;sn=c6af5c79ecead98daa4d742e5ad20ce5" target="_blank" rel="noopener">到底什么时候该使用 MQ？</a></li>
 <li><a href="http://neoremind.com/2018/03/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E6%8A%80%E6%9C%AF%E7%82%B9%E6%A2%B3%E7%90%86/" target="_blank" rel="noopener">消息队列技术点梳理（思维导图版）</a></li>
 </ul>
-</li>
-</ul>
-<h2 id="三、开源框架和容器"><a href="#三、开源框架和容器" class="headerlink" title="三、开源框架和容器"></a>三、开源框架和容器</h2><h3 id="3-1-Servlet"><a href="#3-1-Servlet" class="headerlink" title="3.1 Servlet"></a>3.1 Servlet</h3><ul>
-<li><p>什么是 Servlet？<br>Servlet 是一些遵从 Java Servlet API 的 Java 类（实现 Servlet 接口的类），这些Java类可以响应请求。</p>
-</li>
-<li><p>Servlet 的生命周期</p>
-<ul>
+<h2 id="开源框架和容器"><a href="#开源框架和容器" class="headerlink" title="开源框架和容器"></a>开源框架和容器</h2><h2 id="Servlet"><a href="#Servlet" class="headerlink" title="Servlet"></a>Servlet</h2><h3 id="什么是-Servlet？"><a href="#什么是-Servlet？" class="headerlink" title="什么是 Servlet？"></a>什么是 Servlet？</h3><p>  Servlet 是一些遵从 Java Servlet API 的 Java 类（实现 Servlet 接口的类），这些Java类可以响应请求。</p>
+<h3 id="Servlet-的生命周期"><a href="#Servlet-的生命周期" class="headerlink" title="Servlet 的生命周期"></a>Servlet 的生命周期</h3><ul>
 <li>初始化- init()</li>
 <li>请求处理 - service()</li>
 <li>卸载 Servlet - destroy()</li>
 </ul>
-</li>
-<li><p>转发与重定向的区别</p>
-</li>
-</ul>
-<h3 id="3-2-Spring"><a href="#3-2-Spring" class="headerlink" title="3.2 Spring"></a>3.2 Spring</h3><ul>
-<li><p>什么是 Spring，你对 Spring 的理解？</p>
-<ul>
+<h3 id="转发与重定向的区别"><a href="#转发与重定向的区别" class="headerlink" title="转发与重定向的区别"></a>转发与重定向的区别</h3><h2 id="Spring"><a href="#Spring" class="headerlink" title="Spring"></a>Spring</h2><h3 id="什么是-Spring，你对-Spring-的理解？"><a href="#什么是-Spring，你对-Spring-的理解？" class="headerlink" title="什么是 Spring，你对 Spring 的理解？"></a>什么是 Spring，你对 Spring 的理解？</h3><ul>
 <li>Spring是一个轻型容器(light-weight container)，其核心是Bean工厂(Bean Factory)，用以构造我们所需要的M(Model)。</li>
 <li>在此基础之上，Spring 提供了AOP（Aspect-Oriented Programming, 面向层面的编程）的实现，用它来提供声明式事务、安全等服务；</li>
 <li>对 Bean 工厂的扩展ApplicationContext更加方便我们实现J2EE的应用；</li>
 <li>DAO/ORM 的实现方便我们进行数据库的开发；</li>
 <li>Web MVC 和 Spring Web 提供了 Java Web 应用的框架或与其他流行的 Web 框架进行集成。</li>
 </ul>
-</li>
-<li><p>BeanFactory 和 FactoryBean？</p>
-</li>
-<li><p>BeanFactory 和 ApplicationContext 有什么区别</p>
-</li>
-<li><p>Spring Bean 的生命周期，如何被管理的？</p>
-<ol>
+<h3 id="BeanFactory-和-FactoryBean？"><a href="#BeanFactory-和-FactoryBean？" class="headerlink" title="BeanFactory 和 FactoryBean？"></a>BeanFactory 和 FactoryBean？</h3><h3 id="BeanFactory-和-ApplicationContext-有什么区别"><a href="#BeanFactory-和-ApplicationContext-有什么区别" class="headerlink" title="BeanFactory 和 ApplicationContext 有什么区别"></a>BeanFactory 和 ApplicationContext 有什么区别</h3><h3 id="Spring-Bean-的生命周期，如何被管理的？"><a href="#Spring-Bean-的生命周期，如何被管理的？" class="headerlink" title="Spring Bean 的生命周期，如何被管理的？"></a>Spring Bean 的生命周期，如何被管理的？</h3><ol>
 <li>Spring 容器 从XML 文件中读取 Bean 的定义，并实例化bean。</li>
 <li>Spring 根据 Bean 的定义填充所有的属性。</li>
 <li>如果 Bean 实现了BeanNameAware 接口，Spring 传递 Bean 的ID 到 setBeanName方法。</li>
@@ -1364,20 +1087,12 @@
 <li>如果有 BeanPostProcessors 和 Bean 关联，这些 Bean 的 postProcessAfterInitialization() 方法将被调用。</li>
 <li>如果 Bean 实现了 DisposableBean，它将调用 destroy()方法。</li>
 </ol>
-</li>
-<li><p>Spring IOC 如何实现。可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247484890&amp;idx=1&amp;sn=b0d0f5013021b86441e1abd37c6724e7" target="_blank" rel="noopener">《三条路线告诉你如何掌握Spring IoC容器的核心原理》</a></p>
-</li>
-<li><p>Spring中Bean的作用域，默认的是哪一个？ Singleton</p>
-</li>
-<li><p>Spring IOC 的理解，其初始化过程？<br>IOC:控制反转也叫依赖注入，IOC利用java反射机制，AOP利用代理模式。所谓控制反转是指，本来被调用者的实例是有调用者来创建的，这样的缺点是耦合性太强，IOC则是统一交给spring来管理创建，将对象交给容器管理，你只需要在spring配置文件总配置相应的bean，以及设置相关的属性，让spring容器来生成类的实例对象以及管理对象。在spring容器启动的时候，spring会把你在配置文件中配置的bean都初始化好，然后在你需要调用的时候，就把它已经初始化好的那些bean分配给你需要调用这些bean的类。</p>
-</li>
-<li><p>说说 Spring AOP<br>面向切面编程（AOP）完善spring的依赖注入（DI），面向切面编程在spring中主要表现为两个方面</p>
+<h3 id="Spring-IOC-如何实现。可参考《三条路线告诉你如何掌握Spring-IoC容器的核心原理》"><a href="#Spring-IOC-如何实现。可参考《三条路线告诉你如何掌握Spring-IoC容器的核心原理》" class="headerlink" title="Spring IOC 如何实现。可参考《三条路线告诉你如何掌握Spring IoC容器的核心原理》"></a>Spring IOC 如何实现。可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247484890&amp;idx=1&amp;sn=b0d0f5013021b86441e1abd37c6724e7" target="_blank" rel="noopener">《三条路线告诉你如何掌握Spring IoC容器的核心原理》</a></h3><h3 id="Spring中Bean的作用域，默认的是哪一个？-Singleton"><a href="#Spring中Bean的作用域，默认的是哪一个？-Singleton" class="headerlink" title="Spring中Bean的作用域，默认的是哪一个？ Singleton"></a>Spring中Bean的作用域，默认的是哪一个？ Singleton</h3><h3 id="Spring-IOC-的理解，其初始化过程？"><a href="#Spring-IOC-的理解，其初始化过程？" class="headerlink" title="Spring IOC 的理解，其初始化过程？"></a>Spring IOC 的理解，其初始化过程？</h3><p>  IOC:控制反转也叫依赖注入，IOC利用java反射机制，AOP利用代理模式。所谓控制反转是指，本来被调用者的实例是有调用者来创建的，这样的缺点是耦合性太强，IOC则是统一交给spring来管理创建，将对象交给容器管理，你只需要在spring配置文件总配置相应的bean，以及设置相关的属性，让spring容器来生成类的实例对象以及管理对象。在spring容器启动的时候，spring会把你在配置文件中配置的bean都初始化好，然后在你需要调用的时候，就把它已经初始化好的那些bean分配给你需要调用这些bean的类。</p>
+<h3 id="说说-Spring-AOP"><a href="#说说-Spring-AOP" class="headerlink" title="说说 Spring AOP"></a>说说 Spring AOP</h3><p>  面向切面编程（AOP）完善spring的依赖注入（DI），面向切面编程在spring中主要表现为两个方面</p>
 <ol>
 <li>面向切面编程提供声明式事务管理</li>
-<li>spring支持用户自定义的切面<br>AOP：面向切面，是一种编程思想，OOP的延续。将系统中非核心的业务提取出来，进行单独处理。比如事务、日志和安全等。</li>
+<li>spring支持用户自定义的切面<br>AOP：面向切面，是一种编程思想，OOP的延续。将系统中非核心的业务提取出来，进行单独处理。比如事务、日志和安全等。<h3 id="Spring-AOP-实现原理"><a href="#Spring-AOP-实现原理" class="headerlink" title="Spring AOP 实现原理"></a>Spring AOP 实现原理</h3>实现 AOP 的技术，主要分为两大类：  </li>
 </ol>
-</li>
-<li><p>Spring AOP 实现原理<br>实现 AOP 的技术，主要分为两大类：  </p>
 <ul>
 <li>动态代理：利用截取消息的方式，对该消息进行装饰，以取代原有对象行为的执行；  <ul>
 <li>jdk 动态代理</li>
@@ -1386,20 +1101,14 @@
 </li>
 <li>静态织入：针对每个具体类分别编写代理类；针对一个接口编写一个代理类；</li>
 </ul>
-</li>
-<li><p>Spring 切面可以应用的通知类型有哪些？</p>
-<ol>
+<h3 id="Spring-切面可以应用的通知类型有哪些？"><a href="#Spring-切面可以应用的通知类型有哪些？" class="headerlink" title="Spring 切面可以应用的通知类型有哪些？"></a>Spring 切面可以应用的通知类型有哪些？</h3><ol>
 <li>before：前置通知，在一个方法执行前被调用。</li>
 <li>after: 在方法执行之后调用的通知，无论方法执行是否成功。</li>
 <li>after-returning: 仅当方法成功完成后执行的通知。</li>
 <li>after-throwing: 在方法抛出异常退出时执行的通知。</li>
 <li>around: 在方法执行之前和之后调用的通知。</li>
 </ol>
-</li>
-<li><p>动态代理（CGLib 与 JDK）、优缺点、性能对比、如何选择？</p>
-</li>
-<li><p>Spring 事务实现方式、事务的传播机制、默认的事务类别</p>
-<ul>
+<h3 id="动态代理（CGLib-与-JDK）、优缺点、性能对比、如何选择？"><a href="#动态代理（CGLib-与-JDK）、优缺点、性能对比、如何选择？" class="headerlink" title="动态代理（CGLib 与 JDK）、优缺点、性能对比、如何选择？"></a>动态代理（CGLib 与 JDK）、优缺点、性能对比、如何选择？</h3><h3 id="Spring-事务实现方式、事务的传播机制、默认的事务类别"><a href="#Spring-事务实现方式、事务的传播机制、默认的事务类别" class="headerlink" title="Spring 事务实现方式、事务的传播机制、默认的事务类别"></a>Spring 事务实现方式、事务的传播机制、默认的事务类别</h3><ul>
 <li>事务的隔离级别：<ul>
 <li>Read Uncommited （读未提交）</li>
 <li>Read Commited   （读提交）</li>
@@ -1421,14 +1130,7 @@
 <ul>
 <li>Spring 默认的事务传播行为是 PROPAGATION_REQUIRED，它适合于绝大多数的情况。</li>
 </ul>
-</li>
-<li><p>Spring 事务底层原理</p>
-</li>
-<li>Spring事务失效（事务嵌套），JDK动态代理给Spring事务埋下的坑，可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247484940&amp;idx=1&amp;sn=0a0a7198e96f57d610d3421b19573002" target="_blank" rel="noopener">《JDK动态代理给Spring事务埋下的坑！》</a></li>
-<li><p>如何自定义注解实现功能</p>
-</li>
-<li><p>Spring MVC 工作原理 &amp; 执行流程？  </p>
-<ul>
+<h3 id="Spring-事务底层原理"><a href="#Spring-事务底层原理" class="headerlink" title="Spring 事务底层原理"></a>Spring 事务底层原理</h3><h3 id="Spring事务失效（事务嵌套），JDK动态代理给Spring事务埋下的坑，可参考《JDK动态代理给Spring事务埋下的坑！》"><a href="#Spring事务失效（事务嵌套），JDK动态代理给Spring事务埋下的坑，可参考《JDK动态代理给Spring事务埋下的坑！》" class="headerlink" title="Spring事务失效（事务嵌套），JDK动态代理给Spring事务埋下的坑，可参考《JDK动态代理给Spring事务埋下的坑！》"></a>Spring事务失效（事务嵌套），JDK动态代理给Spring事务埋下的坑，可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247484940&amp;idx=1&amp;sn=0a0a7198e96f57d610d3421b19573002" target="_blank" rel="noopener">《JDK动态代理给Spring事务埋下的坑！》</a></h3><h3 id="如何自定义注解实现功能"><a href="#如何自定义注解实现功能" class="headerlink" title="如何自定义注解实现功能"></a>如何自定义注解实现功能</h3><h3 id="Spring-MVC-工作原理-amp-执行流程？"><a href="#Spring-MVC-工作原理-amp-执行流程？" class="headerlink" title="Spring MVC 工作原理 &amp; 执行流程？"></a>Spring MVC 工作原理 &amp; 执行流程？</h3><ul>
 <li>工作原理<ol>
 <li>SpringMvc 把请求交给 DispactherServlet</li>
 <li>DispactherServlet 查询一个或者多个 HanderMapping</li>
@@ -1447,51 +1149,13 @@
 </ol>
 </li>
 </ul>
-</li>
-<li><p>Spring MVC 启动流程</p>
-</li>
-<li>Spring 的单例实现原理</li>
-<li>Spring 框架中用到了哪些设计模式</li>
-<li>Spring 其他产品（Srping Boot、Spring Cloud、Spring Secuirity、Spring Data、Spring AMQP 等）</li>
-<li>有没有用到 Spring Boot，Spring Boot 的认识、原理</li>
-<li>MyBatis的原理</li>
-<li>可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247484822&amp;idx=1&amp;sn=6fbee2a12b31b6102a18d3725671d41b" target="_blank" rel="noopener">《为什么会有Spring》</a></li>
-<li>可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247484827&amp;idx=1&amp;sn=b9d82f3fced6a875f8dfc22e5849b28e" target="_blank" rel="noopener">《为什么会有Spring AOP》</a></li>
-<li>可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247484835&amp;idx=1&amp;sn=0210514d6eb53ad623874344f3ce720a" target="_blank" rel="noopener">《Spring历史版本变迁和如今的生态帝国》</a><h3 id="3-2、Netty"><a href="#3-2、Netty" class="headerlink" title="3.2、Netty"></a>3.2、Netty</h3></li>
-<li>为什么选择 Netty</li>
-<li>说说业务中，Netty 的使用场景</li>
-<li>原生的 NIO 在 JDK 1.7 版本存在 epoll bug</li>
-<li>什么是TCP 粘包/拆包</li>
-<li>TCP粘包/拆包的解决办法</li>
-<li>Netty 线程模型</li>
-<li>说说 Netty 的零拷贝</li>
-<li>Netty 内部执行流程</li>
-<li>Netty 重连实现</li>
-</ul>
-<h3 id="3-3、Tomcat"><a href="#3-3、Tomcat" class="headerlink" title="3.3、Tomcat"></a>3.3、Tomcat</h3><ul>
-<li>Tomcat 的基础架构（Server、Service、Connector、Container）</li>
-<li>Tomcat 如何加载 Servlet 的</li>
-<li>Pipeline-Valve 机制</li>
-<li>可参考：<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247484905&amp;idx=1&amp;sn=6c8acd89476fadbc4cb9ccfda9c9c2e4" target="_blank" rel="noopener">《四张图带你了解Tomcat系统架构！》</a></li>
-</ul>
-<h2 id="四、分布式"><a href="#四、分布式" class="headerlink" title="四、分布式"></a>四、分布式</h2><h3 id="4-1、Nginx"><a href="#4-1、Nginx" class="headerlink" title="4.1、Nginx"></a>4.1、Nginx</h3><ul>
-<li>请解释什么是C10K问题或者知道什么是C10K问题吗？</li>
-<li>Nginx简介，可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247483994&amp;idx=1&amp;sn=b6591f62c7ea6b4adc5a5bf1bf4eac40" target="_blank" rel="noopener">《Nginx简介》</a></li>
-<li>正向代理和反向代理.</li>
-<li>Nginx几种常见的负载均衡策略</li>
-<li>Nginx服务器上的Master和Worker进程分别是什么</li>
-<li>使用“反向代理服务器”的优点是什么?</li>
-</ul>
-<h3 id="4-2、分布式其他"><a href="#4-2、分布式其他" class="headerlink" title="4.2、分布式其他"></a>4.2、分布式其他</h3><ul>
-<li><p>什么是 CAP 定理？<br>CAP 定理告诉我们，一个分布式系统不可能同时满足一致性（C：Consistency），可用性（A：Availability）和分区容错性（P：Partition tolerance）这三个基本需求，最多只能同时满足其中的两项。</p>
+<h3 id="Spring-MVC-启动流程"><a href="#Spring-MVC-启动流程" class="headerlink" title="Spring MVC 启动流程"></a>Spring MVC 启动流程</h3><h3 id="Spring-的单例实现原理"><a href="#Spring-的单例实现原理" class="headerlink" title="Spring 的单例实现原理"></a>Spring 的单例实现原理</h3><h3 id="Spring-框架中用到了哪些设计模式"><a href="#Spring-框架中用到了哪些设计模式" class="headerlink" title="Spring 框架中用到了哪些设计模式"></a>Spring 框架中用到了哪些设计模式</h3><h3 id="Spring-其他产品（Srping-Boot、Spring-Cloud、Spring-Secuirity、Spring-Data、Spring-AMQP-等）"><a href="#Spring-其他产品（Srping-Boot、Spring-Cloud、Spring-Secuirity、Spring-Data、Spring-AMQP-等）" class="headerlink" title="Spring 其他产品（Srping Boot、Spring Cloud、Spring Secuirity、Spring Data、Spring AMQP 等）"></a>Spring 其他产品（Srping Boot、Spring Cloud、Spring Secuirity、Spring Data、Spring AMQP 等）</h3><h3 id="有没有用到-Spring-Boot，Spring-Boot-的认识、原理"><a href="#有没有用到-Spring-Boot，Spring-Boot-的认识、原理" class="headerlink" title="有没有用到 Spring Boot，Spring Boot 的认识、原理"></a>有没有用到 Spring Boot，Spring Boot 的认识、原理</h3><h3 id="MyBatis的原理"><a href="#MyBatis的原理" class="headerlink" title="MyBatis的原理"></a>MyBatis的原理</h3><h3 id="可参考《为什么会有Spring》"><a href="#可参考《为什么会有Spring》" class="headerlink" title="可参考《为什么会有Spring》"></a>可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247484822&amp;idx=1&amp;sn=6fbee2a12b31b6102a18d3725671d41b" target="_blank" rel="noopener">《为什么会有Spring》</a></h3><h3 id="可参考《为什么会有Spring-AOP》"><a href="#可参考《为什么会有Spring-AOP》" class="headerlink" title="可参考《为什么会有Spring AOP》"></a>可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247484827&amp;idx=1&amp;sn=b9d82f3fced6a875f8dfc22e5849b28e" target="_blank" rel="noopener">《为什么会有Spring AOP》</a></h3><h3 id="可参考《Spring历史版本变迁和如今的生态帝国》"><a href="#可参考《Spring历史版本变迁和如今的生态帝国》" class="headerlink" title="可参考《Spring历史版本变迁和如今的生态帝国》"></a>可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247484835&amp;idx=1&amp;sn=0210514d6eb53ad623874344f3ce720a" target="_blank" rel="noopener">《Spring历史版本变迁和如今的生态帝国》</a></h3><h2 id="Netty"><a href="#Netty" class="headerlink" title="Netty"></a>Netty</h2><h3 id="为什么选择-Netty"><a href="#为什么选择-Netty" class="headerlink" title="为什么选择 Netty"></a>为什么选择 Netty</h3><h3 id="说说业务中，Netty-的使用场景"><a href="#说说业务中，Netty-的使用场景" class="headerlink" title="说说业务中，Netty 的使用场景"></a>说说业务中，Netty 的使用场景</h3><h3 id="原生的-NIO-在-JDK-1-7-版本存在-epoll-bug"><a href="#原生的-NIO-在-JDK-1-7-版本存在-epoll-bug" class="headerlink" title="原生的 NIO 在 JDK 1.7 版本存在 epoll bug"></a>原生的 NIO 在 JDK 1.7 版本存在 epoll bug</h3><h3 id="什么是TCP-粘包-拆包"><a href="#什么是TCP-粘包-拆包" class="headerlink" title="什么是TCP 粘包/拆包"></a>什么是TCP 粘包/拆包</h3><h3 id="TCP粘包-拆包的解决办法"><a href="#TCP粘包-拆包的解决办法" class="headerlink" title="TCP粘包/拆包的解决办法"></a>TCP粘包/拆包的解决办法</h3><h3 id="Netty-线程模型"><a href="#Netty-线程模型" class="headerlink" title="Netty 线程模型"></a>Netty 线程模型</h3><h3 id="说说-Netty-的零拷贝"><a href="#说说-Netty-的零拷贝" class="headerlink" title="说说 Netty 的零拷贝"></a>说说 Netty 的零拷贝</h3><h3 id="Netty-内部执行流程"><a href="#Netty-内部执行流程" class="headerlink" title="Netty 内部执行流程"></a>Netty 内部执行流程</h3><h3 id="Netty-重连实现"><a href="#Netty-重连实现" class="headerlink" title="Netty 重连实现"></a>Netty 重连实现</h3><h2 id="Tomcat"><a href="#Tomcat" class="headerlink" title="Tomcat"></a>Tomcat</h2><h3 id="Tomcat-的基础架构（Server、Service、Connector、Container）"><a href="#Tomcat-的基础架构（Server、Service、Connector、Container）" class="headerlink" title="Tomcat 的基础架构（Server、Service、Connector、Container）"></a>Tomcat 的基础架构（Server、Service、Connector、Container）</h3><h3 id="Tomcat-如何加载-Servlet-的"><a href="#Tomcat-如何加载-Servlet-的" class="headerlink" title="Tomcat 如何加载 Servlet 的"></a>Tomcat 如何加载 Servlet 的</h3><h3 id="Pipeline-Valve-机制"><a href="#Pipeline-Valve-机制" class="headerlink" title="Pipeline-Valve 机制"></a>Pipeline-Valve 机制</h3><h3 id="可参考：《四张图带你了解Tomcat系统架构！》"><a href="#可参考：《四张图带你了解Tomcat系统架构！》" class="headerlink" title="可参考：《四张图带你了解Tomcat系统架构！》"></a>可参考：<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247484905&amp;idx=1&amp;sn=6c8acd89476fadbc4cb9ccfda9c9c2e4" target="_blank" rel="noopener">《四张图带你了解Tomcat系统架构！》</a></h3><h2 id="分布式"><a href="#分布式" class="headerlink" title="分布式"></a>分布式</h2><h2 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h2><h3 id="请解释什么是C10K问题或者知道什么是C10K问题吗？"><a href="#请解释什么是C10K问题或者知道什么是C10K问题吗？" class="headerlink" title="请解释什么是C10K问题或者知道什么是C10K问题吗？"></a>请解释什么是C10K问题或者知道什么是C10K问题吗？</h3><h3 id="Nginx简介，可参考《Nginx简介》"><a href="#Nginx简介，可参考《Nginx简介》" class="headerlink" title="Nginx简介，可参考《Nginx简介》"></a>Nginx简介，可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247483994&amp;idx=1&amp;sn=b6591f62c7ea6b4adc5a5bf1bf4eac40" target="_blank" rel="noopener">《Nginx简介》</a></h3><h3 id="正向代理和反向代理"><a href="#正向代理和反向代理" class="headerlink" title="正向代理和反向代理."></a>正向代理和反向代理.</h3><h3 id="Nginx几种常见的负载均衡策略"><a href="#Nginx几种常见的负载均衡策略" class="headerlink" title="Nginx几种常见的负载均衡策略"></a>Nginx几种常见的负载均衡策略</h3><h3 id="Nginx服务器上的Master和Worker进程分别是什么"><a href="#Nginx服务器上的Master和Worker进程分别是什么" class="headerlink" title="Nginx服务器上的Master和Worker进程分别是什么"></a>Nginx服务器上的Master和Worker进程分别是什么</h3><h3 id="使用“反向代理服务器”的优点是什么"><a href="#使用“反向代理服务器”的优点是什么" class="headerlink" title="使用“反向代理服务器”的优点是什么?"></a>使用“反向代理服务器”的优点是什么?</h3><h2 id="分布式其他"><a href="#分布式其他" class="headerlink" title="分布式其他"></a>分布式其他</h2><h3 id="什么是-CAP-定理？"><a href="#什么是-CAP-定理？" class="headerlink" title="什么是 CAP 定理？"></a>什么是 CAP 定理？</h3><p>  CAP 定理告诉我们，一个分布式系统不可能同时满足一致性（C：Consistency），可用性（A：Availability）和分区容错性（P：Partition tolerance）这三个基本需求，最多只能同时满足其中的两项。</p>
 <ul>
 <li><strong>一致性</strong>（Consistency）：指数据在多个副本之间是否能够保持一致的特性。</li>
 <li><strong>可用性</strong>（Availability）：指系统提供的服务必须一直处于可用的状态，对于用户的每一个操作请求总是能够在有限的时间内返回结果。</li>
 <li><strong>分区容错性</strong>（Partition tolerance）：分区容错性约束了一个分布式系统需要具有瑞安特性：分布式系统在遇到任何网络分区故障的时候，仍然需要能够保证对外提供满足一致性和可用性的服务，除非是整个网络环境都发生了故障。</li>
 </ul>
-</li>
-<li><p>什么是 BASE 理论？</p>
-<ul>
+<h3 id="什么是-BASE-理论？"><a href="#什么是-BASE-理论？" class="headerlink" title="什么是 BASE 理论？"></a>什么是 BASE 理论？</h3><ul>
 <li>BASE 是 Basically Available（基本可用）、Soft state（软状态）和 Eventually consistent（最终一致性）三个短语的简写。</li>
 <li>BASE 是对 CAP 中一致性和可用性权衡的结果，其来源于对大规模互联网系统分布式实践的总结。</li>
 <li>BASE 核心思想是即使无法做到强一致性（Strong consistency），但每个应用都可以根据自身的业务特点，采用适当的方式来使系统达到最终一致性（Eventual consistency）。</li>
@@ -1499,30 +1163,9 @@
 <li><strong>弱状态</strong>：也称软状态，指允许系统中的数据存在中间状态，并认为该中间状态的存在不会影响系统的整体可用性，即允许系统在不同节点的副本之间进行数据同步的过程存在延时。</li>
 <li><strong>最终一致性</strong>：强调的是系统中所有的数据副本，在经过一段时间的同步后，最终能够达到一个一直的状态。其本质是需要系统保证最终数据能够达到一致，而不需要实时保证系统数据的强一致性。</li>
 </ul>
-</li>
-<li><p>谈谈业务中使用分布式的场景</p>
-</li>
-<li>Session 分布式方案</li>
-<li>Session 分布式处理</li>
-<li>分布式锁的应用场景、分布式锁的产生原因、基本概念</li>
-<li>分布是锁的常见解决方案</li>
-<li>分布式事务的常见解决方案</li>
-<li>集群与负载均衡的算法与实现</li>
-<li>怎么提升系统的 QPS 和吞吐量</li>
-<li>如何保证消息的一致性</li>
-<li>CDN 实现原理</li>
-<li>说说分库与分表设计，可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247483931&amp;idx=1&amp;sn=6eda41aa81c1243422a603205d2fad22" target="_blank" rel="noopener">《数据库分库分表策略的具体实现方案》</a></li>
-<li>分库与分表带来的分布式困境与应对之策</li>
-</ul>
-<h3 id="4-3-Dubbo"><a href="#4-3-Dubbo" class="headerlink" title="4.3 Dubbo"></a>4.3 Dubbo</h3><ul>
-<li><p>什么是 Dubbo ？<br>Dubbo 是一个分布式服务框架，致力于提供高性能和透明化的RPC远程服务调用方案，以及SOA服务治理方案。</p>
-</li>
-<li><p>什么是 RPC、如何实现 RPC、RPC 的实现原理，</p>
-</li>
-<li><p>Dubbo 中的 SPI 是什么概念<br>SPI即Service Provider Interface，服务提供接口.</p>
-</li>
-<li><p>Dubbo 的基本原理、执行流程</p>
-<ul>
+<h3 id="谈谈业务中使用分布式的场景"><a href="#谈谈业务中使用分布式的场景" class="headerlink" title="谈谈业务中使用分布式的场景"></a>谈谈业务中使用分布式的场景</h3><h3 id="Session-分布式方案"><a href="#Session-分布式方案" class="headerlink" title="Session 分布式方案"></a>Session 分布式方案</h3><h3 id="Session-分布式处理"><a href="#Session-分布式处理" class="headerlink" title="Session 分布式处理"></a>Session 分布式处理</h3><h3 id="分布式锁的应用场景、分布式锁的产生原因、基本概念"><a href="#分布式锁的应用场景、分布式锁的产生原因、基本概念" class="headerlink" title="分布式锁的应用场景、分布式锁的产生原因、基本概念"></a>分布式锁的应用场景、分布式锁的产生原因、基本概念</h3><h3 id="分布是锁的常见解决方案"><a href="#分布是锁的常见解决方案" class="headerlink" title="分布是锁的常见解决方案"></a>分布是锁的常见解决方案</h3><h3 id="分布式事务的常见解决方案"><a href="#分布式事务的常见解决方案" class="headerlink" title="分布式事务的常见解决方案"></a>分布式事务的常见解决方案</h3><h3 id="集群与负载均衡的算法与实现"><a href="#集群与负载均衡的算法与实现" class="headerlink" title="集群与负载均衡的算法与实现"></a>集群与负载均衡的算法与实现</h3><h3 id="怎么提升系统的-QPS-和吞吐量"><a href="#怎么提升系统的-QPS-和吞吐量" class="headerlink" title="怎么提升系统的 QPS 和吞吐量"></a>怎么提升系统的 QPS 和吞吐量</h3><h3 id="如何保证消息的一致性"><a href="#如何保证消息的一致性" class="headerlink" title="如何保证消息的一致性"></a>如何保证消息的一致性</h3><h3 id="CDN-实现原理"><a href="#CDN-实现原理" class="headerlink" title="CDN 实现原理"></a>CDN 实现原理</h3><h3 id="说说分库与分表设计，可参考《数据库分库分表策略的具体实现方案》"><a href="#说说分库与分表设计，可参考《数据库分库分表策略的具体实现方案》" class="headerlink" title="说说分库与分表设计，可参考《数据库分库分表策略的具体实现方案》"></a>说说分库与分表设计，可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247483931&amp;idx=1&amp;sn=6eda41aa81c1243422a603205d2fad22" target="_blank" rel="noopener">《数据库分库分表策略的具体实现方案》</a></h3><h3 id="分库与分表带来的分布式困境与应对之策"><a href="#分库与分表带来的分布式困境与应对之策" class="headerlink" title="分库与分表带来的分布式困境与应对之策"></a>分库与分表带来的分布式困境与应对之策</h3><h2 id="Dubbo"><a href="#Dubbo" class="headerlink" title="Dubbo"></a>Dubbo</h2><h3 id="什么是-Dubbo-？"><a href="#什么是-Dubbo-？" class="headerlink" title="什么是 Dubbo ？"></a>什么是 Dubbo ？</h3><p>  Dubbo 是一个分布式服务框架，致力于提供高性能和透明化的RPC远程服务调用方案，以及SOA服务治理方案。</p>
+<h3 id="什么是-RPC、如何实现-RPC、RPC-的实现原理，"><a href="#什么是-RPC、如何实现-RPC、RPC-的实现原理，" class="headerlink" title="什么是 RPC、如何实现 RPC、RPC 的实现原理，"></a>什么是 RPC、如何实现 RPC、RPC 的实现原理，</h3><h3 id="Dubbo-中的-SPI-是什么概念"><a href="#Dubbo-中的-SPI-是什么概念" class="headerlink" title="Dubbo 中的 SPI 是什么概念"></a>Dubbo 中的 SPI 是什么概念</h3><p>  SPI即Service Provider Interface，服务提供接口.</p>
+<h3 id="Dubbo-的基本原理、执行流程"><a href="#Dubbo-的基本原理、执行流程" class="headerlink" title="Dubbo 的基本原理、执行流程"></a>Dubbo 的基本原理、执行流程</h3><ul>
 <li>基本原理：<ol>
 <li>client 一个线程调用远程接口，生成一个唯一的ID（比如一段随机字符串，UUID等），Dubbo 是使用 AtomicLong 从 0 开始累计数字的。</li>
 <li>将打包的方法调用信息（如调用的接口名称，方法名称，参数值列表等），和处理结果的回调对象 callback，全部封装在一起，组成一个对象object。</li>
@@ -1534,19 +1177,12 @@
 </ol>
 </li>
 </ul>
-</li>
-<li><p>Dubbo 适用场景：适合于小数据量大并发的服务调用，以及服务消费者机器数远大于服务提供者机器数的情况</p>
-</li>
-<li><p>可参考：</p>
-<ol>
+<h3 id="Dubbo-适用场景：适合于小数据量大并发的服务调用，以及服务消费者机器数远大于服务提供者机器数的情况"><a href="#Dubbo-适用场景：适合于小数据量大并发的服务调用，以及服务消费者机器数远大于服务提供者机器数的情况" class="headerlink" title="Dubbo 适用场景：适合于小数据量大并发的服务调用，以及服务消费者机器数远大于服务提供者机器数的情况"></a>Dubbo 适用场景：适合于小数据量大并发的服务调用，以及服务消费者机器数远大于服务提供者机器数的情况</h3><h3 id="可参考：-3"><a href="#可参考：-3" class="headerlink" title="可参考："></a>可参考：</h3><ol>
 <li><a href="https://my.oschina.net/u/1378920/blog/693374" target="_blank" rel="noopener">分布式框架dubbo原理解析</a></li>
 <li><a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247483931&amp;idx=1&amp;sn=6eda41aa81c1243422a603205d2fad22" target="_blank" rel="noopener">《Dubbo入门》</a></li>
 <li><a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247483900&amp;idx=1&amp;sn=c5ca198a66a701f81c2ab118fe7a734a" target="_blank" rel="noopener">《基于HTTP的RPC实现》</a></li>
 </ol>
-</li>
-</ul>
-<h3 id="4-4-Zookeeper"><a href="#4-4-Zookeeper" class="headerlink" title="4.4 Zookeeper"></a>4.4 Zookeeper</h3><ul>
-<li>Zookeeper 典型应用场景<ul>
+<h2 id="Zookeeper"><a href="#Zookeeper" class="headerlink" title="Zookeeper"></a>Zookeeper</h2><h3 id="Zookeeper-典型应用场景"><a href="#Zookeeper-典型应用场景" class="headerlink" title="Zookeeper 典型应用场景"></a>Zookeeper 典型应用场景</h3><ul>
 <li><strong>数据发布/订阅</strong> 即所谓的配置中心，是指发布者将数据发布到 Zookeeper 的一个或一系列结点上，供订阅者进行数据订阅，进而达到动态获取数据的目的，实现配置信息的集中式管理和数据的动态更新。<br>Zookeeper采用的是推拉相结合的方式：客户端向服务端注册自己需要关注的节点，一旦该节点的数据发生变更，那么服务端就会想相应的客户端发送 Watcher 时间通知，客户端接收到这个消息通知之后，需要主动到服务端获取最新的数据。</li>
 <li><strong>负载均衡</strong></li>
 <li><strong>命名服务</strong></li>
@@ -1567,33 +1203,7 @@
 </li>
 <li><strong>分布式队列</strong></li>
 </ul>
-</li>
-</ul>
-<h2 id="五、微服务"><a href="#五、微服务" class="headerlink" title="五、微服务"></a>五、微服务</h2><h3 id="5-1-微服务"><a href="#5-1-微服务" class="headerlink" title="5.1 微服务"></a>5.1 微服务</h3><ul>
-<li>前后端分离是如何做的？</li>
-<li>微服务哪些框架</li>
-<li>Spring Could的常见组件有哪些？可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247484125&amp;idx=1&amp;sn=ddba9fba6ae900f5ef71a68f70afebe5" target="_blank" rel="noopener">《Spring Cloud概述》</a></li>
-<li>领域驱动有了解吗？什么是领域驱动模型？充血模型、贫血模型</li>
-<li>JWT有了解吗，什么是JWT，可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247485183&amp;idx=1&amp;sn=05dac824dbb534710dd99d6c895fbaf5" target="_blank" rel="noopener">《前后端分离利器之JWT》</a></li>
-<li>你怎么理解 RESTful</li>
-<li>说说如何设计一个良好的 API</li>
-<li>如何理解 RESTful API 的幂等性</li>
-<li>如何保证接口的幂等性</li>
-<li>说说 CAP 定理、BASE 理论</li>
-<li>怎么考虑数据一致性问题</li>
-<li>说说最终一致性的实现方案</li>
-<li>微服务的优缺点，可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247485005&amp;idx=1&amp;sn=78a1d286c6a15a81ea5dcf6634a70b54" target="_blank" rel="noopener">《微服务批判》</a></li>
-<li>微服务与 SOA 的区别</li>
-<li>如何拆分服务、水平分割、垂直分割</li>
-<li>如何应对微服务的链式调用异常</li>
-<li>如何快速追踪与定位问题</li>
-<li>如何保证微服务的安全、认证</li>
-</ul>
-<h3 id="5-2、安全问题"><a href="#5-2、安全问题" class="headerlink" title="5.2、安全问题"></a>5.2、安全问题</h3><ul>
-<li>如何防范常见的Web攻击、如何方式SQL注入</li>
-<li>服务端通信安全攻防</li>
-<li>HTTPS原理剖析、降级攻击、HTTP与HTTPS的对比</li>
-<li>OAuth<ul>
+<h2 id="微服务"><a href="#微服务" class="headerlink" title="微服务"></a>微服务</h2><h2 id="微服务-1"><a href="#微服务-1" class="headerlink" title="微服务"></a>微服务</h2><h3 id="前后端分离是如何做的？"><a href="#前后端分离是如何做的？" class="headerlink" title="前后端分离是如何做的？"></a>前后端分离是如何做的？</h3><h3 id="微服务哪些框架"><a href="#微服务哪些框架" class="headerlink" title="微服务哪些框架"></a>微服务哪些框架</h3><h3 id="Spring-Could的常见组件有哪些？可参考《Spring-Cloud概述》"><a href="#Spring-Could的常见组件有哪些？可参考《Spring-Cloud概述》" class="headerlink" title="Spring Could的常见组件有哪些？可参考《Spring Cloud概述》"></a>Spring Could的常见组件有哪些？可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247484125&amp;idx=1&amp;sn=ddba9fba6ae900f5ef71a68f70afebe5" target="_blank" rel="noopener">《Spring Cloud概述》</a></h3><h3 id="领域驱动有了解吗？什么是领域驱动模型？充血模型、贫血模型"><a href="#领域驱动有了解吗？什么是领域驱动模型？充血模型、贫血模型" class="headerlink" title="领域驱动有了解吗？什么是领域驱动模型？充血模型、贫血模型"></a>领域驱动有了解吗？什么是领域驱动模型？充血模型、贫血模型</h3><h3 id="JWT有了解吗，什么是JWT，可参考《前后端分离利器之JWT》"><a href="#JWT有了解吗，什么是JWT，可参考《前后端分离利器之JWT》" class="headerlink" title="JWT有了解吗，什么是JWT，可参考《前后端分离利器之JWT》"></a>JWT有了解吗，什么是JWT，可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247485183&amp;idx=1&amp;sn=05dac824dbb534710dd99d6c895fbaf5" target="_blank" rel="noopener">《前后端分离利器之JWT》</a></h3><h3 id="你怎么理解-RESTful"><a href="#你怎么理解-RESTful" class="headerlink" title="你怎么理解 RESTful"></a>你怎么理解 RESTful</h3><h3 id="说说如何设计一个良好的-API"><a href="#说说如何设计一个良好的-API" class="headerlink" title="说说如何设计一个良好的 API"></a>说说如何设计一个良好的 API</h3><h3 id="如何理解-RESTful-API-的幂等性"><a href="#如何理解-RESTful-API-的幂等性" class="headerlink" title="如何理解 RESTful API 的幂等性"></a>如何理解 RESTful API 的幂等性</h3><h3 id="如何保证接口的幂等性"><a href="#如何保证接口的幂等性" class="headerlink" title="如何保证接口的幂等性"></a>如何保证接口的幂等性</h3><h3 id="说说-CAP-定理、BASE-理论"><a href="#说说-CAP-定理、BASE-理论" class="headerlink" title="说说 CAP 定理、BASE 理论"></a>说说 CAP 定理、BASE 理论</h3><h3 id="怎么考虑数据一致性问题"><a href="#怎么考虑数据一致性问题" class="headerlink" title="怎么考虑数据一致性问题"></a>怎么考虑数据一致性问题</h3><h3 id="说说最终一致性的实现方案"><a href="#说说最终一致性的实现方案" class="headerlink" title="说说最终一致性的实现方案"></a>说说最终一致性的实现方案</h3><h3 id="微服务的优缺点，可参考《微服务批判》"><a href="#微服务的优缺点，可参考《微服务批判》" class="headerlink" title="微服务的优缺点，可参考《微服务批判》"></a>微服务的优缺点，可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247485005&amp;idx=1&amp;sn=78a1d286c6a15a81ea5dcf6634a70b54" target="_blank" rel="noopener">《微服务批判》</a></h3><h3 id="微服务与-SOA-的区别"><a href="#微服务与-SOA-的区别" class="headerlink" title="微服务与 SOA 的区别"></a>微服务与 SOA 的区别</h3><h3 id="如何拆分服务、水平分割、垂直分割"><a href="#如何拆分服务、水平分割、垂直分割" class="headerlink" title="如何拆分服务、水平分割、垂直分割"></a>如何拆分服务、水平分割、垂直分割</h3><h3 id="如何应对微服务的链式调用异常"><a href="#如何应对微服务的链式调用异常" class="headerlink" title="如何应对微服务的链式调用异常"></a>如何应对微服务的链式调用异常</h3><h3 id="如何快速追踪与定位问题"><a href="#如何快速追踪与定位问题" class="headerlink" title="如何快速追踪与定位问题"></a>如何快速追踪与定位问题</h3><h3 id="如何保证微服务的安全、认证"><a href="#如何保证微服务的安全、认证" class="headerlink" title="如何保证微服务的安全、认证"></a>如何保证微服务的安全、认证</h3><h2 id="安全问题"><a href="#安全问题" class="headerlink" title="安全问题"></a>安全问题</h2><h3 id="如何防范常见的Web攻击、如何方式SQL注入"><a href="#如何防范常见的Web攻击、如何方式SQL注入" class="headerlink" title="如何防范常见的Web攻击、如何方式SQL注入"></a>如何防范常见的Web攻击、如何方式SQL注入</h3><h3 id="服务端通信安全攻防"><a href="#服务端通信安全攻防" class="headerlink" title="服务端通信安全攻防"></a>服务端通信安全攻防</h3><h3 id="HTTPS原理剖析、降级攻击、HTTP与HTTPS的对比"><a href="#HTTPS原理剖析、降级攻击、HTTP与HTTPS的对比" class="headerlink" title="HTTPS原理剖析、降级攻击、HTTP与HTTPS的对比"></a>HTTPS原理剖析、降级攻击、HTTP与HTTPS的对比</h3><h3 id="OAuth"><a href="#OAuth" class="headerlink" title="OAuth"></a>OAuth</h3><ul>
 <li>概念：OAuth 是一个关于授权的开放网络标准。</li>
 </ul>
 <ul>
@@ -1612,50 +1222,7 @@
 </ol>
 </li>
 </ul>
-</li>
-</ul>
-<h3 id="5-3、性能优化"><a href="#5-3、性能优化" class="headerlink" title="5.3、性能优化"></a>5.3、性能优化</h3><ul>
-<li>性能指标有哪些</li>
-<li>如何发现性能瓶颈</li>
-<li>性能调优的常见手段</li>
-<li>说说你在项目中如何进行性能调优</li>
-</ul>
-<h2 id="六、其他"><a href="#六、其他" class="headerlink" title="六、其他"></a>六、其他</h2><h3 id="6-1、设计能力"><a href="#6-1、设计能力" class="headerlink" title="6.1、设计能力"></a>6.1、设计能力</h3><ul>
-<li>说说你在项目中使用过的 UML 图</li>
-<li>你如何考虑组件化、服务化、系统拆分</li>
-<li>秒杀场景如何设计</li>
-<li>有没有处理过线上问题？出现内存泄露，CPU 利用率标高，应用无响应时如何处理的。</li>
-<li>开发中有没有遇到什么技术问题？如何解决的</li>
-<li>如果有几十亿的白名单，每天白天需要高并发查询，晚上需要更新一次，如何设计这个功能。</li>
-<li>新浪微博是如何实现把微博推给订阅者</li>
-<li>Google 是如何在一秒内把搜索结果返回给用户的。</li>
-<li>12306 网站的订票系统如何实现，如何保证不会票不被超卖。</li>
-</ul>
-<p>如何实现一个秒杀系统，保证只有几位用户能买到某件商品。</p>
-<ul>
-<li>可参考：《秒杀系统的技术挑战、应对策略以及架构设计总结一二！》</li>
-<li>可参考：<a href="https://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247483917&amp;idx=1&amp;sn=db1b0a2093d3c0d1bb6e32263abfe137" target="_blank" rel="noopener">《大型网站应用之海量数据和高并发解决方案总结一二》</a></li>
-</ul>
-<h3 id="6-2、业务工程"><a href="#6-2、业务工程" class="headerlink" title="6.2、业务工程"></a>6.2、业务工程</h3><ul>
-<li>说说你的开发流程、如何进行自动化部署的</li>
-<li>你和团队是如何沟通的</li>
-<li>你如何进行代码评审</li>
-<li>说说你对技术与业务的理解</li>
-<li>说说你在项目中遇到感觉最难Bug，是如何解决的</li>
-<li>介绍一下工作中的一个你认为最有价值的项目，以及在这个过程中的角色、解决的问题、你觉得你们项目还有哪些不足的地方</li>
-</ul>
-<h3 id="6-3、软实力"><a href="#6-3、软实力" class="headerlink" title="6.3、软实力"></a>6.3、软实力</h3><ul>
-<li>说说你的优缺点、亮点</li>
-<li>说说你最近在看什么书、什么博客、在研究什么新技术、再看那些开源项目的源代码</li>
-<li>说说你觉得最有意义的技术书籍</li>
-<li>工作之余做什么事情、平时是如何学习的，怎样提升自己的能力</li>
-<li>说说个人发展方向方面的思考</li>
-<li>说说你认为的服务端开发工程师应该具备哪些能力</li>
-<li>说说你认为的架构师是什么样的，架构师主要做什么</li>
-<li>如何看待加班的问题</li>
-</ul>
-<h3 id="6-4-面试技巧"><a href="#6-4-面试技巧" class="headerlink" title="6.4 面试技巧"></a>6.4 面试技巧</h3><ul>
-<li>可参考：<ol>
+<h2 id="性能优化"><a href="#性能优化" class="headerlink" title="性能优化"></a>性能优化</h2><h3 id="性能指标有哪些"><a href="#性能指标有哪些" class="headerlink" title="性能指标有哪些"></a>性能指标有哪些</h3><h3 id="如何发现性能瓶颈"><a href="#如何发现性能瓶颈" class="headerlink" title="如何发现性能瓶颈"></a>如何发现性能瓶颈</h3><h3 id="性能调优的常见手段"><a href="#性能调优的常见手段" class="headerlink" title="性能调优的常见手段"></a>性能调优的常见手段</h3><h3 id="说说你在项目中如何进行性能调优"><a href="#说说你在项目中如何进行性能调优" class="headerlink" title="说说你在项目中如何进行性能调优"></a>说说你在项目中如何进行性能调优</h3><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h2 id="设计能力"><a href="#设计能力" class="headerlink" title="设计能力"></a>设计能力</h2><h3 id="说说你在项目中使用过的-UML-图"><a href="#说说你在项目中使用过的-UML-图" class="headerlink" title="说说你在项目中使用过的 UML 图"></a>说说你在项目中使用过的 UML 图</h3><h3 id="你如何考虑组件化、服务化、系统拆分"><a href="#你如何考虑组件化、服务化、系统拆分" class="headerlink" title="你如何考虑组件化、服务化、系统拆分"></a>你如何考虑组件化、服务化、系统拆分</h3><h3 id="秒杀场景如何设计"><a href="#秒杀场景如何设计" class="headerlink" title="秒杀场景如何设计"></a>秒杀场景如何设计</h3><h3 id="有没有处理过线上问题？出现内存泄露，CPU-利用率标高，应用无响应时如何处理的。"><a href="#有没有处理过线上问题？出现内存泄露，CPU-利用率标高，应用无响应时如何处理的。" class="headerlink" title="有没有处理过线上问题？出现内存泄露，CPU 利用率标高，应用无响应时如何处理的。"></a>有没有处理过线上问题？出现内存泄露，CPU 利用率标高，应用无响应时如何处理的。</h3><h3 id="开发中有没有遇到什么技术问题？如何解决的"><a href="#开发中有没有遇到什么技术问题？如何解决的" class="headerlink" title="开发中有没有遇到什么技术问题？如何解决的"></a>开发中有没有遇到什么技术问题？如何解决的</h3><h3 id="如果有几十亿的白名单，每天白天需要高并发查询，晚上需要更新一次，如何设计这个功能。"><a href="#如果有几十亿的白名单，每天白天需要高并发查询，晚上需要更新一次，如何设计这个功能。" class="headerlink" title="如果有几十亿的白名单，每天白天需要高并发查询，晚上需要更新一次，如何设计这个功能。"></a>如果有几十亿的白名单，每天白天需要高并发查询，晚上需要更新一次，如何设计这个功能。</h3><h3 id="新浪微博是如何实现把微博推给订阅者"><a href="#新浪微博是如何实现把微博推给订阅者" class="headerlink" title="新浪微博是如何实现把微博推给订阅者"></a>新浪微博是如何实现把微博推给订阅者</h3><h3 id="Google-是如何在一秒内把搜索结果返回给用户的。"><a href="#Google-是如何在一秒内把搜索结果返回给用户的。" class="headerlink" title="Google 是如何在一秒内把搜索结果返回给用户的。"></a>Google 是如何在一秒内把搜索结果返回给用户的。</h3><h3 id="12306-网站的订票系统如何实现，如何保证不会票不被超卖。"><a href="#12306-网站的订票系统如何实现，如何保证不会票不被超卖。" class="headerlink" title="12306 网站的订票系统如何实现，如何保证不会票不被超卖。"></a>12306 网站的订票系统如何实现，如何保证不会票不被超卖。</h3><h3 id="如何实现一个秒杀系统，保证只有几位用户能买到某件商品。"><a href="#如何实现一个秒杀系统，保证只有几位用户能买到某件商品。" class="headerlink" title="如何实现一个秒杀系统，保证只有几位用户能买到某件商品。"></a>如何实现一个秒杀系统，保证只有几位用户能买到某件商品。</h3><h3 id="可参考：《秒杀系统的技术挑战、应对策略以及架构设计总结一二！》"><a href="#可参考：《秒杀系统的技术挑战、应对策略以及架构设计总结一二！》" class="headerlink" title="可参考：《秒杀系统的技术挑战、应对策略以及架构设计总结一二！》"></a>可参考：《秒杀系统的技术挑战、应对策略以及架构设计总结一二！》</h3><h3 id="可参考：《大型网站应用之海量数据和高并发解决方案总结一二》"><a href="#可参考：《大型网站应用之海量数据和高并发解决方案总结一二》" class="headerlink" title="可参考：《大型网站应用之海量数据和高并发解决方案总结一二》"></a>可参考：<a href="https://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247483917&amp;idx=1&amp;sn=db1b0a2093d3c0d1bb6e32263abfe137" target="_blank" rel="noopener">《大型网站应用之海量数据和高并发解决方案总结一二》</a></h3><h2 id="业务工程"><a href="#业务工程" class="headerlink" title="业务工程"></a>业务工程</h2><h3 id="说说你的开发流程、如何进行自动化部署的"><a href="#说说你的开发流程、如何进行自动化部署的" class="headerlink" title="说说你的开发流程、如何进行自动化部署的"></a>说说你的开发流程、如何进行自动化部署的</h3><h3 id="你和团队是如何沟通的"><a href="#你和团队是如何沟通的" class="headerlink" title="你和团队是如何沟通的"></a>你和团队是如何沟通的</h3><h3 id="你如何进行代码评审"><a href="#你如何进行代码评审" class="headerlink" title="你如何进行代码评审"></a>你如何进行代码评审</h3><h3 id="说说你对技术与业务的理解"><a href="#说说你对技术与业务的理解" class="headerlink" title="说说你对技术与业务的理解"></a>说说你对技术与业务的理解</h3><h3 id="说说你在项目中遇到感觉最难Bug，是如何解决的"><a href="#说说你在项目中遇到感觉最难Bug，是如何解决的" class="headerlink" title="说说你在项目中遇到感觉最难Bug，是如何解决的"></a>说说你在项目中遇到感觉最难Bug，是如何解决的</h3><h3 id="介绍一下工作中的一个你认为最有价值的项目，以及在这个过程中的角色、解决的问题、你觉得你们项目还有哪些不足的地方"><a href="#介绍一下工作中的一个你认为最有价值的项目，以及在这个过程中的角色、解决的问题、你觉得你们项目还有哪些不足的地方" class="headerlink" title="介绍一下工作中的一个你认为最有价值的项目，以及在这个过程中的角色、解决的问题、你觉得你们项目还有哪些不足的地方"></a>介绍一下工作中的一个你认为最有价值的项目，以及在这个过程中的角色、解决的问题、你觉得你们项目还有哪些不足的地方</h3><h2 id="软实力"><a href="#软实力" class="headerlink" title="软实力"></a>软实力</h2><h3 id="说说你的优缺点、亮点"><a href="#说说你的优缺点、亮点" class="headerlink" title="说说你的优缺点、亮点"></a>说说你的优缺点、亮点</h3><h3 id="说说你最近在看什么书、什么博客、在研究什么新技术、再看那些开源项目的源代码"><a href="#说说你最近在看什么书、什么博客、在研究什么新技术、再看那些开源项目的源代码" class="headerlink" title="说说你最近在看什么书、什么博客、在研究什么新技术、再看那些开源项目的源代码"></a>说说你最近在看什么书、什么博客、在研究什么新技术、再看那些开源项目的源代码</h3><h3 id="说说你觉得最有意义的技术书籍"><a href="#说说你觉得最有意义的技术书籍" class="headerlink" title="说说你觉得最有意义的技术书籍"></a>说说你觉得最有意义的技术书籍</h3><h3 id="工作之余做什么事情、平时是如何学习的，怎样提升自己的能力"><a href="#工作之余做什么事情、平时是如何学习的，怎样提升自己的能力" class="headerlink" title="工作之余做什么事情、平时是如何学习的，怎样提升自己的能力"></a>工作之余做什么事情、平时是如何学习的，怎样提升自己的能力</h3><h3 id="说说个人发展方向方面的思考"><a href="#说说个人发展方向方面的思考" class="headerlink" title="说说个人发展方向方面的思考"></a>说说个人发展方向方面的思考</h3><h3 id="说说你认为的服务端开发工程师应该具备哪些能力"><a href="#说说你认为的服务端开发工程师应该具备哪些能力" class="headerlink" title="说说你认为的服务端开发工程师应该具备哪些能力"></a>说说你认为的服务端开发工程师应该具备哪些能力</h3><h3 id="说说你认为的架构师是什么样的，架构师主要做什么"><a href="#说说你认为的架构师是什么样的，架构师主要做什么" class="headerlink" title="说说你认为的架构师是什么样的，架构师主要做什么"></a>说说你认为的架构师是什么样的，架构师主要做什么</h3><h3 id="如何看待加班的问题"><a href="#如何看待加班的问题" class="headerlink" title="如何看待加班的问题"></a>如何看待加班的问题</h3><h2 id="面试技巧"><a href="#面试技巧" class="headerlink" title="面试技巧"></a>面试技巧</h2><h3 id="可参考：-4"><a href="#可参考：-4" class="headerlink" title="可参考："></a>可参考：</h3><ol>
 <li><a href="http://gitbook.cn/books/5a6985f12a144149588739a5/index.html" target="_blank" rel="noopener">程序员跳槽时，如何高效地准备面试？</a></li>
 <li><a href="http://gitbook.cn/books/5a73206362710202070b47ac/index.html" target="_blank" rel="noopener">才震宏：解析程序员跳槽时如何高效地准备面试</a></li>
 <li><a href="http://gitbook.cn/books/5a9f529e123f227c0649d946/index.html" target="_blank" rel="noopener">程序员跳槽时，如何正确做好职业规划？</a></li>
@@ -1663,8 +1230,6 @@
 <li><a href="http://gitbook.cn/books/5a951e93ba2cd224ba9480a7/index.html" target="_blank" rel="noopener">程序员跳槽时，如何优雅地谈薪水？</a></li>
 <li><a href="http://gitbook.cn/books/5aa0bdf7f622f7137a21bf9e/index.html" target="_blank" rel="noopener">于丽洋：解析程序员跳槽时如何优雅地谈薪水</a></li>
 </ol>
-</li>
-</ul>
 
       
     </div>
@@ -1835,7 +1400,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、基础篇"><span class="nav-number">1.</span> <span class="nav-text">一、基础篇</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-Java基础"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 Java基础</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-Java常见集合"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 Java常见集合</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3、进程和线程"><span class="nav-number">1.3.</span> <span class="nav-text">1.3、进程和线程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4-锁机制"><span class="nav-number">1.4.</span> <span class="nav-text">1.4 锁机制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-5-JUC"><span class="nav-number">1.5.</span> <span class="nav-text">1.5 JUC</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-6-JVM"><span class="nav-number">1.6.</span> <span class="nav-text">1.6 JVM</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-7-设计模式"><span class="nav-number">1.7.</span> <span class="nav-text">1.7 设计模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-8-数据结构"><span class="nav-number">1.8.</span> <span class="nav-text">1.8 数据结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-9-网络-IO-基础"><span class="nav-number">1.9.</span> <span class="nav-text">1.9 网络 / IO 基础</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、数据存储和消息队列"><span class="nav-number">2.</span> <span class="nav-text">二、数据存储和消息队列</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-数据库"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 数据库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2、Redis"><span class="nav-number">2.2.</span> <span class="nav-text">2.2、Redis</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3、消息队列"><span class="nav-number">2.3.</span> <span class="nav-text">2.3、消息队列</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、开源框架和容器"><span class="nav-number">3.</span> <span class="nav-text">三、开源框架和容器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-Servlet"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 Servlet</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-Spring"><span class="nav-number">3.2.</span> <span class="nav-text">3.2 Spring</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2、Netty"><span class="nav-number">3.3.</span> <span class="nav-text">3.2、Netty</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3、Tomcat"><span class="nav-number">3.4.</span> <span class="nav-text">3.3、Tomcat</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、分布式"><span class="nav-number">4.</span> <span class="nav-text">四、分布式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1、Nginx"><span class="nav-number">4.1.</span> <span class="nav-text">4.1、Nginx</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2、分布式其他"><span class="nav-number">4.2.</span> <span class="nav-text">4.2、分布式其他</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-Dubbo"><span class="nav-number">4.3.</span> <span class="nav-text">4.3 Dubbo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-Zookeeper"><span class="nav-number">4.4.</span> <span class="nav-text">4.4 Zookeeper</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#五、微服务"><span class="nav-number">5.</span> <span class="nav-text">五、微服务</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1-微服务"><span class="nav-number">5.1.</span> <span class="nav-text">5.1 微服务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-2、安全问题"><span class="nav-number">5.2.</span> <span class="nav-text">5.2、安全问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-3、性能优化"><span class="nav-number">5.3.</span> <span class="nav-text">5.3、性能优化</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#六、其他"><span class="nav-number">6.</span> <span class="nav-text">六、其他</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#6-1、设计能力"><span class="nav-number">6.1.</span> <span class="nav-text">6.1、设计能力</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-2、业务工程"><span class="nav-number">6.2.</span> <span class="nav-text">6.2、业务工程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-3、软实力"><span class="nav-number">6.3.</span> <span class="nav-text">6.3、软实力</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-4-面试技巧"><span class="nav-number">6.4.</span> <span class="nav-text">6.4 面试技巧</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#基础篇"><span class="nav-number">1.</span> <span class="nav-text">基础篇</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Java基础"><span class="nav-number">1.1.</span> <span class="nav-text">Java基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#面向对象的特征：抽象、继承、封装和多态"><span class="nav-number">1.1.1.</span> <span class="nav-text">面向对象的特征：抽象、继承、封装和多态</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#final-finally-finalize-的区别"><span class="nav-number">1.1.2.</span> <span class="nav-text">final, finally, finalize 的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Exception、Error、运行时异常与一般异常有何异同"><span class="nav-number">1.1.3.</span> <span class="nav-text">Exception、Error、运行时异常与一般异常有何异同</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#int-和-Integer-有什么区别，Integer的值缓存范围"><span class="nav-number">1.1.4.</span> <span class="nav-text">int 和 Integer 有什么区别，Integer的值缓存范围</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#包装类，装箱和拆箱"><span class="nav-number">1.1.5.</span> <span class="nav-text">包装类，装箱和拆箱</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#String、StringBuilder、StringBuffer"><span class="nav-number">1.1.6.</span> <span class="nav-text">String、StringBuilder、StringBuffer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重载和重写的区别"><span class="nav-number">1.1.7.</span> <span class="nav-text">重载和重写的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#抽象类和接口有什么区别"><span class="nav-number">1.1.8.</span> <span class="nav-text">抽象类和接口有什么区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#说说反射的用途及实现"><span class="nav-number">1.1.9.</span> <span class="nav-text">说说反射的用途及实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#说说自定义注解的场景及实现"><span class="nav-number">1.1.10.</span> <span class="nav-text">说说自定义注解的场景及实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTP请求的GET与POST方式的区别"><span class="nav-number">1.1.11.</span> <span class="nav-text">HTTP请求的GET与POST方式的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Session-与-Cookie-区别"><span class="nav-number">1.1.12.</span> <span class="nav-text">Session 与 Cookie 区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#列出自己常用的JDK包"><span class="nav-number">1.1.13.</span> <span class="nav-text">列出自己常用的JDK包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MVC设计思想"><span class="nav-number">1.1.14.</span> <span class="nav-text">MVC设计思想</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#equals-与-的区别"><span class="nav-number">1.1.15.</span> <span class="nav-text">equals 与 == 的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#String-类为什么是-final-的？"><span class="nav-number">1.1.16.</span> <span class="nav-text">String 类为什么是 final 的？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#String、StringBuffer与StringBuilder的区别？"><span class="nav-number">1.1.17.</span> <span class="nav-text">String、StringBuffer与StringBuilder的区别？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是序列化以及用途，什么时候使用序列化？"><span class="nav-number">1.1.18.</span> <span class="nav-text">什么是序列化以及用途，什么时候使用序列化？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hashCode-和-equals-方法的区别与联系"><span class="nav-number">1.1.19.</span> <span class="nav-text">hashCode 和 equals 方法的区别与联系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是Java序列化和反序列化，如何实现Java序列化？或者请解释Serializable-接口的作用"><span class="nav-number">1.1.20.</span> <span class="nav-text">什么是Java序列化和反序列化，如何实现Java序列化？或者请解释Serializable 接口的作用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Object类中常见的方法，为什么-wait-notify-会放在-Object-里边？"><span class="nav-number">1.1.21.</span> <span class="nav-text">Object类中常见的方法，为什么 wait  notify 会放在 Object 里边？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单例模式"><span class="nav-number">1.1.22.</span> <span class="nav-text">单例模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java-8-有哪些新特性"><span class="nav-number">1.1.23.</span> <span class="nav-text">Java 8 有哪些新特性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java常见集合"><span class="nav-number">1.2.</span> <span class="nav-text">Java常见集合</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#List、Set、Map-的区别"><span class="nav-number">1.2.1.</span> <span class="nav-text">List、Set、Map 的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HashSet-如何保证不重复"><span class="nav-number">1.2.2.</span> <span class="nav-text">HashSet 如何保证不重复</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HashMap-是线程安全的吗，为什么不是线程安全的（最好画图说明多线程环境下不安全）"><span class="nav-number">1.2.3.</span> <span class="nav-text">HashMap 是线程安全的吗，为什么不是线程安全的（最好画图说明多线程环境下不安全）?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HashMap-的扩容过程"><span class="nav-number">1.2.4.</span> <span class="nav-text">HashMap 的扩容过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HashMap-1-7-与-1-8-的-区别，1-8-做了哪些优化，如何优化的？"><span class="nav-number">1.2.5.</span> <span class="nav-text">HashMap 1.7 与 1.8 的 区别，1.8 做了哪些优化，如何优化的？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LinkedHashMap-的应用"><span class="nav-number">1.2.6.</span> <span class="nav-text">LinkedHashMap 的应用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Set-和-hashCode-以及-equals-方法的联系"><span class="nav-number">1.2.7.</span> <span class="nav-text">Set 和 hashCode 以及 equals 方法的联系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Arraylist-与-LinkedList-区别"><span class="nav-number">1.2.8.</span> <span class="nav-text">Arraylist 与 LinkedList 区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ArrayList-与-Vector-区别"><span class="nav-number">1.2.9.</span> <span class="nav-text">ArrayList 与 Vector 区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HashMap、Hashtable-和-HashSet-的区别"><span class="nav-number">1.2.10.</span> <span class="nav-text">HashMap、Hashtable 和 HashSet 的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HashMap-和-ConcurrentHashMap-的区别"><span class="nav-number">1.2.11.</span> <span class="nav-text">HashMap 和 ConcurrentHashMap 的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HashMap-的工作原理及代码实现，什么时候用到红黑树"><span class="nav-number">1.2.12.</span> <span class="nav-text">HashMap 的工作原理及代码实现，什么时候用到红黑树</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#多线程情况下-HashMap-死循环的问题"><span class="nav-number">1.2.13.</span> <span class="nav-text">多线程情况下 HashMap 死循环的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HashMap-出现-Hash-DOS-攻击的问题"><span class="nav-number">1.2.14.</span> <span class="nav-text">HashMap 出现 Hash DOS 攻击的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ConcurrentHashMap-的工作原理及代码实现，如何统计所有的元素个数"><span class="nav-number">1.2.15.</span> <span class="nav-text">ConcurrentHashMap 的工作原理及代码实现，如何统计所有的元素个数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#手写简单的-HashMap"><span class="nav-number">1.2.16.</span> <span class="nav-text">手写简单的 HashMap</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数组在内存中如何分配"><span class="nav-number">1.2.17.</span> <span class="nav-text">数组在内存中如何分配</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#看过那些-Java-集合类的源码"><span class="nav-number">1.2.18.</span> <span class="nav-text">看过那些 Java 集合类的源码</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#进程和线程"><span class="nav-number">1.3.</span> <span class="nav-text">进程和线程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#线程和进程的概念"><span class="nav-number">1.3.1.</span> <span class="nav-text">线程和进程的概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#线程的生命周期，状态是如何转移的？"><span class="nav-number">1.3.2.</span> <span class="nav-text">线程的生命周期，状态是如何转移的？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#并行和并发的概念"><span class="nav-number">1.3.3.</span> <span class="nav-text">并行和并发的概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建线程的方式及实现"><span class="nav-number">1.3.4.</span> <span class="nav-text">创建线程的方式及实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#同步和异步有何异同，在什么情况下分别使用他们？举例说明。"><span class="nav-number">1.3.5.</span> <span class="nav-text">同步和异步有何异同，在什么情况下分别使用他们？举例说明。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进程间通信的方式？可參考JAVA线程间通信的几种方式"><span class="nav-number">1.3.6.</span> <span class="nav-text">进程间通信的方式？可參考JAVA线程间通信的几种方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#线程间通信的方式。可参考《线程间通信剖析》"><span class="nav-number">1.3.7.</span> <span class="nav-text">线程间通信的方式。可参考《线程间通信剖析》</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么需要多线程-多线程的优势"><span class="nav-number">1.3.8.</span> <span class="nav-text">为什么需要多线程(多线程的优势)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是线程安全？"><span class="nav-number">1.3.9.</span> <span class="nav-text">什么是线程安全？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何保证线程安全？"><span class="nav-number">1.3.10.</span> <span class="nav-text">如何保证线程安全？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是-CAS，CAS-有什么缺陷，如何解决？"><span class="nav-number">1.3.11.</span> <span class="nav-text">什么是 CAS，CAS 有什么缺陷，如何解决？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#说说-CountDownLatch-CyclicBarrier-Semaphore-原理和区别"><span class="nav-number">1.3.12.</span> <span class="nav-text">说说 CountDownLatch, CyclicBarrier, Semaphore 原理和区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#说说-Exchanger-原理"><span class="nav-number">1.3.13.</span> <span class="nav-text">说说 Exchanger 原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ThreadLocal-原理分析，ThreadLocal-为什么会出现-OOM，出现的深层次原理？"><span class="nav-number">1.3.14.</span> <span class="nav-text">ThreadLocal 原理分析，ThreadLocal 为什么会出现 OOM，出现的深层次原理？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#讲讲线程池的实现原理"><span class="nav-number">1.3.15.</span> <span class="nav-text">讲讲线程池的实现原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#线程池的几种实现方式"><span class="nav-number">1.3.16.</span> <span class="nav-text">线程池的几种实现方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何理解并发的三个特性（问题）：原子性、内存可见性、重排序？"><span class="nav-number">1.3.17.</span> <span class="nav-text">如何理解并发的三个特性（问题）：原子性、内存可见性、重排序？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#线程池的种类，区别和使用场景？"><span class="nav-number">1.3.18.</span> <span class="nav-text">线程池的种类，区别和使用场景？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分析线程池的实现原理和线程的调度过程？"><span class="nav-number">1.3.19.</span> <span class="nav-text">分析线程池的实现原理和线程的调度过程？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#线程池如何调优，最大数目如何确认？"><span class="nav-number">1.3.20.</span> <span class="nav-text">线程池如何调优，最大数目如何确认？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据连接池的工作机制是什么？"><span class="nav-number">1.3.21.</span> <span class="nav-text">数据连接池的工作机制是什么？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#可参考："><span class="nav-number">1.3.22.</span> <span class="nav-text">可参考：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#锁机制"><span class="nav-number">1.4.</span> <span class="nav-text">锁机制</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是锁？"><span class="nav-number">1.4.1.</span> <span class="nav-text">什么是锁？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是死锁？"><span class="nav-number">1.4.2.</span> <span class="nav-text">什么是死锁？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#产生死锁的四个条件"><span class="nav-number">1.4.3.</span> <span class="nav-text">产生死锁的四个条件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#处理死锁的基本方法"><span class="nav-number">1.4.4.</span> <span class="nav-text">处理死锁的基本方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java-中常见的锁有哪些？"><span class="nav-number">1.4.5.</span> <span class="nav-text">Java 中常见的锁有哪些？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Condition"><span class="nav-number">1.4.6.</span> <span class="nav-text">Condition</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重入锁的概念，重入锁为什么可以防止死锁"><span class="nav-number">1.4.7.</span> <span class="nav-text">重入锁的概念，重入锁为什么可以防止死锁</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何检查死锁（通过jConsole检查死锁）"><span class="nav-number">1.4.8.</span> <span class="nav-text">如何检查死锁（通过jConsole检查死锁）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#volatile-实现原理（禁止指令重排、刷新内存）？"><span class="nav-number">1.4.9.</span> <span class="nav-text">volatile 实现原理（禁止指令重排、刷新内存）？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#synchronized-实现原理（对象监视器）"><span class="nav-number">1.4.10.</span> <span class="nav-text">synchronized 实现原理（对象监视器）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#synchronized-与-lock-的区别"><span class="nav-number">1.4.11.</span> <span class="nav-text">synchronized 与 lock 的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#可参考：《Java多线程编程核心技术》"><span class="nav-number">1.4.12.</span> <span class="nav-text">可参考：《Java多线程编程核心技术》</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JUC"><span class="nav-number">1.5.</span> <span class="nav-text">JUC</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Java-并发体系思维导图"><span class="nav-number">1.5.1.</span> <span class="nav-text">Java 并发体系思维导图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AQS-同步队列"><span class="nav-number">1.5.2.</span> <span class="nav-text">AQS 同步队列</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LockSupport工具"><span class="nav-number">1.5.3.</span> <span class="nav-text">LockSupport工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Condition接口及其实现原理"><span class="nav-number">1.5.4.</span> <span class="nav-text">Condition接口及其实现原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Fork-Join框架的理解"><span class="nav-number">1.5.5.</span> <span class="nav-text">Fork/Join框架的理解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分段锁的原理-锁力度减小的思考"><span class="nav-number">1.5.6.</span> <span class="nav-text">分段锁的原理,锁力度减小的思考</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#八种阻塞队列以及各个阻塞队列的特性"><span class="nav-number">1.5.7.</span> <span class="nav-text">八种阻塞队列以及各个阻塞队列的特性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java中的队列都有哪些，有什么区别？"><span class="nav-number">1.5.8.</span> <span class="nav-text">Java中的队列都有哪些，有什么区别？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常见的原子操作类"><span class="nav-number">1.5.9.</span> <span class="nav-text">常见的原子操作类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java-8并法包下常见的并发类"><span class="nav-number">1.5.10.</span> <span class="nav-text">Java 8并法包下常见的并发类</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JVM"><span class="nav-number">1.6.</span> <span class="nav-text">JVM</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是类的加载"><span class="nav-number">1.6.1.</span> <span class="nav-text">什么是类的加载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#class-文件加载方式"><span class="nav-number">1.6.2.</span> <span class="nav-text">class 文件加载方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#类加载器"><span class="nav-number">1.6.3.</span> <span class="nav-text">类加载器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#类的生命周期"><span class="nav-number">1.6.4.</span> <span class="nav-text">类的生命周期</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JVM-类加载机制"><span class="nav-number">1.6.5.</span> <span class="nav-text">JVM 类加载机制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#什么时候发生-GC。"><span class="nav-number">1.6.6.</span> <span class="nav-text">什么时候发生 GC。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Minor-GC-过程"><span class="nav-number">1.6.7.</span> <span class="nav-text">Minor GC 过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java-中会存在内存泄漏吗？"><span class="nav-number">1.6.8.</span> <span class="nav-text">Java 中会存在内存泄漏吗？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#内存溢出-OOM-和堆栈溢出-SOE-的示例及原因、如何排查与解决"><span class="nav-number">1.6.9.</span> <span class="nav-text">内存溢出 OOM 和堆栈溢出 SOE 的示例及原因、如何排查与解决</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何判断对象是否可以回收或存活"><span class="nav-number">1.6.10.</span> <span class="nav-text">如何判断对象是否可以回收或存活</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常见的GC回收算法及其含义"><span class="nav-number">1.6.11.</span> <span class="nav-text">常见的GC回收算法及其含义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常见的JVM性能监控和故障处理工具类：jps、jstat、jmap、jinfo、jconsole等"><span class="nav-number">1.6.12.</span> <span class="nav-text">常见的JVM性能监控和故障处理工具类：jps、jstat、jmap、jinfo、jconsole等</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JVM如何设置参数"><span class="nav-number">1.6.13.</span> <span class="nav-text">JVM如何设置参数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JVM性能调优"><span class="nav-number">1.6.14.</span> <span class="nav-text">JVM性能调优</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#可参考：-1"><span class="nav-number">1.6.15.</span> <span class="nav-text">可参考：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设计模式"><span class="nav-number">1.7.</span> <span class="nav-text">设计模式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#常见的设计模式"><span class="nav-number">1.7.1.</span> <span class="nav-text">常见的设计模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设计模式的的六大原则及其含义"><span class="nav-number">1.7.2.</span> <span class="nav-text">设计模式的的六大原则及其含义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常见的单例模式以及各种实现方式的优缺点，哪一种最好，手写常见的单利模式"><span class="nav-number">1.7.3.</span> <span class="nav-text">常见的单例模式以及各种实现方式的优缺点，哪一种最好，手写常见的单利模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设计模式在实际场景中的应用"><span class="nav-number">1.7.4.</span> <span class="nav-text">设计模式在实际场景中的应用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Spring中用到了哪些设计模式"><span class="nav-number">1.7.5.</span> <span class="nav-text">Spring中用到了哪些设计模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MyBatis中用到了哪些设计模式"><span class="nav-number">1.7.6.</span> <span class="nav-text">MyBatis中用到了哪些设计模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#你项目中有使用哪些设计模式"><span class="nav-number">1.7.7.</span> <span class="nav-text">你项目中有使用哪些设计模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#说说常用开源框架中设计模式使用分析"><span class="nav-number">1.7.8.</span> <span class="nav-text">说说常用开源框架中设计模式使用分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#动态代理很重要！！！"><span class="nav-number">1.7.9.</span> <span class="nav-text">动态代理很重要！！！</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据结构"><span class="nav-number">1.8.</span> <span class="nav-text">数据结构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#树（二叉查找树、平衡二叉树、红黑树、B树、B-树）"><span class="nav-number">1.8.1.</span> <span class="nav-text">树（二叉查找树、平衡二叉树、红黑树、B树、B+树）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#深度有限算法、广度优先算法"><span class="nav-number">1.8.2.</span> <span class="nav-text">深度有限算法、广度优先算法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#克鲁斯卡尔算法、普林母算法、迪克拉斯算法"><span class="nav-number">1.8.3.</span> <span class="nav-text">克鲁斯卡尔算法、普林母算法、迪克拉斯算法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是一致性Hash及其原理、Hash环问题"><span class="nav-number">1.8.4.</span> <span class="nav-text">什么是一致性Hash及其原理、Hash环问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常见的排序算法和查找算法：快排、折半查找、堆排序等"><span class="nav-number">1.8.5.</span> <span class="nav-text">常见的排序算法和查找算法：快排、折半查找、堆排序等</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网络-IO-基础"><span class="nav-number">1.9.</span> <span class="nav-text">网络 / IO 基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#BIO、NIO、AIO的概念"><span class="nav-number">1.9.1.</span> <span class="nav-text">BIO、NIO、AIO的概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是长连接和短连接"><span class="nav-number">1.9.2.</span> <span class="nav-text">什么是长连接和短连接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Http1-0-和-2-0-相比有什么区别，可参考《Http-2-0》"><span class="nav-number">1.9.3.</span> <span class="nav-text">Http1.0 和 2.0 相比有什么区别，可参考《Http 2.0》</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Https的基本概念"><span class="nav-number">1.9.4.</span> <span class="nav-text">Https的基本概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三次握手和四次挥手、为什么挥手需要四次"><span class="nav-number">1.9.5.</span> <span class="nav-text">三次握手和四次挥手、为什么挥手需要四次</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#从游览器中输入URL到页面加载的发生了什么？可参考《从输入URL到页面加载发生了什么》"><span class="nav-number">1.9.6.</span> <span class="nav-text">从游览器中输入URL到页面加载的发生了什么？可参考《从输入URL到页面加载发生了什么》</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、数据存储和消息队列"><span class="nav-number">1.10.</span> <span class="nav-text">二、数据存储和消息队列</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-数据库"><span class="nav-number">1.11.</span> <span class="nav-text">2.1 数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-索引使用的注意事项"><span class="nav-number">1.11.1.</span> <span class="nav-text">MySQL 索引使用的注意事项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DDL、DML、DCL分别指什么"><span class="nav-number">1.11.2.</span> <span class="nav-text">DDL、DML、DCL分别指什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#explain-命令"><span class="nav-number">1.11.3.</span> <span class="nav-text">explain 命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#left-join，right-join，inner-join"><span class="nav-number">1.11.4.</span> <span class="nav-text">left join，right join，inner join</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据库事物-ACID"><span class="nav-number">1.11.5.</span> <span class="nav-text">数据库事物 ACID</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#事务的隔离级别"><span class="nav-number">1.11.6.</span> <span class="nav-text">事务的隔离级别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#脏读、幻读、不可重复读"><span class="nav-number">1.11.7.</span> <span class="nav-text">脏读、幻读、不可重复读</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据库的几大范式"><span class="nav-number">1.11.8.</span> <span class="nav-text">数据库的几大范式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据库常见的命令"><span class="nav-number">1.11.9.</span> <span class="nav-text">数据库常见的命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#说说分库与分表设计"><span class="nav-number">1.11.10.</span> <span class="nav-text">说说分库与分表设计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分库与分表带来的分布式困境与应对之策（如何解决分布式下的分库分表，全局表？）"><span class="nav-number">1.11.11.</span> <span class="nav-text">分库与分表带来的分布式困境与应对之策（如何解决分布式下的分库分表，全局表？）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#说说-SQL-优化之道。可参考《19个MySQL性能优化要点解析》"><span class="nav-number">1.11.12.</span> <span class="nav-text">说说 SQL 优化之道。可参考《19个MySQL性能优化要点解析》</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL遇到的死锁问题、如何排查与解决"><span class="nav-number">1.11.13.</span> <span class="nav-text">MySQL遇到的死锁问题、如何排查与解决</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#存储引擎的-InnoDB与MyISAM区别，优缺点，使用场景"><span class="nav-number">1.11.14.</span> <span class="nav-text">存储引擎的 InnoDB与MyISAM区别，优缺点，使用场景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#索引类别（B-树索引、全文索引、哈希索引）、索引的原理"><span class="nav-number">1.11.15.</span> <span class="nav-text">索引类别（B+树索引、全文索引、哈希索引）、索引的原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是自适应哈希索引（AHI）"><span class="nav-number">1.11.16.</span> <span class="nav-text">什么是自适应哈希索引（AHI）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么要用-B-tree-作为MySQL索引的数据结构"><span class="nav-number">1.11.17.</span> <span class="nav-text">为什么要用 B+tree 作为MySQL索引的数据结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#聚集索引与非聚集索引的区别"><span class="nav-number">1.11.18.</span> <span class="nav-text">聚集索引与非聚集索引的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#遇到过索引失效的情况没，什么时候可能会出现，如何解决"><span class="nav-number">1.11.19.</span> <span class="nav-text">遇到过索引失效的情况没，什么时候可能会出现，如何解决</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#limit-20000-加载很慢怎么解决"><span class="nav-number">1.11.20.</span> <span class="nav-text">limit 20000 加载很慢怎么解决</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何选择合适的分布式主键方案"><span class="nav-number">1.11.21.</span> <span class="nav-text">如何选择合适的分布式主键方案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#选择合适的数据存储方案"><span class="nav-number">1.11.22.</span> <span class="nav-text">选择合适的数据存储方案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常见的几种分布式ID的设计方案"><span class="nav-number">1.11.23.</span> <span class="nav-text">常见的几种分布式ID的设计方案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常见的数据库优化方案，在你的项目中数据库如何进行优化的"><span class="nav-number">1.11.24.</span> <span class="nav-text">常见的数据库优化方案，在你的项目中数据库如何进行优化的</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Redis"><span class="nav-number">1.12.</span> <span class="nav-text">Redis</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Redis-有哪些数据类型，可参考《Redis常见的5种不同的数据类型详解》"><span class="nav-number">1.12.1.</span> <span class="nav-text">Redis 有哪些数据类型，可参考《Redis常见的5种不同的数据类型详解》</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Redis-内部结构"><span class="nav-number">1.12.2.</span> <span class="nav-text">Redis 内部结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Redis-使用场景"><span class="nav-number">1.12.3.</span> <span class="nav-text">Redis 使用场景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Redis-持久化机制，可参考《使用快照和AOF将Redis数据持久化到硬盘中》"><span class="nav-number">1.12.4.</span> <span class="nav-text">Redis 持久化机制，可参考《使用快照和AOF将Redis数据持久化到硬盘中》</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Redis-集群方案与实现"><span class="nav-number">1.12.5.</span> <span class="nav-text">Redis 集群方案与实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Redis-为什么是单线程的？"><span class="nav-number">1.12.6.</span> <span class="nav-text">Redis 为什么是单线程的？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#缓存雪崩、缓存穿透、缓存预热、缓存更新、缓存降级"><span class="nav-number">1.12.7.</span> <span class="nav-text">缓存雪崩、缓存穿透、缓存预热、缓存更新、缓存降级</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用缓存的合理性问题"><span class="nav-number">1.12.8.</span> <span class="nav-text">使用缓存的合理性问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Redis-常见的回收策略"><span class="nav-number">1.12.9.</span> <span class="nav-text">Redis 常见的回收策略</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#消息队列"><span class="nav-number">1.13.</span> <span class="nav-text">消息队列</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#消息队列的使用场景"><span class="nav-number">1.13.1.</span> <span class="nav-text">消息队列的使用场景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#消息的重发补偿解决思路"><span class="nav-number">1.13.2.</span> <span class="nav-text">消息的重发补偿解决思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#消息的幂等性解决思路"><span class="nav-number">1.13.3.</span> <span class="nav-text">消息的幂等性解决思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#消息的堆积解决思路"><span class="nav-number">1.13.4.</span> <span class="nav-text">消息的堆积解决思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自己如何实现消息队列"><span class="nav-number">1.13.5.</span> <span class="nav-text">自己如何实现消息队列</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何保证消息的有序性"><span class="nav-number">1.13.6.</span> <span class="nav-text">如何保证消息的有序性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#可参考：-2"><span class="nav-number">1.13.7.</span> <span class="nav-text">可参考：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开源框架和容器"><span class="nav-number">1.14.</span> <span class="nav-text">开源框架和容器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Servlet"><span class="nav-number">1.15.</span> <span class="nav-text">Servlet</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是-Servlet？"><span class="nav-number">1.15.1.</span> <span class="nav-text">什么是 Servlet？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Servlet-的生命周期"><span class="nav-number">1.15.2.</span> <span class="nav-text">Servlet 的生命周期</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#转发与重定向的区别"><span class="nav-number">1.15.3.</span> <span class="nav-text">转发与重定向的区别</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Spring"><span class="nav-number">1.16.</span> <span class="nav-text">Spring</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是-Spring，你对-Spring-的理解？"><span class="nav-number">1.16.1.</span> <span class="nav-text">什么是 Spring，你对 Spring 的理解？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#BeanFactory-和-FactoryBean？"><span class="nav-number">1.16.2.</span> <span class="nav-text">BeanFactory 和 FactoryBean？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#BeanFactory-和-ApplicationContext-有什么区别"><span class="nav-number">1.16.3.</span> <span class="nav-text">BeanFactory 和 ApplicationContext 有什么区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Spring-Bean-的生命周期，如何被管理的？"><span class="nav-number">1.16.4.</span> <span class="nav-text">Spring Bean 的生命周期，如何被管理的？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Spring-IOC-如何实现。可参考《三条路线告诉你如何掌握Spring-IoC容器的核心原理》"><span class="nav-number">1.16.5.</span> <span class="nav-text">Spring IOC 如何实现。可参考《三条路线告诉你如何掌握Spring IoC容器的核心原理》</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Spring中Bean的作用域，默认的是哪一个？-Singleton"><span class="nav-number">1.16.6.</span> <span class="nav-text">Spring中Bean的作用域，默认的是哪一个？ Singleton</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Spring-IOC-的理解，其初始化过程？"><span class="nav-number">1.16.7.</span> <span class="nav-text">Spring IOC 的理解，其初始化过程？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#说说-Spring-AOP"><span class="nav-number">1.16.8.</span> <span class="nav-text">说说 Spring AOP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Spring-AOP-实现原理"><span class="nav-number">1.16.9.</span> <span class="nav-text">Spring AOP 实现原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Spring-切面可以应用的通知类型有哪些？"><span class="nav-number">1.16.10.</span> <span class="nav-text">Spring 切面可以应用的通知类型有哪些？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#动态代理（CGLib-与-JDK）、优缺点、性能对比、如何选择？"><span class="nav-number">1.16.11.</span> <span class="nav-text">动态代理（CGLib 与 JDK）、优缺点、性能对比、如何选择？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Spring-事务实现方式、事务的传播机制、默认的事务类别"><span class="nav-number">1.16.12.</span> <span class="nav-text">Spring 事务实现方式、事务的传播机制、默认的事务类别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Spring-事务底层原理"><span class="nav-number">1.16.13.</span> <span class="nav-text">Spring 事务底层原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Spring事务失效（事务嵌套），JDK动态代理给Spring事务埋下的坑，可参考《JDK动态代理给Spring事务埋下的坑！》"><span class="nav-number">1.16.14.</span> <span class="nav-text">Spring事务失效（事务嵌套），JDK动态代理给Spring事务埋下的坑，可参考《JDK动态代理给Spring事务埋下的坑！》</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何自定义注解实现功能"><span class="nav-number">1.16.15.</span> <span class="nav-text">如何自定义注解实现功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Spring-MVC-工作原理-amp-执行流程？"><span class="nav-number">1.16.16.</span> <span class="nav-text">Spring MVC 工作原理 &amp; 执行流程？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Spring-MVC-启动流程"><span class="nav-number">1.16.17.</span> <span class="nav-text">Spring MVC 启动流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Spring-的单例实现原理"><span class="nav-number">1.16.18.</span> <span class="nav-text">Spring 的单例实现原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Spring-框架中用到了哪些设计模式"><span class="nav-number">1.16.19.</span> <span class="nav-text">Spring 框架中用到了哪些设计模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Spring-其他产品（Srping-Boot、Spring-Cloud、Spring-Secuirity、Spring-Data、Spring-AMQP-等）"><span class="nav-number">1.16.20.</span> <span class="nav-text">Spring 其他产品（Srping Boot、Spring Cloud、Spring Secuirity、Spring Data、Spring AMQP 等）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#有没有用到-Spring-Boot，Spring-Boot-的认识、原理"><span class="nav-number">1.16.21.</span> <span class="nav-text">有没有用到 Spring Boot，Spring Boot 的认识、原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MyBatis的原理"><span class="nav-number">1.16.22.</span> <span class="nav-text">MyBatis的原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#可参考《为什么会有Spring》"><span class="nav-number">1.16.23.</span> <span class="nav-text">可参考《为什么会有Spring》</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#可参考《为什么会有Spring-AOP》"><span class="nav-number">1.16.24.</span> <span class="nav-text">可参考《为什么会有Spring AOP》</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#可参考《Spring历史版本变迁和如今的生态帝国》"><span class="nav-number">1.16.25.</span> <span class="nav-text">可参考《Spring历史版本变迁和如今的生态帝国》</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Netty"><span class="nav-number">1.17.</span> <span class="nav-text">Netty</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么选择-Netty"><span class="nav-number">1.17.1.</span> <span class="nav-text">为什么选择 Netty</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#说说业务中，Netty-的使用场景"><span class="nav-number">1.17.2.</span> <span class="nav-text">说说业务中，Netty 的使用场景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#原生的-NIO-在-JDK-1-7-版本存在-epoll-bug"><span class="nav-number">1.17.3.</span> <span class="nav-text">原生的 NIO 在 JDK 1.7 版本存在 epoll bug</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是TCP-粘包-拆包"><span class="nav-number">1.17.4.</span> <span class="nav-text">什么是TCP 粘包/拆包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TCP粘包-拆包的解决办法"><span class="nav-number">1.17.5.</span> <span class="nav-text">TCP粘包/拆包的解决办法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Netty-线程模型"><span class="nav-number">1.17.6.</span> <span class="nav-text">Netty 线程模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#说说-Netty-的零拷贝"><span class="nav-number">1.17.7.</span> <span class="nav-text">说说 Netty 的零拷贝</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Netty-内部执行流程"><span class="nav-number">1.17.8.</span> <span class="nav-text">Netty 内部执行流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Netty-重连实现"><span class="nav-number">1.17.9.</span> <span class="nav-text">Netty 重连实现</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tomcat"><span class="nav-number">1.18.</span> <span class="nav-text">Tomcat</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Tomcat-的基础架构（Server、Service、Connector、Container）"><span class="nav-number">1.18.1.</span> <span class="nav-text">Tomcat 的基础架构（Server、Service、Connector、Container）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tomcat-如何加载-Servlet-的"><span class="nav-number">1.18.2.</span> <span class="nav-text">Tomcat 如何加载 Servlet 的</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Pipeline-Valve-机制"><span class="nav-number">1.18.3.</span> <span class="nav-text">Pipeline-Valve 机制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#可参考：《四张图带你了解Tomcat系统架构！》"><span class="nav-number">1.18.4.</span> <span class="nav-text">可参考：《四张图带你了解Tomcat系统架构！》</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分布式"><span class="nav-number">1.19.</span> <span class="nav-text">分布式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Nginx"><span class="nav-number">1.20.</span> <span class="nav-text">Nginx</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#请解释什么是C10K问题或者知道什么是C10K问题吗？"><span class="nav-number">1.20.1.</span> <span class="nav-text">请解释什么是C10K问题或者知道什么是C10K问题吗？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Nginx简介，可参考《Nginx简介》"><span class="nav-number">1.20.2.</span> <span class="nav-text">Nginx简介，可参考《Nginx简介》</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#正向代理和反向代理"><span class="nav-number">1.20.3.</span> <span class="nav-text">正向代理和反向代理.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Nginx几种常见的负载均衡策略"><span class="nav-number">1.20.4.</span> <span class="nav-text">Nginx几种常见的负载均衡策略</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Nginx服务器上的Master和Worker进程分别是什么"><span class="nav-number">1.20.5.</span> <span class="nav-text">Nginx服务器上的Master和Worker进程分别是什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用“反向代理服务器”的优点是什么"><span class="nav-number">1.20.6.</span> <span class="nav-text">使用“反向代理服务器”的优点是什么?</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分布式其他"><span class="nav-number">1.21.</span> <span class="nav-text">分布式其他</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是-CAP-定理？"><span class="nav-number">1.21.1.</span> <span class="nav-text">什么是 CAP 定理？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是-BASE-理论？"><span class="nav-number">1.21.2.</span> <span class="nav-text">什么是 BASE 理论？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#谈谈业务中使用分布式的场景"><span class="nav-number">1.21.3.</span> <span class="nav-text">谈谈业务中使用分布式的场景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Session-分布式方案"><span class="nav-number">1.21.4.</span> <span class="nav-text">Session 分布式方案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Session-分布式处理"><span class="nav-number">1.21.5.</span> <span class="nav-text">Session 分布式处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分布式锁的应用场景、分布式锁的产生原因、基本概念"><span class="nav-number">1.21.6.</span> <span class="nav-text">分布式锁的应用场景、分布式锁的产生原因、基本概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分布是锁的常见解决方案"><span class="nav-number">1.21.7.</span> <span class="nav-text">分布是锁的常见解决方案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分布式事务的常见解决方案"><span class="nav-number">1.21.8.</span> <span class="nav-text">分布式事务的常见解决方案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#集群与负载均衡的算法与实现"><span class="nav-number">1.21.9.</span> <span class="nav-text">集群与负载均衡的算法与实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#怎么提升系统的-QPS-和吞吐量"><span class="nav-number">1.21.10.</span> <span class="nav-text">怎么提升系统的 QPS 和吞吐量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何保证消息的一致性"><span class="nav-number">1.21.11.</span> <span class="nav-text">如何保证消息的一致性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CDN-实现原理"><span class="nav-number">1.21.12.</span> <span class="nav-text">CDN 实现原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#说说分库与分表设计，可参考《数据库分库分表策略的具体实现方案》"><span class="nav-number">1.21.13.</span> <span class="nav-text">说说分库与分表设计，可参考《数据库分库分表策略的具体实现方案》</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分库与分表带来的分布式困境与应对之策"><span class="nav-number">1.21.14.</span> <span class="nav-text">分库与分表带来的分布式困境与应对之策</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Dubbo"><span class="nav-number">1.22.</span> <span class="nav-text">Dubbo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是-Dubbo-？"><span class="nav-number">1.22.1.</span> <span class="nav-text">什么是 Dubbo ？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是-RPC、如何实现-RPC、RPC-的实现原理，"><span class="nav-number">1.22.2.</span> <span class="nav-text">什么是 RPC、如何实现 RPC、RPC 的实现原理，</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Dubbo-中的-SPI-是什么概念"><span class="nav-number">1.22.3.</span> <span class="nav-text">Dubbo 中的 SPI 是什么概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Dubbo-的基本原理、执行流程"><span class="nav-number">1.22.4.</span> <span class="nav-text">Dubbo 的基本原理、执行流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Dubbo-适用场景：适合于小数据量大并发的服务调用，以及服务消费者机器数远大于服务提供者机器数的情况"><span class="nav-number">1.22.5.</span> <span class="nav-text">Dubbo 适用场景：适合于小数据量大并发的服务调用，以及服务消费者机器数远大于服务提供者机器数的情况</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#可参考：-3"><span class="nav-number">1.22.6.</span> <span class="nav-text">可参考：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Zookeeper"><span class="nav-number">1.23.</span> <span class="nav-text">Zookeeper</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Zookeeper-典型应用场景"><span class="nav-number">1.23.1.</span> <span class="nav-text">Zookeeper 典型应用场景</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#微服务"><span class="nav-number">1.24.</span> <span class="nav-text">微服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#微服务-1"><span class="nav-number">1.25.</span> <span class="nav-text">微服务</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#前后端分离是如何做的？"><span class="nav-number">1.25.1.</span> <span class="nav-text">前后端分离是如何做的？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#微服务哪些框架"><span class="nav-number">1.25.2.</span> <span class="nav-text">微服务哪些框架</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Spring-Could的常见组件有哪些？可参考《Spring-Cloud概述》"><span class="nav-number">1.25.3.</span> <span class="nav-text">Spring Could的常见组件有哪些？可参考《Spring Cloud概述》</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#领域驱动有了解吗？什么是领域驱动模型？充血模型、贫血模型"><span class="nav-number">1.25.4.</span> <span class="nav-text">领域驱动有了解吗？什么是领域驱动模型？充血模型、贫血模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JWT有了解吗，什么是JWT，可参考《前后端分离利器之JWT》"><span class="nav-number">1.25.5.</span> <span class="nav-text">JWT有了解吗，什么是JWT，可参考《前后端分离利器之JWT》</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#你怎么理解-RESTful"><span class="nav-number">1.25.6.</span> <span class="nav-text">你怎么理解 RESTful</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#说说如何设计一个良好的-API"><span class="nav-number">1.25.7.</span> <span class="nav-text">说说如何设计一个良好的 API</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何理解-RESTful-API-的幂等性"><span class="nav-number">1.25.8.</span> <span class="nav-text">如何理解 RESTful API 的幂等性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何保证接口的幂等性"><span class="nav-number">1.25.9.</span> <span class="nav-text">如何保证接口的幂等性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#说说-CAP-定理、BASE-理论"><span class="nav-number">1.25.10.</span> <span class="nav-text">说说 CAP 定理、BASE 理论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#怎么考虑数据一致性问题"><span class="nav-number">1.25.11.</span> <span class="nav-text">怎么考虑数据一致性问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#说说最终一致性的实现方案"><span class="nav-number">1.25.12.</span> <span class="nav-text">说说最终一致性的实现方案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#微服务的优缺点，可参考《微服务批判》"><span class="nav-number">1.25.13.</span> <span class="nav-text">微服务的优缺点，可参考《微服务批判》</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#微服务与-SOA-的区别"><span class="nav-number">1.25.14.</span> <span class="nav-text">微服务与 SOA 的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何拆分服务、水平分割、垂直分割"><span class="nav-number">1.25.15.</span> <span class="nav-text">如何拆分服务、水平分割、垂直分割</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何应对微服务的链式调用异常"><span class="nav-number">1.25.16.</span> <span class="nav-text">如何应对微服务的链式调用异常</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何快速追踪与定位问题"><span class="nav-number">1.25.17.</span> <span class="nav-text">如何快速追踪与定位问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何保证微服务的安全、认证"><span class="nav-number">1.25.18.</span> <span class="nav-text">如何保证微服务的安全、认证</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安全问题"><span class="nav-number">1.26.</span> <span class="nav-text">安全问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#如何防范常见的Web攻击、如何方式SQL注入"><span class="nav-number">1.26.1.</span> <span class="nav-text">如何防范常见的Web攻击、如何方式SQL注入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#服务端通信安全攻防"><span class="nav-number">1.26.2.</span> <span class="nav-text">服务端通信安全攻防</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTPS原理剖析、降级攻击、HTTP与HTTPS的对比"><span class="nav-number">1.26.3.</span> <span class="nav-text">HTTPS原理剖析、降级攻击、HTTP与HTTPS的对比</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#OAuth"><span class="nav-number">1.26.4.</span> <span class="nav-text">OAuth</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#性能优化"><span class="nav-number">1.27.</span> <span class="nav-text">性能优化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#性能指标有哪些"><span class="nav-number">1.27.1.</span> <span class="nav-text">性能指标有哪些</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何发现性能瓶颈"><span class="nav-number">1.27.2.</span> <span class="nav-text">如何发现性能瓶颈</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#性能调优的常见手段"><span class="nav-number">1.27.3.</span> <span class="nav-text">性能调优的常见手段</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#说说你在项目中如何进行性能调优"><span class="nav-number">1.27.4.</span> <span class="nav-text">说说你在项目中如何进行性能调优</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他"><span class="nav-number">1.28.</span> <span class="nav-text">其他</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设计能力"><span class="nav-number">1.29.</span> <span class="nav-text">设计能力</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#说说你在项目中使用过的-UML-图"><span class="nav-number">1.29.1.</span> <span class="nav-text">说说你在项目中使用过的 UML 图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#你如何考虑组件化、服务化、系统拆分"><span class="nav-number">1.29.2.</span> <span class="nav-text">你如何考虑组件化、服务化、系统拆分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#秒杀场景如何设计"><span class="nav-number">1.29.3.</span> <span class="nav-text">秒杀场景如何设计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#有没有处理过线上问题？出现内存泄露，CPU-利用率标高，应用无响应时如何处理的。"><span class="nav-number">1.29.4.</span> <span class="nav-text">有没有处理过线上问题？出现内存泄露，CPU 利用率标高，应用无响应时如何处理的。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#开发中有没有遇到什么技术问题？如何解决的"><span class="nav-number">1.29.5.</span> <span class="nav-text">开发中有没有遇到什么技术问题？如何解决的</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如果有几十亿的白名单，每天白天需要高并发查询，晚上需要更新一次，如何设计这个功能。"><span class="nav-number">1.29.6.</span> <span class="nav-text">如果有几十亿的白名单，每天白天需要高并发查询，晚上需要更新一次，如何设计这个功能。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#新浪微博是如何实现把微博推给订阅者"><span class="nav-number">1.29.7.</span> <span class="nav-text">新浪微博是如何实现把微博推给订阅者</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Google-是如何在一秒内把搜索结果返回给用户的。"><span class="nav-number">1.29.8.</span> <span class="nav-text">Google 是如何在一秒内把搜索结果返回给用户的。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12306-网站的订票系统如何实现，如何保证不会票不被超卖。"><span class="nav-number">1.29.9.</span> <span class="nav-text">12306 网站的订票系统如何实现，如何保证不会票不被超卖。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何实现一个秒杀系统，保证只有几位用户能买到某件商品。"><span class="nav-number">1.29.10.</span> <span class="nav-text">如何实现一个秒杀系统，保证只有几位用户能买到某件商品。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#可参考：《秒杀系统的技术挑战、应对策略以及架构设计总结一二！》"><span class="nav-number">1.29.11.</span> <span class="nav-text">可参考：《秒杀系统的技术挑战、应对策略以及架构设计总结一二！》</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#可参考：《大型网站应用之海量数据和高并发解决方案总结一二》"><span class="nav-number">1.29.12.</span> <span class="nav-text">可参考：《大型网站应用之海量数据和高并发解决方案总结一二》</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#业务工程"><span class="nav-number">1.30.</span> <span class="nav-text">业务工程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#说说你的开发流程、如何进行自动化部署的"><span class="nav-number">1.30.1.</span> <span class="nav-text">说说你的开发流程、如何进行自动化部署的</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#你和团队是如何沟通的"><span class="nav-number">1.30.2.</span> <span class="nav-text">你和团队是如何沟通的</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#你如何进行代码评审"><span class="nav-number">1.30.3.</span> <span class="nav-text">你如何进行代码评审</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#说说你对技术与业务的理解"><span class="nav-number">1.30.4.</span> <span class="nav-text">说说你对技术与业务的理解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#说说你在项目中遇到感觉最难Bug，是如何解决的"><span class="nav-number">1.30.5.</span> <span class="nav-text">说说你在项目中遇到感觉最难Bug，是如何解决的</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#介绍一下工作中的一个你认为最有价值的项目，以及在这个过程中的角色、解决的问题、你觉得你们项目还有哪些不足的地方"><span class="nav-number">1.30.6.</span> <span class="nav-text">介绍一下工作中的一个你认为最有价值的项目，以及在这个过程中的角色、解决的问题、你觉得你们项目还有哪些不足的地方</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#软实力"><span class="nav-number">1.31.</span> <span class="nav-text">软实力</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#说说你的优缺点、亮点"><span class="nav-number">1.31.1.</span> <span class="nav-text">说说你的优缺点、亮点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#说说你最近在看什么书、什么博客、在研究什么新技术、再看那些开源项目的源代码"><span class="nav-number">1.31.2.</span> <span class="nav-text">说说你最近在看什么书、什么博客、在研究什么新技术、再看那些开源项目的源代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#说说你觉得最有意义的技术书籍"><span class="nav-number">1.31.3.</span> <span class="nav-text">说说你觉得最有意义的技术书籍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#工作之余做什么事情、平时是如何学习的，怎样提升自己的能力"><span class="nav-number">1.31.4.</span> <span class="nav-text">工作之余做什么事情、平时是如何学习的，怎样提升自己的能力</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#说说个人发展方向方面的思考"><span class="nav-number">1.31.5.</span> <span class="nav-text">说说个人发展方向方面的思考</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#说说你认为的服务端开发工程师应该具备哪些能力"><span class="nav-number">1.31.6.</span> <span class="nav-text">说说你认为的服务端开发工程师应该具备哪些能力</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#说说你认为的架构师是什么样的，架构师主要做什么"><span class="nav-number">1.31.7.</span> <span class="nav-text">说说你认为的架构师是什么样的，架构师主要做什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何看待加班的问题"><span class="nav-number">1.31.8.</span> <span class="nav-text">如何看待加班的问题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#面试技巧"><span class="nav-number">1.32.</span> <span class="nav-text">面试技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#可参考：-4"><span class="nav-number">1.32.1.</span> <span class="nav-text">可参考：</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
