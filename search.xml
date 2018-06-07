@@ -856,14 +856,94 @@
 <li><a href="http://www.cnblogs.com/ityouknow/p/5603287.html" target="_blank" rel="noopener">java类的加载机制</a></li>
 </ol>
 <h2 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h2><h3 id="常见的设计模式"><a href="#常见的设计模式" class="headerlink" title="常见的设计模式"></a>常见的设计模式</h3><h3 id="设计模式的的六大原则及其含义"><a href="#设计模式的的六大原则及其含义" class="headerlink" title="设计模式的的六大原则及其含义"></a>设计模式的的六大原则及其含义</h3><h3 id="常见的单例模式以及各种实现方式的优缺点，哪一种最好，手写常见的单利模式"><a href="#常见的单例模式以及各种实现方式的优缺点，哪一种最好，手写常见的单利模式" class="headerlink" title="常见的单例模式以及各种实现方式的优缺点，哪一种最好，手写常见的单利模式"></a>常见的单例模式以及各种实现方式的优缺点，哪一种最好，手写常见的单利模式</h3><h3 id="设计模式在实际场景中的应用"><a href="#设计模式在实际场景中的应用" class="headerlink" title="设计模式在实际场景中的应用"></a>设计模式在实际场景中的应用</h3><h3 id="Spring-中用到了哪些设计模式"><a href="#Spring-中用到了哪些设计模式" class="headerlink" title="Spring 中用到了哪些设计模式"></a>Spring 中用到了哪些设计模式</h3><h3 id="MyBatis-中用到了哪些设计模式"><a href="#MyBatis-中用到了哪些设计模式" class="headerlink" title="MyBatis 中用到了哪些设计模式"></a>MyBatis 中用到了哪些设计模式</h3><h3 id="你项目中有使用哪些设计模式"><a href="#你项目中有使用哪些设计模式" class="headerlink" title="你项目中有使用哪些设计模式"></a>你项目中有使用哪些设计模式</h3><h3 id="说说常用开源框架中设计模式使用分析"><a href="#说说常用开源框架中设计模式使用分析" class="headerlink" title="说说常用开源框架中设计模式使用分析"></a>说说常用开源框架中设计模式使用分析</h3><h3 id="动态代理很重要！！！"><a href="#动态代理很重要！！！" class="headerlink" title="动态代理很重要！！！"></a>动态代理很重要！！！</h3><h2 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h2><h3 id="树（二叉查找树、平衡二叉树、红黑树、B树、B-树）"><a href="#树（二叉查找树、平衡二叉树、红黑树、B树、B-树）" class="headerlink" title="树（二叉查找树、平衡二叉树、红黑树、B树、B+树）"></a>树（二叉查找树、平衡二叉树、红黑树、B树、B+树）</h3><h3 id="深度有限算法、广度优先算法"><a href="#深度有限算法、广度优先算法" class="headerlink" title="深度有限算法、广度优先算法"></a>深度有限算法、广度优先算法</h3><h3 id="克鲁斯卡尔算法、普林母算法、迪克拉斯算法"><a href="#克鲁斯卡尔算法、普林母算法、迪克拉斯算法" class="headerlink" title="克鲁斯卡尔算法、普林母算法、迪克拉斯算法"></a>克鲁斯卡尔算法、普林母算法、迪克拉斯算法</h3><h3 id="什么是一致性Hash及其原理、Hash环问题"><a href="#什么是一致性Hash及其原理、Hash环问题" class="headerlink" title="什么是一致性Hash及其原理、Hash环问题"></a>什么是一致性Hash及其原理、Hash环问题</h3><h3 id="常见的排序算法和查找算法：快排、折半查找、堆排序等"><a href="#常见的排序算法和查找算法：快排、折半查找、堆排序等" class="headerlink" title="常见的排序算法和查找算法：快排、折半查找、堆排序等"></a><a href="https://itimetraveler.github.io/2017/07/18/%E5%85%AB%E5%A4%A7%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93%E4%B8%8Ejava%E5%AE%9E%E7%8E%B0/" target="_blank" rel="noopener">常见的排序算法和查找算法：快排、折半查找、堆排序等</a></h3><h2 id="网络-IO-基础"><a href="#网络-IO-基础" class="headerlink" title="网络 / IO 基础"></a>网络 / IO 基础</h2><h3 id="BIO、NIO、AIO的概念"><a href="#BIO、NIO、AIO的概念" class="headerlink" title="BIO、NIO、AIO的概念"></a>BIO、NIO、AIO的概念</h3><p>  可参考：<a href="https://tech.meituan.com/nio.html" target="_blank" rel="noopener">Java NIO浅析</a></p>
-<h3 id="什么是长连接和短连接"><a href="#什么是长连接和短连接" class="headerlink" title="什么是长连接和短连接"></a>什么是长连接和短连接</h3><h3 id="Http1-0-和-2-0-相比有什么区别，可参考Http-2-0"><a href="#Http1-0-和-2-0-相比有什么区别，可参考Http-2-0" class="headerlink" title="Http1.0 和 2.0 相比有什么区别，可参考Http 2.0"></a>Http1.0 和 2.0 相比有什么区别，可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247484611&amp;idx=1&amp;sn=66c875392eedff8150633ddcd5d83e7a" target="_blank" rel="noopener">Http 2.0</a></h3><h3 id="Https的基本概念"><a href="#Https的基本概念" class="headerlink" title="Https的基本概念"></a>Https的基本概念</h3><h3 id="三次握手和四次挥手、为什么挥手需要四次"><a href="#三次握手和四次挥手、为什么挥手需要四次" class="headerlink" title="三次握手和四次挥手、为什么挥手需要四次"></a>三次握手和四次挥手、为什么挥手需要四次</h3><h3 id="从游览器中输入URL到页面加载的发生了什么？可参考从输入URL到页面加载发生了什么"><a href="#从游览器中输入URL到页面加载的发生了什么？可参考从输入URL到页面加载发生了什么" class="headerlink" title="从游览器中输入URL到页面加载的发生了什么？可参考从输入URL到页面加载发生了什么"></a>从游览器中输入URL到页面加载的发生了什么？可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247483724&amp;idx=1&amp;sn=e58dd30d124971c795584e8673d6cc71" target="_blank" rel="noopener">从输入URL到页面加载发生了什么</a></h3><h1 id="数据存储和消息队列"><a href="#数据存储和消息队列" class="headerlink" title="数据存储和消息队列"></a>数据存储和消息队列</h1><h2 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h2><h3 id="MySQL-索引使用的注意事项"><a href="#MySQL-索引使用的注意事项" class="headerlink" title="MySQL 索引使用的注意事项"></a>MySQL 索引使用的注意事项</h3><h3 id="DDL、DML、DCL分别指什么"><a href="#DDL、DML、DCL分别指什么" class="headerlink" title="DDL、DML、DCL分别指什么"></a>DDL、DML、DCL分别指什么</h3><ul>
+<h3 id="什么是长连接和短连接"><a href="#什么是长连接和短连接" class="headerlink" title="什么是长连接和短连接"></a>什么是长连接和短连接</h3><h3 id="Http1-0-和-2-0-相比有什么区别，可参考Http-2-0"><a href="#Http1-0-和-2-0-相比有什么区别，可参考Http-2-0" class="headerlink" title="Http1.0 和 2.0 相比有什么区别，可参考Http 2.0"></a>Http1.0 和 2.0 相比有什么区别，可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247484611&amp;idx=1&amp;sn=66c875392eedff8150633ddcd5d83e7a" target="_blank" rel="noopener">Http 2.0</a></h3><h3 id="Https的基本概念"><a href="#Https的基本概念" class="headerlink" title="Https的基本概念"></a>Https的基本概念</h3><h3 id="三次握手和四次挥手、为什么挥手需要四次"><a href="#三次握手和四次挥手、为什么挥手需要四次" class="headerlink" title="三次握手和四次挥手、为什么挥手需要四次"></a>三次握手和四次挥手、为什么挥手需要四次</h3><h3 id="从游览器中输入URL到页面加载的发生了什么？可参考从输入URL到页面加载发生了什么"><a href="#从游览器中输入URL到页面加载的发生了什么？可参考从输入URL到页面加载发生了什么" class="headerlink" title="从游览器中输入URL到页面加载的发生了什么？可参考从输入URL到页面加载发生了什么"></a>从游览器中输入URL到页面加载的发生了什么？可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247483724&amp;idx=1&amp;sn=e58dd30d124971c795584e8673d6cc71" target="_blank" rel="noopener">从输入URL到页面加载发生了什么</a></h3><h1 id="数据存储和消息队列"><a href="#数据存储和消息队列" class="headerlink" title="数据存储和消息队列"></a>数据存储和消息队列</h1><h2 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h2><h3 id="MySQL-存储引擎区别"><a href="#MySQL-存储引擎区别" class="headerlink" title="MySQL 存储引擎区别"></a>MySQL 存储引擎区别</h3><p>  MySQL 5.5 之前版本默认的存储引擎为 MyISAM，从5.5之后为 InnoDB。</p>
+<ul>
+<li>MyISAM<ul>
+<li>不支持事务，但是每次查询都是原子的。</li>
+<li>支持表级锁，即每次操作是对整个表加锁；</li>
+<li>存储表的总行数；</li>
+<li>一个MYISAM表有三个文件：索引文件、表结构文件、数据文件；</li>
+<li>采用菲聚集索引，索引文件的数据域存储指向数据文件的指针。辅索引与主索引基本一致，但是辅索引不用保证唯一性。</li>
+</ul>
+</li>
+<li>InnoDB<ul>
+<li>支持ACID的事务，支持事务的四种隔离级别；</li>
+<li>支持行级锁及外键约束：因此可以支持写并发；</li>
+<li>不存储总行数；</li>
+<li>一个InnoDb引擎存储在一个文件空间（共享表空间，表大小不受操作系统控制，一个表可能分布在多个文件里），也有可能为多个（设置为独立表空，表大小受操作系统文件大小限制，一般为2G），受操作系统文件大小的限制；</li>
+<li>主键索引采用聚集索引（索引的数据域存储数据文件本身），辅索引的数据域存储主键的值；因此从辅索引查找数据，需要先通过辅索引找到主键值，再访问辅索引；最好使用自增主键，防止插入数据时，为维持B+树结构，文件的大调整。</li>
+</ul>
+</li>
+<li>Memory<br>…<h3 id="MySQL-索引定义"><a href="#MySQL-索引定义" class="headerlink" title="MySQL 索引定义"></a>MySQL 索引定义</h3>官方定义：索引（Index）是帮助MySQL高效获取数据的数据结构。所以索引的本质：索引是数据结构。</li>
+</ul>
+<h3 id="MySQL-索引类型"><a href="#MySQL-索引类型" class="headerlink" title="MySQL 索引类型"></a>MySQL 索引类型</h3><ul>
+<li>BTree 索引（B-tree：又称B树、B-树，又叫平衡(balance)多路查找树）<ul>
+<li>B-Tree<ol>
+<li>MyISAM使用B-Tree实现主键索引、非主键索引和唯一索引。</li>
+</ol>
+</li>
+<li>B+Tree<ol>
+<li>InnoDB 索引使用的是B+Tree。</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>哈希索引<ul>
+<li>hash 就是一种（key=&gt;value）形式的键值对，目前仅 Memory 引擎支持。</li>
+<li>由于hash索引可以一次定位，不需要像树形索引那样逐层查找,因此具有极高的效率</li>
+</ul>
+</li>
+<li>空间数据索引（R-Tree）<ul>
+<li>仅支持geometry数据类型</li>
+<li>相对于BTREE，RTREE 的优势在于范围查找.</li>
+</ul>
+</li>
+<li>全文索引<br>仅 MyISAM 引擎支持</li>
+</ul>
+<h3 id="为什么使用-B-Tree-作为索引"><a href="#为什么使用-B-Tree-作为索引" class="headerlink" title="为什么使用 B+Tree 作为索引"></a>为什么使用 B+Tree 作为索引</h3><ul>
+<li>B+树更适合外部存储,由于内节点无 data 域,一个结点可以存储更多的内结点,每个节点能索引的范围更大更精确,也意味着 B+树单次磁盘IO的信息量大于B-树,I/O效率更高。</li>
+<li>Mysql是一种关系型数据库，区间访问是常见的一种情况，B+树叶节点增加的链指针,加强了区间访问性，可使用在范围区间查询等，而B-树每个节点 key 和 data 在一起，则无法区间查找。    </li>
+</ul>
+<h3 id="MySQL-BTree-索引和-Hash-索引的区别"><a href="#MySQL-BTree-索引和-Hash-索引的区别" class="headerlink" title="MySQL BTree 索引和 Hash 索引的区别"></a>MySQL BTree 索引和 Hash 索引的区别</h3><ul>
+<li>Hash 索引仅能满足”=”,”IN”和”&lt;=&gt;”查询，不能使用范围查询。<br>由于 Hash 索引比较的是进行 Hash 运算之后的 Hash 值，所以它只能用于等值的过滤，不能用于基于范围的过滤，因为经过相应的 Hash 算法处理之后的 Hash 值的大小关系，并不能保证和Hash运算前完全一样。</li>
+<li>Hash 索引无法被用来避免数据的排序操作。<br>由于 Hash 索引中存放的是经过 Hash 计算之后的 Hash 值，而Hash值的大小关系并不一定和 Hash 运算前的键值完全一样，所以数据库无法利用索引的数据来避免任何排序运算；</li>
+<li>Hash 索引不能利用部分索引键查询（仅对使用全部索引键查询有效）。<br>对于组合索引，Hash 索引在计算 Hash 值的时候是组合索引键合并后再一起计算 Hash 值，而不是单独计算 Hash 值，所以通过组合索引的前面一个或几个索引键进行查询的时候，Hash 索引也无法被利用。</li>
+<li>Hash 索引在任何时候都不能避免表扫描。<br>前面已经知道，Hash 索引是将索引键通过 Hash 运算之后，将 Hash运算结果的 Hash 值和所对应的行指针信息存放于一个 Hash 表中，由于不同索引键存在相同 Hash 值，所以即使取满足某个 Hash 键值的数据的记录条数，也无法从 Hash 索引中直接完成查询，还是要通过访问表中的实际数据进行相应的比较，并得到相应的结果。</li>
+<li>Hash 索引遇到大量Hash值相等的情况后性能并不一定就会比B-Tree索引高。<br>对于选择性比较低的索引键，如果创建 Hash 索引，那么将会存在大量记录指针信息存于同一个 Hash 值相关联。这样要定位某一条记录时就会非常麻烦，会浪费多次表数据的访问，而造成整体性能低下。</li>
+</ul>
+<h3 id="MySQL-索引使用的注意事项"><a href="#MySQL-索引使用的注意事项" class="headerlink" title="MySQL 索引使用的注意事项"></a>MySQL 索引使用的注意事项</h3><h3 id="MySQL-悲观锁和乐观锁"><a href="#MySQL-悲观锁和乐观锁" class="headerlink" title="MySQL 悲观锁和乐观锁"></a>MySQL 悲观锁和乐观锁</h3><ul>
+<li>悲观锁：假设会发生并发冲突，回避一切可能违反数据完整性的操作。<br>在一般情况下，悲观锁依靠数据库的锁机制实现，以保证操作最大程度的排他性和独占性，因而会导致数据库性能的大量开销和并发性很低，特别是对长事务而言，这种开销往往过于巨大而无法承受。</li>
+<li>乐观锁：假设不会发生并发冲突，只在提交操作时检查是否违反数据完整性，注意乐观锁并不能解决脏读的问题(关于脏读稍后解析)。<br>乐观锁，大多情况下是基于数据版本（ Version ）记录机制实现。</li>
+</ul>
+<h3 id="DDL、DML、DCL分别指什么"><a href="#DDL、DML、DCL分别指什么" class="headerlink" title="DDL、DML、DCL分别指什么"></a>DDL、DML、DCL分别指什么</h3><ul>
 <li>DDL：data manipulation language 数据操纵语言<br>主要用来对数据库的数据进行一些操作，如： SELECT、UPDATE、INSERT、DELETE。</li>
 <li>DML：data definition language 数据库定义语言<br>如：CREATE、ALTER、DROP等</li>
 <li>DCL：Data Control Language 数据库控制语言<br>用来设置或更改数据库用户或角色权限的语句，如 grant,deny,revoke等语句</li>
 </ul>
 <h3 id="explain-命令"><a href="#explain-命令" class="headerlink" title="explain 命令"></a>explain 命令</h3><h3 id="left-join，right-join，inner-join"><a href="#left-join，right-join，inner-join" class="headerlink" title="left join，right join，inner join"></a>left join，right join，inner join</h3><h3 id="数据库事物-ACID"><a href="#数据库事物-ACID" class="headerlink" title="数据库事物 ACID"></a>数据库事物 ACID</h3><p>  （原子性、一致性、隔离性、持久性）</p>
 <h3 id="事务的隔离级别"><a href="#事务的隔离级别" class="headerlink" title="事务的隔离级别"></a>事务的隔离级别</h3><p>  （读未提交、读以提交、可重复读、可序列化读）</p>
-<h3 id="脏读、幻读、不可重复读"><a href="#脏读、幻读、不可重复读" class="headerlink" title="脏读、幻读、不可重复读"></a>脏读、幻读、不可重复读</h3><h3 id="数据库的几大范式"><a href="#数据库的几大范式" class="headerlink" title="数据库的几大范式"></a>数据库的几大范式</h3><h3 id="数据库常见的命令"><a href="#数据库常见的命令" class="headerlink" title="数据库常见的命令"></a>数据库常见的命令</h3><h3 id="说说分库与分表设计"><a href="#说说分库与分表设计" class="headerlink" title="说说分库与分表设计"></a>说说分库与分表设计</h3><h3 id="分库与分表带来的分布式困境与应对之策（如何解决分布式下的分库分表，全局表？）"><a href="#分库与分表带来的分布式困境与应对之策（如何解决分布式下的分库分表，全局表？）" class="headerlink" title="分库与分表带来的分布式困境与应对之策（如何解决分布式下的分库分表，全局表？）"></a>分库与分表带来的分布式困境与应对之策（如何解决分布式下的分库分表，全局表？）</h3><h3 id="说说-SQL-优化之道。可参考19个MySQL性能优化要点解析"><a href="#说说-SQL-优化之道。可参考19个MySQL性能优化要点解析" class="headerlink" title="说说 SQL 优化之道。可参考19个MySQL性能优化要点解析"></a>说说 SQL 优化之道。可参考<a href="http://blog.csdn.net/xlgen157387/article/details/50735269" target="_blank" rel="noopener">19个MySQL性能优化要点解析</a></h3><h3 id="MySQL遇到的死锁问题、如何排查与解决"><a href="#MySQL遇到的死锁问题、如何排查与解决" class="headerlink" title="MySQL遇到的死锁问题、如何排查与解决"></a>MySQL遇到的死锁问题、如何排查与解决</h3><h3 id="存储引擎的-InnoDB与MyISAM区别，优缺点，使用场景"><a href="#存储引擎的-InnoDB与MyISAM区别，优缺点，使用场景" class="headerlink" title="存储引擎的 InnoDB与MyISAM区别，优缺点，使用场景"></a>存储引擎的 InnoDB与MyISAM区别，优缺点，使用场景</h3><h3 id="索引类别（B-树索引、全文索引、哈希索引）、索引的原理"><a href="#索引类别（B-树索引、全文索引、哈希索引）、索引的原理" class="headerlink" title="索引类别（B+树索引、全文索引、哈希索引）、索引的原理"></a>索引类别（B+树索引、全文索引、哈希索引）、索引的原理</h3><h3 id="什么是自适应哈希索引（AHI）"><a href="#什么是自适应哈希索引（AHI）" class="headerlink" title="什么是自适应哈希索引（AHI）"></a>什么是自适应哈希索引（AHI）</h3><h3 id="为什么要用-B-tree-作为MySQL索引的数据结构"><a href="#为什么要用-B-tree-作为MySQL索引的数据结构" class="headerlink" title="为什么要用 B+tree 作为MySQL索引的数据结构"></a>为什么要用 B+tree 作为MySQL索引的数据结构</h3><h3 id="聚集索引与非聚集索引的区别"><a href="#聚集索引与非聚集索引的区别" class="headerlink" title="聚集索引与非聚集索引的区别"></a>聚集索引与非聚集索引的区别</h3><h3 id="遇到过索引失效的情况没，什么时候可能会出现，如何解决"><a href="#遇到过索引失效的情况没，什么时候可能会出现，如何解决" class="headerlink" title="遇到过索引失效的情况没，什么时候可能会出现，如何解决"></a>遇到过索引失效的情况没，什么时候可能会出现，如何解决</h3><h3 id="limit-20000-加载很慢怎么解决"><a href="#limit-20000-加载很慢怎么解决" class="headerlink" title="limit 20000 加载很慢怎么解决"></a>limit 20000 加载很慢怎么解决</h3><h3 id="如何选择合适的分布式主键方案"><a href="#如何选择合适的分布式主键方案" class="headerlink" title="如何选择合适的分布式主键方案"></a>如何选择合适的分布式主键方案</h3><h3 id="选择合适的数据存储方案"><a href="#选择合适的数据存储方案" class="headerlink" title="选择合适的数据存储方案"></a>选择合适的数据存储方案</h3><h3 id="常见的几种分布式ID的设计方案"><a href="#常见的几种分布式ID的设计方案" class="headerlink" title="常见的几种分布式ID的设计方案"></a>常见的几种分布式ID的设计方案</h3><h3 id="常见的数据库优化方案，在你的项目中数据库如何进行优化的"><a href="#常见的数据库优化方案，在你的项目中数据库如何进行优化的" class="headerlink" title="常见的数据库优化方案，在你的项目中数据库如何进行优化的"></a>常见的数据库优化方案，在你的项目中数据库如何进行优化的</h3><h3 id="如果有很多数据插⼊MYSQL-你会选择什么⽅式"><a href="#如果有很多数据插⼊MYSQL-你会选择什么⽅式" class="headerlink" title="如果有很多数据插⼊MYSQL 你会选择什么⽅式?"></a>如果有很多数据插⼊MYSQL 你会选择什么⽅式?</h3><h3 id="如果查询很慢，你会想到的第⼀个⽅式是什么？索引是⼲嘛的"><a href="#如果查询很慢，你会想到的第⼀个⽅式是什么？索引是⼲嘛的" class="headerlink" title="如果查询很慢，你会想到的第⼀个⽅式是什么？索引是⼲嘛的?"></a>如果查询很慢，你会想到的第⼀个⽅式是什么？索引是⼲嘛的?</h3><h3 id="如果建了⼀个单列索引，查询的时候查出2列，会⽤到这个单列索引吗？"><a href="#如果建了⼀个单列索引，查询的时候查出2列，会⽤到这个单列索引吗？" class="headerlink" title="如果建了⼀个单列索引，查询的时候查出2列，会⽤到这个单列索引吗？"></a>如果建了⼀个单列索引，查询的时候查出2列，会⽤到这个单列索引吗？</h3><h3 id="如果建了⼀个包含多个列的索引，查询的时候只⽤了第⼀列，能不能⽤上-这个索引？查三列呢？"><a href="#如果建了⼀个包含多个列的索引，查询的时候只⽤了第⼀列，能不能⽤上-这个索引？查三列呢？" class="headerlink" title="如果建了⼀个包含多个列的索引，查询的时候只⽤了第⼀列，能不能⽤上 这个索引？查三列呢？"></a>如果建了⼀个包含多个列的索引，查询的时候只⽤了第⼀列，能不能⽤上 这个索引？查三列呢？</h3><h3 id="接上题，如果where条件后⾯带有⼀个-i-5-lt-100-会使⽤到这个索引吗？"><a href="#接上题，如果where条件后⾯带有⼀个-i-5-lt-100-会使⽤到这个索引吗？" class="headerlink" title="接上题，如果where条件后⾯带有⼀个 i + 5 &lt; 100 会使⽤到这个索引吗？"></a>接上题，如果where条件后⾯带有⼀个 i + 5 &lt; 100 会使⽤到这个索引吗？</h3><h3 id="怎么看是否⽤到了某个索引？"><a href="#怎么看是否⽤到了某个索引？" class="headerlink" title="怎么看是否⽤到了某个索引？"></a>怎么看是否⽤到了某个索引？</h3><h3 id="like-aaa-会使⽤索引吗-like-aaa-呢"><a href="#like-aaa-会使⽤索引吗-like-aaa-呢" class="headerlink" title="like %aaa%会使⽤索引吗? like aaa%呢?"></a>like %aaa%会使⽤索引吗? like aaa%呢?</h3><h3 id="drop、truncate、delete的区别？"><a href="#drop、truncate、delete的区别？" class="headerlink" title="drop、truncate、delete的区别？"></a>drop、truncate、delete的区别？</h3><h3 id="平时你们是怎么监控数据库的-慢-SQL-是怎么排查的？"><a href="#平时你们是怎么监控数据库的-慢-SQL-是怎么排查的？" class="headerlink" title="平时你们是怎么监控数据库的? 慢 SQL 是怎么排查的？"></a>平时你们是怎么监控数据库的? 慢 SQL 是怎么排查的？</h3><h3 id="你们数据库是否⽀持emoji表情，如果不⽀持，如何操作"><a href="#你们数据库是否⽀持emoji表情，如果不⽀持，如何操作" class="headerlink" title="你们数据库是否⽀持emoji表情，如果不⽀持，如何操作?"></a>你们数据库是否⽀持emoji表情，如果不⽀持，如何操作?</h3><h3 id="你们的数据库单表数据量是多少？⼀般多⼤的时候开始出现查询性能急-剧下降？"><a href="#你们的数据库单表数据量是多少？⼀般多⼤的时候开始出现查询性能急-剧下降？" class="headerlink" title="你们的数据库单表数据量是多少？⼀般多⼤的时候开始出现查询性能急 剧下降？"></a>你们的数据库单表数据量是多少？⼀般多⼤的时候开始出现查询性能急 剧下降？</h3><h3 id="查询死掉了，想要找出执⾏的查询进程⽤什么命令？找出来之后⼀般你-会⼲嘛？"><a href="#查询死掉了，想要找出执⾏的查询进程⽤什么命令？找出来之后⼀般你-会⼲嘛？" class="headerlink" title="查询死掉了，想要找出执⾏的查询进程⽤什么命令？找出来之后⼀般你 会⼲嘛？"></a>查询死掉了，想要找出执⾏的查询进程⽤什么命令？找出来之后⼀般你 会⼲嘛？</h3><h3 id="读写分离是怎么做的？你认为中间件会怎么来操作？这样操作跟事务有-什么关系？-14-分库分表有没有做过？线上的迁移过程是怎么样的？如何确定数据是正-确的？"><a href="#读写分离是怎么做的？你认为中间件会怎么来操作？这样操作跟事务有-什么关系？-14-分库分表有没有做过？线上的迁移过程是怎么样的？如何确定数据是正-确的？" class="headerlink" title="读写分离是怎么做的？你认为中间件会怎么来操作？这样操作跟事务有 什么关系？ 14. 分库分表有没有做过？线上的迁移过程是怎么样的？如何确定数据是正 确的？"></a>读写分离是怎么做的？你认为中间件会怎么来操作？这样操作跟事务有 什么关系？ 14. 分库分表有没有做过？线上的迁移过程是怎么样的？如何确定数据是正 确的？</h3><h3 id="MySQL常用命令"><a href="#MySQL常用命令" class="headerlink" title="MySQL常用命令"></a>MySQL常用命令</h3><h3 id="数据库中事物的特征？"><a href="#数据库中事物的特征？" class="headerlink" title="数据库中事物的特征？"></a>数据库中事物的特征？</h3><h3 id="JDBC的使用？"><a href="#JDBC的使用？" class="headerlink" title="JDBC的使用？"></a>JDBC的使用？</h3><h3 id="InnodB与MyISAM的区别"><a href="#InnodB与MyISAM的区别" class="headerlink" title="InnodB与MyISAM的区别"></a>InnodB与MyISAM的区别</h3><h3 id="MySQL为什么使用B-树作为索引？"><a href="#MySQL为什么使用B-树作为索引？" class="headerlink" title="MySQL为什么使用B+树作为索引？"></a>MySQL为什么使用B+树作为索引？</h3><h2 id="Redis"><a href="#Redis" class="headerlink" title="Redis"></a>Redis</h2><h3 id="Redis与Memorycache的区别？"><a href="#Redis与Memorycache的区别？" class="headerlink" title="Redis与Memorycache的区别？"></a>Redis与Memorycache的区别？</h3><h3 id="Redis的五种数据结构？"><a href="#Redis的五种数据结构？" class="headerlink" title="Redis的五种数据结构？"></a>Redis的五种数据结构？</h3><h3 id="渐进式rehash过程？"><a href="#渐进式rehash过程？" class="headerlink" title="渐进式rehash过程？"></a>渐进式rehash过程？</h3><h3 id="rehash源码？"><a href="#rehash源码？" class="headerlink" title="rehash源码？"></a>rehash源码？</h3><h3 id="持久化机制"><a href="#持久化机制" class="headerlink" title="持久化机制"></a>持久化机制</h3><h3 id="reaof源码？"><a href="#reaof源码？" class="headerlink" title="reaof源码？"></a>reaof源码？</h3><h3 id="事务与事件"><a href="#事务与事件" class="headerlink" title="事务与事件"></a>事务与事件</h3><h3 id="主从复制"><a href="#主从复制" class="headerlink" title="主从复制"></a>主从复制</h3><h3 id="启动过程"><a href="#启动过程" class="headerlink" title="启动过程"></a>启动过程</h3><h3 id="集群"><a href="#集群" class="headerlink" title="集群"></a>集群</h3><h3 id="Redis的6种数据淘汰策略"><a href="#Redis的6种数据淘汰策略" class="headerlink" title="Redis的6种数据淘汰策略"></a>Redis的6种数据淘汰策略</h3><h3 id="redis的并发竞争问题？"><a href="#redis的并发竞争问题？" class="headerlink" title="redis的并发竞争问题？"></a>redis的并发竞争问题？</h3><h3 id="Redis-有哪些数据类型，可参考Redis常见的5种不同的数据类型详解"><a href="#Redis-有哪些数据类型，可参考Redis常见的5种不同的数据类型详解" class="headerlink" title="Redis 有哪些数据类型，可参考Redis常见的5种不同的数据类型详解"></a>Redis 有哪些数据类型，可参考<a href="https://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247483987&amp;idx=1&amp;sn=5c5e4cd5bc73a7e6f84e5d6adfab0935" target="_blank" rel="noopener">Redis常见的5种不同的数据类型详解</a></h3><h3 id="Redis-内部结构"><a href="#Redis-内部结构" class="headerlink" title="Redis 内部结构"></a>Redis 内部结构</h3><h3 id="Redis-使用场景"><a href="#Redis-使用场景" class="headerlink" title="Redis 使用场景"></a>Redis 使用场景</h3><h3 id="Redis-持久化机制，可参考使用快照和AOF将Redis数据持久化到硬盘中"><a href="#Redis-持久化机制，可参考使用快照和AOF将Redis数据持久化到硬盘中" class="headerlink" title="Redis 持久化机制，可参考使用快照和AOF将Redis数据持久化到硬盘中"></a>Redis 持久化机制，可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247483992&amp;idx=1&amp;sn=8f554bc490c4db1a78a30144f873e911" target="_blank" rel="noopener">使用快照和AOF将Redis数据持久化到硬盘中</a></h3><h3 id="Redis-集群方案与实现"><a href="#Redis-集群方案与实现" class="headerlink" title="Redis 集群方案与实现"></a>Redis 集群方案与实现</h3><h3 id="Redis-为什么是单线程的？"><a href="#Redis-为什么是单线程的？" class="headerlink" title="Redis 为什么是单线程的？"></a>Redis 为什么是单线程的？</h3><h3 id="缓存雪崩、缓存穿透、缓存预热、缓存更新、缓存降级"><a href="#缓存雪崩、缓存穿透、缓存预热、缓存更新、缓存降级" class="headerlink" title="缓存雪崩、缓存穿透、缓存预热、缓存更新、缓存降级"></a>缓存雪崩、缓存穿透、缓存预热、缓存更新、缓存降级</h3><h3 id="使用缓存的合理性问题"><a href="#使用缓存的合理性问题" class="headerlink" title="使用缓存的合理性问题"></a>使用缓存的合理性问题</h3><h3 id="Redis-常见的回收策略"><a href="#Redis-常见的回收策略" class="headerlink" title="Redis 常见的回收策略"></a>Redis 常见的回收策略</h3><h2 id="消息队列"><a href="#消息队列" class="headerlink" title="消息队列"></a>消息队列</h2><p>  MQ 是一个互联网架构中常见的解耦利器<br>  <img src="http://neoremind.com/wp-content/uploads/MQ_mind2.png" alt="消息队列思维导图"></p>
+<h3 id="脏读、幻读、不可重复读"><a href="#脏读、幻读、不可重复读" class="headerlink" title="脏读、幻读、不可重复读"></a>脏读、幻读、不可重复读</h3><h3 id="数据库的几大范式"><a href="#数据库的几大范式" class="headerlink" title="数据库的几大范式"></a>数据库的几大范式</h3><h3 id="数据库常见的命令"><a href="#数据库常见的命令" class="headerlink" title="数据库常见的命令"></a>数据库常见的命令</h3><h3 id="说说分库与分表设计"><a href="#说说分库与分表设计" class="headerlink" title="说说分库与分表设计"></a>说说分库与分表设计</h3><h3 id="分库与分表带来的分布式困境与应对之策（如何解决分布式下的分库分表，全局表？）"><a href="#分库与分表带来的分布式困境与应对之策（如何解决分布式下的分库分表，全局表？）" class="headerlink" title="分库与分表带来的分布式困境与应对之策（如何解决分布式下的分库分表，全局表？）"></a>分库与分表带来的分布式困境与应对之策（如何解决分布式下的分库分表，全局表？）</h3><h3 id="说说-SQL-优化之道。可参考19个MySQL性能优化要点解析"><a href="#说说-SQL-优化之道。可参考19个MySQL性能优化要点解析" class="headerlink" title="说说 SQL 优化之道。可参考19个MySQL性能优化要点解析"></a>说说 SQL 优化之道。可参考<a href="http://blog.csdn.net/xlgen157387/article/details/50735269" target="_blank" rel="noopener">19个MySQL性能优化要点解析</a></h3><h3 id="MySQL遇到的死锁问题、如何排查与解决"><a href="#MySQL遇到的死锁问题、如何排查与解决" class="headerlink" title="MySQL遇到的死锁问题、如何排查与解决"></a>MySQL遇到的死锁问题、如何排查与解决</h3><h3 id="存储引擎的-InnoDB与MyISAM区别，优缺点，使用场景"><a href="#存储引擎的-InnoDB与MyISAM区别，优缺点，使用场景" class="headerlink" title="存储引擎的 InnoDB与MyISAM区别，优缺点，使用场景"></a>存储引擎的 InnoDB与MyISAM区别，优缺点，使用场景</h3><h3 id="索引类别（B-树索引、全文索引、哈希索引）、索引的原理"><a href="#索引类别（B-树索引、全文索引、哈希索引）、索引的原理" class="headerlink" title="索引类别（B+树索引、全文索引、哈希索引）、索引的原理"></a>索引类别（B+树索引、全文索引、哈希索引）、索引的原理</h3><h3 id="什么是自适应哈希索引（AHI）"><a href="#什么是自适应哈希索引（AHI）" class="headerlink" title="什么是自适应哈希索引（AHI）"></a>什么是自适应哈希索引（AHI）</h3><h3 id="为什么要用-B-tree-作为MySQL索引的数据结构"><a href="#为什么要用-B-tree-作为MySQL索引的数据结构" class="headerlink" title="为什么要用 B+tree 作为MySQL索引的数据结构"></a>为什么要用 B+tree 作为MySQL索引的数据结构</h3><h3 id="聚集索引与非聚集索引的区别"><a href="#聚集索引与非聚集索引的区别" class="headerlink" title="聚集索引与非聚集索引的区别"></a>聚集索引与非聚集索引的区别</h3><h3 id="遇到过索引失效的情况没，什么时候可能会出现，如何解决"><a href="#遇到过索引失效的情况没，什么时候可能会出现，如何解决" class="headerlink" title="遇到过索引失效的情况没，什么时候可能会出现，如何解决"></a>遇到过索引失效的情况没，什么时候可能会出现，如何解决</h3><h3 id="limit-20000-加载很慢怎么解决"><a href="#limit-20000-加载很慢怎么解决" class="headerlink" title="limit 20000 加载很慢怎么解决"></a>limit 20000 加载很慢怎么解决</h3><h3 id="如何选择合适的分布式主键方案"><a href="#如何选择合适的分布式主键方案" class="headerlink" title="如何选择合适的分布式主键方案"></a>如何选择合适的分布式主键方案</h3><h3 id="选择合适的数据存储方案"><a href="#选择合适的数据存储方案" class="headerlink" title="选择合适的数据存储方案"></a>选择合适的数据存储方案</h3><h3 id="常见的几种分布式ID的设计方案"><a href="#常见的几种分布式ID的设计方案" class="headerlink" title="常见的几种分布式ID的设计方案"></a>常见的几种分布式ID的设计方案</h3><h3 id="常见的数据库优化方案，在你的项目中数据库如何进行优化的"><a href="#常见的数据库优化方案，在你的项目中数据库如何进行优化的" class="headerlink" title="常见的数据库优化方案，在你的项目中数据库如何进行优化的"></a>常见的数据库优化方案，在你的项目中数据库如何进行优化的</h3><h3 id="如果有很多数据插⼊MYSQL-你会选择什么⽅式"><a href="#如果有很多数据插⼊MYSQL-你会选择什么⽅式" class="headerlink" title="如果有很多数据插⼊MYSQL 你会选择什么⽅式?"></a>如果有很多数据插⼊MYSQL 你会选择什么⽅式?</h3><h3 id="如果查询很慢，你会想到的第⼀个⽅式是什么？索引是⼲嘛的"><a href="#如果查询很慢，你会想到的第⼀个⽅式是什么？索引是⼲嘛的" class="headerlink" title="如果查询很慢，你会想到的第⼀个⽅式是什么？索引是⼲嘛的?"></a>如果查询很慢，你会想到的第⼀个⽅式是什么？索引是⼲嘛的?</h3><h3 id="如果建了⼀个单列索引，查询的时候查出2列，会⽤到这个单列索引吗？"><a href="#如果建了⼀个单列索引，查询的时候查出2列，会⽤到这个单列索引吗？" class="headerlink" title="如果建了⼀个单列索引，查询的时候查出2列，会⽤到这个单列索引吗？"></a>如果建了⼀个单列索引，查询的时候查出2列，会⽤到这个单列索引吗？</h3><h3 id="如果建了⼀个包含多个列的索引，查询的时候只⽤了第⼀列，能不能⽤上-这个索引？查三列呢？"><a href="#如果建了⼀个包含多个列的索引，查询的时候只⽤了第⼀列，能不能⽤上-这个索引？查三列呢？" class="headerlink" title="如果建了⼀个包含多个列的索引，查询的时候只⽤了第⼀列，能不能⽤上 这个索引？查三列呢？"></a>如果建了⼀个包含多个列的索引，查询的时候只⽤了第⼀列，能不能⽤上 这个索引？查三列呢？</h3><h3 id="接上题，如果where条件后⾯带有⼀个-i-5-lt-100-会使⽤到这个索引吗？"><a href="#接上题，如果where条件后⾯带有⼀个-i-5-lt-100-会使⽤到这个索引吗？" class="headerlink" title="接上题，如果where条件后⾯带有⼀个 i + 5 &lt; 100 会使⽤到这个索引吗？"></a>接上题，如果where条件后⾯带有⼀个 i + 5 &lt; 100 会使⽤到这个索引吗？</h3><h3 id="怎么看是否⽤到了某个索引？"><a href="#怎么看是否⽤到了某个索引？" class="headerlink" title="怎么看是否⽤到了某个索引？"></a>怎么看是否⽤到了某个索引？</h3><h3 id="like-aaa-会使⽤索引吗-like-aaa-呢"><a href="#like-aaa-会使⽤索引吗-like-aaa-呢" class="headerlink" title="like %aaa%会使⽤索引吗? like aaa%呢?"></a>like %aaa%会使⽤索引吗? like aaa%呢?</h3><h3 id="drop、truncate、delete的区别？"><a href="#drop、truncate、delete的区别？" class="headerlink" title="drop、truncate、delete的区别？"></a>drop、truncate、delete的区别？</h3><h3 id="平时你们是怎么监控数据库的-慢-SQL-是怎么排查的？"><a href="#平时你们是怎么监控数据库的-慢-SQL-是怎么排查的？" class="headerlink" title="平时你们是怎么监控数据库的? 慢 SQL 是怎么排查的？"></a>平时你们是怎么监控数据库的? 慢 SQL 是怎么排查的？</h3><h3 id="你们数据库是否⽀持emoji表情，如果不⽀持，如何操作"><a href="#你们数据库是否⽀持emoji表情，如果不⽀持，如何操作" class="headerlink" title="你们数据库是否⽀持emoji表情，如果不⽀持，如何操作?"></a>你们数据库是否⽀持emoji表情，如果不⽀持，如何操作?</h3><h3 id="你们的数据库单表数据量是多少？⼀般多⼤的时候开始出现查询性能急-剧下降？"><a href="#你们的数据库单表数据量是多少？⼀般多⼤的时候开始出现查询性能急-剧下降？" class="headerlink" title="你们的数据库单表数据量是多少？⼀般多⼤的时候开始出现查询性能急 剧下降？"></a>你们的数据库单表数据量是多少？⼀般多⼤的时候开始出现查询性能急 剧下降？</h3><h3 id="查询死掉了，想要找出执⾏的查询进程⽤什么命令？找出来之后⼀般你-会⼲嘛？"><a href="#查询死掉了，想要找出执⾏的查询进程⽤什么命令？找出来之后⼀般你-会⼲嘛？" class="headerlink" title="查询死掉了，想要找出执⾏的查询进程⽤什么命令？找出来之后⼀般你 会⼲嘛？"></a>查询死掉了，想要找出执⾏的查询进程⽤什么命令？找出来之后⼀般你 会⼲嘛？</h3><h3 id="读写分离是怎么做的？你认为中间件会怎么来操作？这样操作跟事务有-什么关系？-14-分库分表有没有做过？线上的迁移过程是怎么样的？如何确定数据是正-确的？"><a href="#读写分离是怎么做的？你认为中间件会怎么来操作？这样操作跟事务有-什么关系？-14-分库分表有没有做过？线上的迁移过程是怎么样的？如何确定数据是正-确的？" class="headerlink" title="读写分离是怎么做的？你认为中间件会怎么来操作？这样操作跟事务有 什么关系？ 14. 分库分表有没有做过？线上的迁移过程是怎么样的？如何确定数据是正 确的？"></a>读写分离是怎么做的？你认为中间件会怎么来操作？这样操作跟事务有 什么关系？ 14. 分库分表有没有做过？线上的迁移过程是怎么样的？如何确定数据是正 确的？</h3><h3 id="MySQL常用命令"><a href="#MySQL常用命令" class="headerlink" title="MySQL常用命令"></a>MySQL常用命令</h3><h3 id="数据库中事物的特征？"><a href="#数据库中事物的特征？" class="headerlink" title="数据库中事物的特征？"></a>数据库中事物的特征？</h3><h3 id="JDBC的使用？"><a href="#JDBC的使用？" class="headerlink" title="JDBC的使用？"></a>JDBC的使用？</h3><h3 id="MySQL为什么使用B-树作为索引？"><a href="#MySQL为什么使用B-树作为索引？" class="headerlink" title="MySQL为什么使用B+树作为索引？"></a>MySQL为什么使用B+树作为索引？</h3><h2 id="Redis"><a href="#Redis" class="headerlink" title="Redis"></a>Redis</h2><h3 id="Redis与Memorycache的区别？"><a href="#Redis与Memorycache的区别？" class="headerlink" title="Redis与Memorycache的区别？"></a>Redis与Memorycache的区别？</h3><h3 id="Redis的五种数据结构？"><a href="#Redis的五种数据结构？" class="headerlink" title="Redis的五种数据结构？"></a>Redis的五种数据结构？</h3><ul>
+<li>string（字符串）</li>
+<li>Hash（哈希表）</li>
+<li>List（列表）</li>
+<li>Set（集合）</li>
+<li>SortedSet（有序集合）<br>基于跳跃表（skip list）实现</li>
+</ul>
+<h3 id="渐进式rehash过程？"><a href="#渐进式rehash过程？" class="headerlink" title="渐进式rehash过程？"></a>渐进式rehash过程？</h3><h3 id="rehash源码？"><a href="#rehash源码？" class="headerlink" title="rehash源码？"></a>rehash源码？</h3><h3 id="持久化机制"><a href="#持久化机制" class="headerlink" title="持久化机制"></a>持久化机制</h3><h3 id="reaof源码？"><a href="#reaof源码？" class="headerlink" title="reaof源码？"></a>reaof源码？</h3><h3 id="事务与事件"><a href="#事务与事件" class="headerlink" title="事务与事件"></a>事务与事件</h3><h3 id="主从复制"><a href="#主从复制" class="headerlink" title="主从复制"></a>主从复制</h3><h3 id="启动过程"><a href="#启动过程" class="headerlink" title="启动过程"></a>启动过程</h3><h3 id="集群"><a href="#集群" class="headerlink" title="集群"></a>集群</h3><h3 id="Redis的6种数据淘汰策略"><a href="#Redis的6种数据淘汰策略" class="headerlink" title="Redis的6种数据淘汰策略"></a>Redis的6种数据淘汰策略</h3><h3 id="redis的并发竞争问题？"><a href="#redis的并发竞争问题？" class="headerlink" title="redis的并发竞争问题？"></a>redis的并发竞争问题？</h3><h3 id="Redis-有哪些数据类型，可参考Redis常见的5种不同的数据类型详解"><a href="#Redis-有哪些数据类型，可参考Redis常见的5种不同的数据类型详解" class="headerlink" title="Redis 有哪些数据类型，可参考Redis常见的5种不同的数据类型详解"></a>Redis 有哪些数据类型，可参考<a href="https://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247483987&amp;idx=1&amp;sn=5c5e4cd5bc73a7e6f84e5d6adfab0935" target="_blank" rel="noopener">Redis常见的5种不同的数据类型详解</a></h3><h3 id="Redis-内部结构"><a href="#Redis-内部结构" class="headerlink" title="Redis 内部结构"></a>Redis 内部结构</h3><h3 id="Redis-使用场景"><a href="#Redis-使用场景" class="headerlink" title="Redis 使用场景"></a>Redis 使用场景</h3><h3 id="Redis-持久化机制"><a href="#Redis-持久化机制" class="headerlink" title="Redis 持久化机制"></a>Redis 持久化机制</h3><ul>
+<li>快照持久化<ul>
+<li>快照就是我们所说的备份。用户可以将Redis内存中的数据在某一个时间点进行备份，在创建快照之后，用户可以对快照进行备份。</li>
+<li>创建快照的方式，并不能完全保证我们的数据不丢失</li>
+<li>客户端通过向Redis发送BGSAVE 命令来创建快照。</li>
+<li>客户端通过向Redis发送SAVE 命令来创建快照。</li>
+</ul>
+</li>
+<li>AOF 持久化<ul>
+<li>AOF持久化会将被执行的写命令写到AOF文件的末尾，以此来记录数据发生的变化。这样，我们在恢复数据的时候，只需要从头到尾的执行一下AOF文件即可恢复数据。</li>
+</ul>
+</li>
+</ul>
+<p>  可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247483992&amp;idx=1&amp;sn=8f554bc490c4db1a78a30144f873e911" target="_blank" rel="noopener">使用快照和AOF将Redis数据持久化到硬盘中</a></p>
+<h3 id="Redis-集群方案与实现"><a href="#Redis-集群方案与实现" class="headerlink" title="Redis 集群方案与实现"></a>Redis 集群方案与实现</h3><h3 id="Redis-为什么是单线程的？"><a href="#Redis-为什么是单线程的？" class="headerlink" title="Redis 为什么是单线程的？"></a>Redis 为什么是单线程的？</h3><h3 id="缓存雪崩、缓存穿透、缓存预热、缓存更新、缓存降级"><a href="#缓存雪崩、缓存穿透、缓存预热、缓存更新、缓存降级" class="headerlink" title="缓存雪崩、缓存穿透、缓存预热、缓存更新、缓存降级"></a>缓存雪崩、缓存穿透、缓存预热、缓存更新、缓存降级</h3><h3 id="使用缓存的合理性问题"><a href="#使用缓存的合理性问题" class="headerlink" title="使用缓存的合理性问题"></a>使用缓存的合理性问题</h3><h3 id="Redis-常见的回收策略"><a href="#Redis-常见的回收策略" class="headerlink" title="Redis 常见的回收策略"></a>Redis 常见的回收策略</h3><h2 id="消息队列"><a href="#消息队列" class="headerlink" title="消息队列"></a>消息队列</h2><p>  MQ 是一个互联网架构中常见的解耦利器<br>  <img src="http://neoremind.com/wp-content/uploads/MQ_mind2.png" alt="消息队列思维导图"></p>
 <h3 id="消息队列的使用场景"><a href="#消息队列的使用场景" class="headerlink" title="消息队列的使用场景"></a>消息队列的使用场景</h3><ul>
 <li>什么时候使用 MQ？<ul>
 <li>数据驱动的任务依赖</li>
@@ -907,15 +987,36 @@
 <h3 id="说说-Spring-AOP"><a href="#说说-Spring-AOP" class="headerlink" title="说说 Spring AOP"></a>说说 Spring AOP</h3><p>  面向切面编程（AOP）完善spring的依赖注入（DI），面向切面编程在spring中主要表现为两个方面</p>
 <ol>
 <li>面向切面编程提供声明式事务管理</li>
-<li>spring支持用户自定义的切面<br>AOP：面向切面，是一种编程思想，OOP的延续。将系统中非核心的业务提取出来，进行单独处理。比如事务、日志和安全等。<h3 id="Spring-AOP-实现原理"><a href="#Spring-AOP-实现原理" class="headerlink" title="Spring AOP 实现原理"></a>Spring AOP 实现原理</h3>实现 AOP 的技术，主要分为两大类：  </li>
+<li>spring支持用户自定义的切面<br>AOP：面向切面，是一种编程思想，OOP的延续。将系统中非核心的业务提取出来，进行单独处理。比如事务、日志和安全等。</li>
 </ol>
+<h3 id="Spring-AOP-实现原理"><a href="#Spring-AOP-实现原理" class="headerlink" title="Spring AOP 实现原理"></a>Spring AOP 实现原理</h3><p>  Spring AOP的实现原理是基于动态代理技术，而动态代理技术又分为Java JDK动态代理和CGLIB动态代理。</p>
 <ul>
-<li>动态代理：利用截取消息的方式，对该消息进行装饰，以取代原有对象行为的执行；  <ul>
-<li>jdk 动态代理</li>
-<li>CGLIB<br>CGLIB 是一个代码生成的类库，可以在运行时动态的生成某个类的子类，注意，CGLIB是通过继承的方式做的动态代理，因此如果某个类被标记为final，那么它是无法使用CGLIB做动态代理的，诸如private的方法也是不可以作为切面的。</li>
+<li>JDK 动态代理<ul>
+<li>是利用反射机制生成一个实现代理接口的匿名类，在调用具体方法前调用InvokeHandler来处理。</li>
+</ul>
+<ul>
+<li>优势：<ul>
+<li>最小化依赖关系，减少依赖意味着简化开发和维护，JDK 本身的支持，可能比 cglib 更加可靠。</li>
+<li>平滑进行 JDK 版本升级，而字节码类库通常需要进行更新以保证在新版 Java 上能够使用。</li>
+<li>代码实现简单。</li>
 </ul>
 </li>
-<li>静态织入：针对每个具体类分别编写代理类；针对一个接口编写一个代理类；</li>
+</ul>
+</li>
+<li>CGLIB<ul>
+<li>是利用asm开源包，对代理对象类的class文件加载进来，通过修改其字节码生成子类来处理。</li>
+<li>注意，CGLIB是通过继承的方式做的动态代理，因此如果某个类被标记为final，那么它是无法使用CGLIB做动态代理的，诸如private的方法也是不可以作为切面的。</li>
+<li>采取的是创建目标类的子类的方式，因为是子类化，我们可以达到近似使用被调用者本身的效果。</li>
+</ul>
+<ul>
+<li>优势：<ul>
+<li>有的时候调用目标可能不便实现额外接口，从某种角度看，限定调用者实现接口是有些侵入性的实践，类似 cglib 动态代理就没有这种限制。</li>
+<li>只操作我们关心的类，而不必为其他相关类增加工作量。</li>
+<li>高性能</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <h3 id="Spring-切面可以应用的通知类型有哪些？"><a href="#Spring-切面可以应用的通知类型有哪些？" class="headerlink" title="Spring 切面可以应用的通知类型有哪些？"></a>Spring 切面可以应用的通知类型有哪些？</h3><ol>
 <li>before：前置通知，在一个方法执行前被调用。</li>
@@ -932,6 +1033,11 @@
 <li>Serializable    （序列化）</li>
 </ul>
 </li>
+<li>默认事务隔离级别：<ul>
+<li>大多数数据库默认为 Read Committed</li>
+<li>MySQL 默认为 Repeatable Committed</li>
+</ul>
+</li>
 <li>Spring 支持 7 种事务传播行为：<ul>
 <li>propagation_requierd：     如果当前没有事务，就新建一个事务，如果已存在一个事务中，加入到这个事务中，这是最常见的选择。</li>
 <li>propagation_supports：     支持当前事务，如果没有当前事务，就以非事务方法执行。</li>
@@ -945,6 +1051,22 @@
 </ul>
 <ul>
 <li>Spring 默认的事务传播行为是 PROPAGATION_REQUIRED，它适合于绝大多数的情况。</li>
+</ul>
+<h3 id="事务并发访问时可能会出现：脏读、不可重复读和幻读"><a href="#事务并发访问时可能会出现：脏读、不可重复读和幻读" class="headerlink" title="事务并发访问时可能会出现：脏读、不可重复读和幻读"></a>事务并发访问时可能会出现：脏读、不可重复读和幻读</h3><ul>
+<li>脏读<br>A事务读取了B事务未提交的更改数据。一般数据库事务默认不允许该问题出现。</li>
+<li>不可重复读<br>指在一个事务内多次读同一数据，在这期间另外一个事务也访问并对该数据进行了修改。这样就造成了第一个事务两次读到的数据不一致，因此称为不可重复读。</li>
+<li>幻读<br>它发生在一个事务（T1）读取了几行数据，接着另一个并发事务（T2）插入了一些数据时。在随后的查询中，第一个事务（T1）就会发现多了一些原本不存在的记录。请注意，幻读重点是插入或者删除数据导致的（对满足条件的数据行集进行锁定）<h3 id="数据库隔离级别与可能出现的问题"><a href="#数据库隔离级别与可能出现的问题" class="headerlink" title="数据库隔离级别与可能出现的问题"></a>数据库隔离级别与可能出现的问题</h3>|隔离级别                    |脏读 |不可重复读|幻读|<br>|Read Uncommited （读未提交）|会   |会        |会|<br>|Read Commited   （读提交）  |不   |会        |会|<br>|Read Repeatable （可重复读）|不   |不        |会|<br>|Serializable    （序列化）  |不   |不        |不|</li>
+</ul>
+<h3 id="MySQL-共享锁和排他锁"><a href="#MySQL-共享锁和排他锁" class="headerlink" title="MySQL 共享锁和排他锁"></a>MySQL 共享锁和排他锁</h3><ul>
+<li>共享锁（又称读锁）<br>共享锁就是多个事务对于同一数据可以共享一把锁，都能访问到数据，但是只能读不能修改。</li>
+</ul>
+<ul>
+<li>排他锁（又称写锁）<ul>
+<li>如果一个事务获取了一个数据行的排他锁，其他事务就不能再获取该行的其他锁，包括共享锁和排他锁。</li>
+<li>InnoDB 引擎默认的修改数据语句 update、delete、insert 都会自动给涉及到的数据加上排他锁，select 默认不会加任何锁。</li>
+<li>加过排他锁的数据行在其他事务里是不能修改数据的，也不能通过for update 和 lock in share mode 锁的方式查询数据，但可以直接通过 select …from… 查询数据，因为普通查询没有任何锁机制。</li>
+</ul>
+</li>
 </ul>
 <h3 id="Spring-事务底层原理"><a href="#Spring-事务底层原理" class="headerlink" title="Spring 事务底层原理"></a>Spring 事务底层原理</h3><h3 id="Spring-事务失效（事务嵌套），JDK-动态代理给-Spring-事务埋下的坑，可参考JDK动态代理给Spring事务埋下的坑！"><a href="#Spring-事务失效（事务嵌套），JDK-动态代理给-Spring-事务埋下的坑，可参考JDK动态代理给Spring事务埋下的坑！" class="headerlink" title="Spring 事务失效（事务嵌套），JDK 动态代理给 Spring 事务埋下的坑，可参考JDK动态代理给Spring事务埋下的坑！"></a>Spring 事务失效（事务嵌套），JDK 动态代理给 Spring 事务埋下的坑，可参考<a href="http://mp.weixin.qq.com/s?__biz=MzI1NDQ3MjQxNA==&amp;mid=2247484940&amp;idx=1&amp;sn=0a0a7198e96f57d610d3421b19573002" target="_blank" rel="noopener">JDK动态代理给Spring事务埋下的坑！</a></h3><h3 id="如何自定义注解实现功能"><a href="#如何自定义注解实现功能" class="headerlink" title="如何自定义注解实现功能"></a>如何自定义注解实现功能</h3><h3 id="Spring-MVC-工作原理-amp-执行流程？"><a href="#Spring-MVC-工作原理-amp-执行流程？" class="headerlink" title="Spring MVC 工作原理 &amp; 执行流程？"></a>Spring MVC 工作原理 &amp; 执行流程？</h3><ul>
 <li>工作原理<ol>
